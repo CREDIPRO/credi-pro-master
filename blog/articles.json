@@ -1,9 +1,653 @@
 [
   {
+    "id": 4,
+    "slug": "credito-nomina-maestros-magisterio-2026",
+    "metaTitle": "Crédito de Nómina para Maestros del Magisterio 2026 | Credipro",
+    "metaDescription": "¿Eres docente del magisterio mexicano? Descubre cómo obtener un crédito de nómina con tasas preferenciales, requisitos y pasos para solicitarlo en 2026.",
+    "titulo": "Crédito de Nómina para Maestros del Magisterio: Guía Completa 2026",
+    "resumen": "Si eres docente del sector público, tienes acceso a créditos de nómina con condiciones preferenciales. Aquí todo lo que necesitas saber para solicitarlo.",
+    "imagen": "../src/assets/images/blog/credito-nomina-maestros-magisterio-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Maestra mexicana del magisterio consultando opciones de crédito de nómina",
+    "categoria": "Créditos de Nómina",
+    "tags": ["crédito nómina maestros", "magisterio", "crédito docentes", "préstamo maestros SEP", "crédito educación pública", "crédito nómina 2026", "trabajadores SEP", "préstamo magisterio"],
+    "fecha": "2026-05-05",
+    "fechaISO": "2026-05-05T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "7 min",
+    "destacado": true,
+    "faq": [
+      {
+        "pregunta": "¿Los maestros del magisterio pueden solicitar un crédito de nómina?",
+        "respuesta": "Sí. Los docentes del sector público —ya sea de la SEP, de secretarías de educación estatales o de escuelas federalizadas— son elegibles para créditos de nómina con muy buenas condiciones, gracias a su estabilidad laboral y plaza base."
+      },
+      {
+        "pregunta": "¿Qué monto puede solicitar un maestro en un crédito de nómina?",
+        "respuesta": "El monto depende de tu salario neto mensual y tu antigüedad. En general, puedes solicitar entre 1 y 12 veces tu sueldo neto, siempre que la mensualidad no supere el 30% de tu ingreso. Muchos docentes acceden a montos de entre $30,000 y $300,000 pesos."
+      },
+      {
+        "pregunta": "¿Necesito estar en el sindicato (SNTE o CNTE) para acceder a un crédito de nómina?",
+        "respuesta": "No. La membresía sindical no es requisito para solicitar un crédito de nómina a través de una institución financiera o empresa de asesoría como Credipro. Lo que importa es que tengas plaza activa y recibas tu salario vía nómina gubernamental."
+      },
+      {
+        "pregunta": "¿Un crédito de nómina afecta mis prestaciones como maestro?",
+        "respuesta": "No afecta tus prestaciones de ley. El descuento del crédito se aplica directamente sobre tu salario neto, pero no toca prestaciones como aguinaldo, prima vacacional, FOVISSSTE ni tu Afore."
+      },
+      {
+        "pregunta": "¿Puedo solicitar un crédito de nómina si ya tengo un préstamo del sindicato?",
+        "respuesta": "En la mayoría de los casos sí, siempre que el total de descuentos sobre tu nómina no supere el 30% de tu ingreso neto. Un asesor de Credipro puede revisar tu caso y orientarte sobre el monto disponible."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "h2",
+        "texto": "¿Por qué los maestros del magisterio acceden a créditos preferenciales?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El crédito de nómina para maestros del magisterio es uno de los productos financieros más accesibles en México, y la razón es muy simple: los docentes del sector público representan un perfil de muy bajo riesgo para las instituciones financieras. Tener una plaza base en el sistema educativo —ya sea federal, estatal o municipalizada— significa que tu empleo es estable y que tu salario llega puntualmente quincena tras quincena. Esa seguridad se traduce directamente en mejores tasas de interés, montos más altos y plazos más cómodos para ti."
+      },
+      {
+        "tipo": "p",
+        "texto": "En México hay más de 1.2 millones de docentes en educación básica y media superior que forman parte del sistema público, muchos de los cuales desconocen que tienen acceso a financiamiento en condiciones mucho mejores que las de un trabajador del sector privado. Si eres maestro de primaria, secundaria, preparatoria, educación especial o cualquier nivel público, este artículo es para ti."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Ventajas del crédito de nómina para docentes del magisterio"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los créditos de nómina para maestros ofrecen una combinación de beneficios que es difícil encontrar en otros productos financieros del mercado mexicano:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Tasas de interés más bajas que las tarjetas de crédito o préstamos personales sin garantía",
+          "Descuento automático de nómina: no tienes que recordar pagar, se descuenta de tu quincena",
+          "Sin aval ni garantía hipotecaria requerida",
+          "Montos desde $10,000 hasta $300,000 pesos según tu salario y antigüedad",
+          "Plazos flexibles de 6 hasta 60 meses para que tu mensualidad sea cómoda",
+          "Proceso ágil: la mayoría de los trámites se resuelven en 24 a 72 horas hábiles",
+          "No afecta tus prestaciones de ley (aguinaldo, prima vacacional, FOVISSSTE)",
+          "Ideal para remodelaciones, consolidar deudas, gastos médicos o educación de tus hijos"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Requisitos para solicitar un crédito de nómina siendo maestro del sector público"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los documentos que necesitas para solicitar tu crédito de nómina como docente del magisterio son estándar y fáciles de conseguir. La mayoría ya los tienes en casa o puedes solicitarlos a tu área de recursos humanos:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Identificación oficial vigente (INE o pasaporte)",
+          "CURP",
+          "Comprobante de domicilio reciente (no mayor a 3 meses): recibo de luz, agua o teléfono",
+          "Últimos 3 recibos de nómina quincenal o mensual",
+          "Constancia de empleo y antigüedad firmada por tu área de recursos humanos",
+          "Estado de cuenta bancario de los últimos 3 meses (donde recibes tu salario)",
+          "Clave del Registro Federal de Contribuyentes (RFC)"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cuánto dinero puedo solicitar como maestro del magisterio?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El monto de tu crédito de nómina depende principalmente de dos factores: tu salario neto quincenal o mensual y tu antigüedad como docente. Como regla general, las instituciones financieras permiten que el descuento mensual no supere el 30% de tu ingreso neto. Eso significa que, si ganas $12,000 pesos netos al mes, tu mensualidad máxima sería de $3,600 pesos. A partir de ahí, con ese pago mensual y un plazo de 48 meses, podrías acceder a un crédito de alrededor de $130,000 a $150,000 pesos (el monto exacto depende de la tasa de interés del producto)."
+      },
+      {
+        "tipo": "p",
+        "texto": "Docentes con mayor antigüedad y salario —como directores de escuela, docentes de tiempo completo en preparatoria o profesores universitarios del sistema público— pueden calificar para montos de hasta $300,000 pesos o más. Usa el simulador de Credipro para conocer el monto exacto al que puedes acceder según tu situación particular."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Préstamo del sindicato vs. crédito de nómina bancario: ¿cuál conviene más?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Muchos maestros tienen acceso a préstamos a través del SNTE (Sindicato Nacional de Trabajadores de la Educación) o la CNTE. Estos préstamos tienen ventajas, pero también limitaciones importantes: los montos suelen ser menores, los procesos pueden ser más lentos y la tasa de interés no siempre es la más competitiva del mercado. Un crédito de nómina gestionado a través de una institución financiera privada o con el apoyo de Credipro puede ofrecerte mejores condiciones en términos de monto, plazo y costo total del crédito."
+      },
+      {
+        "tipo": "p",
+        "texto": "Lo más importante es comparar el CAT (Costo Anual Total) de cada opción, que incluye la tasa de interés, comisiones y otros cargos. Así sabes cuánto pagarás realmente por el crédito. En Credipro te ayudamos a hacer esa comparación de forma gratuita."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Pasos para solicitar tu crédito de nómina con Credipro"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Paso 1: Simula tu crédito en el simulador de Credipro para saber cuánto puedes pedir según tu salario",
+          "Paso 2: Un asesor de Credipro se comunica contigo para explicarte las opciones disponibles",
+          "Paso 3: Reúnes tus documentos (los listamos arriba) y los envías de forma digital o presencial",
+          "Paso 4: Se realiza la revisión y pre-aprobación en un plazo de 24 a 72 horas hábiles",
+          "Paso 5: Firmas el contrato de crédito y el dinero se deposita directo en tu cuenta"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Listo para solicitar tu crédito de nómina como maestro?"
+      },
+      {
+        "tipo": "p",
+        "texto": "En Credipro entendemos las necesidades específicas de los docentes del magisterio mexicano. Hemos ayudado a cientos de maestros de primaria, secundaria y preparatoria a obtener el financiamiento que necesitaban para remodelar su casa, pagar una deuda, invertir en su propio negocio o cubrir una emergencia familiar. El proceso es sencillo, transparente y 100% a tu favor. Ingresa al simulador en nuestra página y descubre en minutos cuánto puedes solicitar. ¿Tienes dudas? Escríbenos por WhatsApp y un asesor real te responderá de inmediato."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "credito-nomina-trabajadores-imss-issste-diferencias",
+    "metaTitle": "Crédito de Nómina: IMSS vs ISSSTE — Diferencias Clave 2026 | Credipro",
+    "metaDescription": "¿Trabajas en el IMSS o en el ISSSTE? Conoce las diferencias en créditos de nómina, montos, beneficios y cómo solicitar el mejor crédito según tu institución en 2026.",
+    "titulo": "Crédito de Nómina para Trabajadores del IMSS e ISSSTE: Diferencias y Beneficios",
+    "resumen": "Si trabajas en el IMSS o el ISSSTE, tienes acceso a créditos de nómina con condiciones especiales. Descubre qué opciones tienes y cómo aprovecharlas.",
+    "imagen": "../src/assets/images/blog/credito-nomina-trabajadores-imss-issste-diferencias.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Trabajadoras del IMSS e ISSSTE revisando opciones de crédito de nómina",
+    "categoria": "Créditos de Nómina",
+    "tags": ["crédito nómina IMSS", "crédito nómina ISSSTE", "trabajadores IMSS", "trabajadores ISSSTE", "préstamo sector salud", "crédito gobierno federal", "nómina sector público salud"],
+    "fecha": "2026-05-05",
+    "fechaISO": "2026-05-05T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "6 min",
+    "destacado": false,
+    "faq": [
+      {
+        "pregunta": "¿Los trabajadores del IMSS pueden solicitar créditos de nómina externos?",
+        "respuesta": "Sí. Aunque el IMSS tiene productos de crédito propios para su personal, los trabajadores también pueden solicitar créditos de nómina con instituciones financieras externas, siempre que el descuento total no supere el porcentaje permitido sobre su salario neto."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre el préstamo personal del ISSSTE y un crédito de nómina externo?",
+        "respuesta": "El préstamo personal del ISSSTE tiene tasas muy competitivas, pero los montos y plazos son limitados y los tiempos de aprobación pueden ser largos. Un crédito de nómina externo puede ofrecer montos más altos y aprobación en 24-72 horas, aunque la tasa puede ser ligeramente mayor. La comparación del CAT es clave para decidir."
+      },
+      {
+        "pregunta": "¿Puedo tener el préstamo del ISSSTE y un crédito de nómina al mismo tiempo?",
+        "respuesta": "Sí, en la mayoría de los casos. Lo importante es que el total de los descuentos en tu nómina no supere el 30% de tu ingreso neto mensual. Un asesor de Credipro puede calcular el espacio disponible en tu nómina de forma gratuita."
+      },
+      {
+        "pregunta": "¿Qué pasa con mi crédito de nómina si me jubilo del IMSS o del ISSSTE?",
+        "respuesta": "Depende del contrato. En muchos casos, el crédito de nómina puede migrar a un descuento sobre tu pensión, que también es una fuente de ingresos estable. Es importante revisar esta cláusula antes de firmar el crédito."
+      },
+      {
+        "pregunta": "¿Los trabajadores eventuales o por contrato en el IMSS pueden solicitar crédito de nómina?",
+        "respuesta": "Generalmente, los créditos de nómina requieren plaza base o contrato indefinido. Los trabajadores eventuales tienen menos opciones, aunque en algunos casos pueden calificar con una antigüedad mínima de 6 a 12 meses. Consulta con un asesor para revisar tu caso específico."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "h2",
+        "texto": "Crédito de nómina para trabajadores del IMSS e ISSSTE: ¿por qué son diferentes?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El IMSS (Instituto Mexicano del Seguro Social) y el ISSSTE (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado) son dos de los mayores empleadores del sector público en México, con cientos de miles de trabajadores activos. Médicos, enfermeras, administrativos, técnicos y personal de apoyo que trabajan en cualquiera de estas dos instituciones tienen acceso a créditos de nómina con condiciones muy favorables. Sin embargo, hay diferencias importantes entre las opciones disponibles para cada tipo de trabajador que vale la pena conocer."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué beneficios tienen los trabajadores del ISSSTE en materia de crédito?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El ISSSTE ofrece directamente a sus trabajadores —y a los trabajadores del gobierno federal que cotizan en él— un Préstamo Personal con tasas de interés subsidiadas, que históricamente ha sido una de las opciones más baratas del mercado. Sin embargo, este producto tiene limitaciones:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Los montos máximos suelen ser de hasta 50 o 60 veces el salario mínimo diario, lo que para muchos trabajadores resulta insuficiente",
+          "Los tiempos de aprobación pueden ser de varias semanas o incluso meses, dependiendo de la disponibilidad de recursos",
+          "Solo puedes tener un préstamo personal ISSSTE activo a la vez",
+          "Los plazos de pago son fijos y no siempre se adaptan a tus necesidades"
+        ]
+      },
+      {
+        "tipo": "p",
+        "texto": "Por eso, muchos trabajadores del gobierno federal que cotizan en el ISSSTE complementan su financiamiento con un crédito de nómina externo gestionado a través de instituciones bancarias o empresas especializadas como Credipro. Esto les permite acceder a montos mayores con tiempos de respuesta mucho más rápidos."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Crédito de nómina para trabajadores del IMSS: lo que necesitas saber"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los trabajadores del IMSS —que son empleados del instituto, no derechohabientes— tienen un régimen laboral diferente y cotizan en el propio IMSS para sus prestaciones. El IMSS también ofrece préstamos internos a su personal, pero al igual que el ISSSTE, pueden no cubrir todas las necesidades. Los créditos de nómina externos son una excelente alternativa para trabajadores del IMSS que necesitan:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Montos más altos que los que ofrece el crédito interno del IMSS",
+          "Aprobación en 24 a 72 horas hábiles sin largas esperas",
+          "Mayor flexibilidad en plazo y monto según su salario",
+          "Consolidar deudas en una sola mensualidad con mejor tasa",
+          "Financiamiento para proyectos personales: remodelación, educación, negocio propio"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Requisitos para solicitar un crédito de nómina siendo trabajador del IMSS o del ISSSTE"
+      },
+      {
+        "tipo": "p",
+        "texto": "Sin importar si trabajas en el IMSS o en el ISSSTE, los documentos necesarios son prácticamente los mismos. Aquí el listado completo:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Identificación oficial vigente (INE o pasaporte mexicano)",
+          "CURP actualizada",
+          "Comprobante de domicilio reciente (máximo 3 meses de antigüedad)",
+          "Últimos 3 recibos de nómina (quincenal o mensual)",
+          "Constancia de empleo y antigüedad emitida por tu área de recursos humanos",
+          "Estado de cuenta bancario de los últimos 3 meses donde recibes tu salario",
+          "RFC"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Puedo tener el préstamo del IMSS o ISSSTE y un crédito de nómina externo al mismo tiempo?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Sí, en la mayoría de los casos es posible. La clave está en el porcentaje de descuento total sobre tu nómina. La ley y las instituciones financieras establecen que el total de los descuentos no debe superar el 30% de tu ingreso neto mensual. Si ya tienes un préstamo interno activo, el espacio disponible para un crédito externo dependerá de cuánto se descuenta actualmente y de tu salario total. En Credipro realizamos esta revisión de forma gratuita para que sepas exactamente a cuánto puedes acceder sin poner en riesgo tu economía mensual."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Tablas comparativas: préstamo interno vs. crédito de nómina externo"
+      },
+      {
+        "tipo": "p",
+        "texto": "Para entender cuál es la mejor opción en tu caso, es útil comparar los productos disponibles en función del CAT (Costo Anual Total), el monto máximo disponible, el tiempo de aprobación y la flexibilidad de plazo. El préstamo del ISSSTE puede tener un CAT más bajo, pero si necesitas el dinero en 48 horas o un monto mayor al que ofrece la institución, un crédito de nómina externo es la solución más eficiente. La decisión ideal no es elegir uno u otro, sino saber cuándo y cómo usar cada herramienta a tu favor."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Listo para explorar tus opciones de crédito de nómina?"
+      },
+      {
+        "tipo": "p",
+        "texto": "En Credipro hemos asesorado a cientos de trabajadores del IMSS y del ISSSTE para obtener el financiamiento que necesitaban en las mejores condiciones del mercado. Nuestro proceso es transparente, sin costos ocultos y 100% orientado a tu beneficio. Usa el simulador de Credipro para ver cuánto puedes solicitar según tu salario, o escríbenos directamente por WhatsApp y un asesor te dará una respuesta personalizada en minutos."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "que-es-el-cat-como-comparar-creditos-mexico-2026",
+    "metaTitle": "¿Qué es el CAT y Cómo Comparar Créditos en México 2026? | Credipro",
+    "metaDescription": "Aprende qué es el CAT de un crédito en México, cómo se calcula, qué es un CAT bueno en 2026 y cómo usarlo para elegir el mejor préstamo o tarjeta de crédito.",
+    "titulo": "¿Qué es el CAT y Cómo Te Ayuda a Elegir el Mejor Crédito en México?",
+    "resumen": "El CAT es la medida más importante para comparar créditos en México. Aquí te explicamos qué es, cómo funciona y cómo usarlo para tomar mejores decisiones financieras.",
+    "imagen": "../src/assets/images/blog/que-es-el-cat-como-comparar-creditos-mexico-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Persona comparando CAT de diferentes créditos en México con calculadora",
+    "categoria": "Crédito en México",
+    "tags": ["CAT crédito México", "costo anual total", "comparar créditos México", "tasa de interés", "tarjeta de crédito CAT", "crédito nómina CAT", "Banxico crédito", "finanzas personales México"],
+    "fecha": "2026-05-05",
+    "fechaISO": "2026-05-05T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "6 min",
+    "destacado": false,
+    "faq": [
+      {
+        "pregunta": "¿Qué significa CAT en un crédito?",
+        "respuesta": "CAT significa Costo Anual Total. Es un porcentaje que refleja el costo real de un crédito al año, incluyendo la tasa de interés, comisiones, seguros obligatorios y otros cargos. Es la medida más completa para comparar productos crediticios en México."
+      },
+      {
+        "pregunta": "¿Quién regula el CAT en México?",
+        "respuesta": "El Banco de México (Banxico) es la institución que regula y define cómo se calcula el CAT. Desde 2004 es obligatorio que todas las instituciones financieras en México publiquen el CAT de sus productos de crédito para garantizar transparencia al consumidor."
+      },
+      {
+        "pregunta": "¿Es mejor un CAT más alto o más bajo?",
+        "respuesta": "Siempre es mejor un CAT más bajo, porque significa que el crédito te cuesta menos al año. Si tienes dos opciones de crédito con características similares, elige la que tenga el CAT menor."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre el CAT y la tasa de interés?",
+        "respuesta": "La tasa de interés es solo uno de los componentes del costo de un crédito. El CAT incluye además comisiones por apertura, seguros de vida o de desempleo obligatorios, y otros cargos. Por eso el CAT siempre es mayor o igual a la tasa de interés nominal."
+      },
+      {
+        "pregunta": "¿El CAT incluye el IVA?",
+        "respuesta": "En algunos productos financieros el CAT se presenta sin IVA (sin incluir el impuesto sobre el valor agregado aplicable a intereses y comisiones). Cuando compares créditos, asegúrate de que ambos CAT estén expresados de la misma forma —con o sin IVA— para que la comparación sea justa."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es el CAT de un crédito en México?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Si alguna vez has visto un anuncio de banco, una tarjeta de crédito o una institución financiera en México, seguramente te habrás topado con las siglas CAT. El Costo Anual Total es un indicador obligatorio en todos los productos de crédito del país —préstamos personales, créditos hipotecarios, tarjetas de crédito, créditos de nómina— y su objetivo es darte una imagen clara y honesta del costo real que tendrá ese producto a lo largo de un año."
+      },
+      {
+        "tipo": "p",
+        "texto": "Fue creado por el Banco de México (Banxico) y su uso se volvió obligatorio en 2004 precisamente para proteger a los consumidores. Antes, los bancos podían anunciar tasas de interés muy bajas que no reflejaban todos los costos asociados al crédito. Con el CAT, esa práctica se acabó: ahora cualquier cargo que pagues por tener un crédito —intereses, comisiones, seguros obligatorios— debe estar reflejado en ese porcentaje."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cómo se calcula el CAT de un crédito?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El CAT se calcula usando una fórmula matemática estándar definida por Banxico que toma en cuenta todos los flujos de dinero del crédito: el monto que recibes, todos los pagos que realizarás durante la vida del crédito (incluyendo intereses, comisiones de apertura, seguros y cualquier otro cargo obligatorio), y los plazos en que ocurren esos pagos. El resultado es un porcentaje anual que te permite saber, de forma aproximada, cuánto te cuesta ese crédito al año por cada peso que pediste prestado."
+      },
+      {
+        "tipo": "p",
+        "texto": "Por ejemplo: si pides un crédito de $100,000 pesos y al final del año habrás pagado el equivalente a $130,000 pesos (considerando todos los cargos), el CAT de ese crédito es aproximadamente 30%. Es una forma sencilla de medir el costo real."
+      },
+      {
+        "tipo": "h2",
+        "texto": "CAT vs Tasa de Interés Nominal: la diferencia que nadie te explica"
+      },
+      {
+        "tipo": "p",
+        "texto": "Aquí está el error más común que cometen los mexicanos al contratar un crédito: confundir la tasa de interés nominal con el CAT. La tasa de interés nominal es solo el costo de los intereses del préstamo, expresado como porcentaje anual. El CAT, en cambio, incluye la tasa de interés más todos los cargos adicionales: comisión por apertura, seguros de vida o desempleo que son obligatorios, costos de mensualidades de administración y cualquier otro cargo que debas pagar para tener el crédito activo."
+      },
+      {
+        "tipo": "p",
+        "texto": "Un crédito puede anunciar una tasa de interés del 18% anual, pero si tiene una comisión de apertura del 3% y un seguro obligatorio de $200 pesos al mes, el CAT puede ser del 28% o más. Por eso siempre debes pedir el CAT, no solo la tasa, antes de firmar cualquier contrato de crédito."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es un CAT bueno o aceptable en México en 2026?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los rangos de CAT varían mucho según el tipo de producto crediticio. Aquí un panorama general para que puedas orientarte en el mercado mexicano en 2026:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Crédito de nómina para trabajadores del gobierno: entre 18% y 40% CAT anual (depende de la institución y el plazo)",
+          "Crédito personal sin garantía en banco: entre 30% y 70% CAT anual",
+          "Tarjetas de crédito bancarias: entre 40% y 90% CAT anual o más",
+          "Crédito hipotecario (INFONAVIT, FOVISSSTE, banco): entre 10% y 16% CAT anual",
+          "Préstamos en aplicaciones móviles o fintech: pueden superar el 100% CAT anual",
+          "Crédito automotriz: entre 15% y 30% CAT anual dependiendo del enganche y plazo"
+        ]
+      },
+      {
+        "tipo": "p",
+        "texto": "Como regla práctica: entre más bajo sea el CAT comparado con el promedio de su categoría, mejor es el producto para ti. Para créditos de nómina dirigidos a trabajadores del gobierno, un CAT menor al 30% anual se considera competitivo en el mercado mexicano actual."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Cómo usar el CAT para comparar créditos paso a paso"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Paso 1: Solicita el CAT de cada opción de crédito que estés evaluando. Es un dato que las instituciones están obligadas a proporcionarte.",
+          "Paso 2: Asegúrate de que todos los CAT estén calculados bajo las mismas condiciones (mismo monto y plazo, con o sin IVA).",
+          "Paso 3: Compara el CAT de los productos. En igualdad de condiciones, elige el de menor CAT.",
+          "Paso 4: También revisa la tasa de interés ordinaria y moratoria (la que aplica si te atrasas en un pago).",
+          "Paso 5: Lee las condiciones especiales: ¿el CAT sube si cambias el plazo? ¿Hay penalización por pago anticipado?",
+          "Paso 6: Si tienes dudas, pide asesoría antes de firmar. En Credipro te explicamos sin costo todas las condiciones."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Elige tu crédito con información, no con prisa"
+      },
+      {
+        "tipo": "p",
+        "texto": "La mayoría de los mexicanos firma contratos de crédito sin revisar el CAT, lo que puede significar pagar miles de pesos de más a lo largo de la vida del préstamo. Antes de comprometerte con cualquier producto financiero, tómate el tiempo de comparar. Si estás pensando en un crédito de nómina y quieres saber cuál es el CAT que te correspondería según tu salario y perfil, simula tu crédito en el simulador de Credipro o contáctanos por WhatsApp. Te damos toda la información en menos de 24 horas, sin ningún costo."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "como-crear-fondo-de-emergencia-mexico-2026",
+    "metaTitle": "Cómo Crear tu Fondo de Emergencia en México 2026 | Credipro",
+    "metaDescription": "Aprende paso a paso cómo crear un fondo de emergencia en México en 2026: cuánto dinero necesitas, dónde guardarlo y cómo empezar aunque ganes poco.",
+    "titulo": "Cómo Crear tu Fondo de Emergencia en México: Guía Paso a Paso 2026",
+    "resumen": "Un fondo de emergencia es la base de tu seguridad financiera. Te explicamos cómo armarlo, cuánto necesitas y dónde guardar ese dinero para que no te lo gastes.",
+    "imagen": "../src/assets/images/blog/como-crear-fondo-de-emergencia-mexico-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Persona ahorrando dinero en alcancía para su fondo de emergencia en México",
+    "categoria": "Educación Financiera",
+    "tags": ["fondo de emergencia", "ahorro México 2026", "emergencia financiera", "cómo ahorrar México", "finanzas personales", "ahorro trabajadores gobierno", "fondo reserva familiar", "educación financiera"],
+    "fecha": "2026-05-05",
+    "fechaISO": "2026-05-05T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "7 min",
+    "destacado": false,
+    "faq": [
+      {
+        "pregunta": "¿Cuánto dinero debo tener en mi fondo de emergencia?",
+        "respuesta": "La recomendación estándar es tener entre 3 y 6 meses de tus gastos fijos mensuales. Si tu trabajo es muy estable (como el de un trabajador del gobierno con plaza base), 3 meses puede ser suficiente. Si eres freelance o emprendedor, apunta a 6 meses o más."
+      },
+      {
+        "pregunta": "¿Dónde puedo guardar mi fondo de emergencia en México?",
+        "respuesta": "Lo ideal es en una cuenta de ahorro o inversión de fácil acceso (alta liquidez), como una cuenta de ahorro bancaria, una CETES Directo, o una cuenta en una SOFIPO. Lo importante es que el dinero esté disponible en máximo 24-48 horas y que no lo tengas en efectivo en casa."
+      },
+      {
+        "pregunta": "¿Cuánto tiempo tarda en formarse un fondo de emergencia?",
+        "respuesta": "Depende de cuánto puedas ahorrar cada mes. Si ahorras el 10% de tu salario neto, puedes tener un fondo de 3 meses de gastos en aproximadamente 2 a 3 años. Si aumentas el porcentaje de ahorro, el tiempo se reduce significativamente."
+      },
+      {
+        "pregunta": "¿Puedo usar mi crédito de nómina para crear el fondo de emergencia?",
+        "respuesta": "No es lo recomendable, porque estarías pagando intereses por dinero que guardas pero no usas. La mejor estrategia es ahorrar de forma progresiva desde tu salario. Sin embargo, si tienes una emergencia ahora mismo y no tienes fondo, un crédito de nómina puede ser un puente temporal mientras construyes tu reserva."
+      },
+      {
+        "pregunta": "¿El fondo de emergencia es lo mismo que mis ahorros para el retiro o vacaciones?",
+        "respuesta": "No. El fondo de emergencia es exclusivamente para imprevistos: pérdida de empleo, emergencia médica, reparación urgente del auto o el hogar. Tus ahorros para vacaciones, retiro o metas personales deben estar en cuentas o instrumentos separados para evitar mezclarlos."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es un fondo de emergencia y por qué lo necesitas?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Un fondo de emergencia es una reserva de dinero que guardas aparte de tus gastos cotidianos y tus otros ahorros, con el único propósito de enfrentar imprevistos económicos: una enfermedad grave, la pérdida repentina de trabajo, una reparación urgente del coche o del hogar, o cualquier otra situación que requiera dinero inmediato. En México, donde el 65% de los hogares no tiene ahorros formales según datos de la ENIF (Encuesta Nacional de Inclusión Financiera), una emergencia puede convertirse rápidamente en una deuda cara si no tienes esa reserva."
+      },
+      {
+        "tipo": "p",
+        "texto": "La diferencia entre una persona financieramente estable y una que vive al límite muchas veces no es el salario, sino la existencia o no de ese colchón de emergencia. Con un fondo bien armado, los imprevistos dejan de ser catástrofes y se convierten en problemas manejables que resuelves sin endeudarte."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cuánto dinero debe tener tu fondo de emergencia en México?"
+      },
+      {
+        "tipo": "p",
+        "texto": "La regla general recomendada por los expertos en finanzas personales es acumular entre 3 y 6 meses de tus gastos fijos mensuales. Para calcularlo, suma todos los gastos que tienes cada mes sin falta: renta o hipoteca, alimentación, transporte, servicios (luz, agua, gas, internet), medicamentos fijos, colegiaturas si tienes hijos y cualquier deuda activa que tengas que pagar."
+      },
+      {
+        "tipo": "p",
+        "texto": "Por ejemplo: si tus gastos fijos mensuales son de $12,000 pesos, tu fondo de emergencia ideal debería estar entre $36,000 y $72,000 pesos. Si eso te parece mucho, empieza con la meta de los 3 meses e incrementa con el tiempo. Lo más importante es comenzar, aunque sea con un mes de reserva."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Paso a paso para crear tu fondo de emergencia desde cero"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Paso 1: Calcula tus gastos fijos mensuales y define tu meta de ahorro (3 a 6 meses de gastos)",
+          "Paso 2: Abre una cuenta de ahorro separada, exclusiva para tu fondo de emergencia. Nunca la mezcles con tu cuenta de gastos diarios",
+          "Paso 3: Define un porcentaje de tu salario que destinarás cada quincena o mes a esta cuenta. Empieza con el 5% o 10% si nunca has ahorrado",
+          "Paso 4: Automatiza el ahorro si es posible: pide a tu banco que transfiera automáticamente ese porcentaje a la cuenta de emergencias en cuanto recibes tu nómina",
+          "Paso 5: No toques ese dinero para gastos que no sean emergencias reales (las vacaciones o un descuento en ropa no cuentan como emergencia)",
+          "Paso 6: Si usas parte del fondo ante una emergencia real, repónlo lo antes posible antes de volver a ahorrar para otras metas"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Dónde guardar tu fondo de emergencia para que rinda y esté disponible?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El principal requisito para la cuenta donde guardes tu fondo de emergencia es la liquidez: debes poder acceder a ese dinero en máximo 24 a 48 horas cuando lo necesites. Pero eso no significa que deba estar completamente inactivo. Aquí algunas opciones reales disponibles en México en 2026:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Cuenta de ahorro bancaria de fácil acceso: la opción más segura y sencilla, aunque el rendimiento es muy bajo (menos del 1% anual en la mayoría de los bancos)",
+          "CETES Directo (cetesdirecto.com): plataforma del gobierno mexicano donde puedes invertir en CETES a 28 días con rendimientos muy superiores a una cuenta de ahorro tradicional (entre 8% y 11% anual aproximadamente según la tasa vigente en 2026)",
+          "Cuenta de inversión en SOFIPO o plataforma fintech regulada: algunas ofrecen rendimientos de entre 8% y 12% anual con liquidez en 24-48 horas. Verifica siempre que estén reguladas por la CNBV",
+          "No recomendado: efectivo en casa (sin rendimiento, riesgo de robo), inversiones a largo plazo (sin liquidez inmediata), Afore (no puedes retirar libremente)"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Errores comunes al crear un fondo de emergencia en México"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Mezclar el fondo de emergencia con los ahorros de vacaciones o metas personales",
+          "Usar el fondo para 'emergencias' que en realidad son gastos planeables (regalos, ropa de temporada, arreglo del coche que ya era obvio)",
+          "Guardar todo el dinero en efectivo en casa sin ningún tipo de rendimiento",
+          "Renunciar a armar el fondo porque el monto meta parece imposible: cualquier cantidad, aunque sea pequeña, ya es un avance",
+          "No reponerlo después de usarlo ante una emergencia real"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Fondo de emergencia y crédito de nómina: cómo funcionan juntos"
+      },
+      {
+        "tipo": "p",
+        "texto": "Si todavía no tienes tu fondo de emergencia armado y te surge un imprevisto importante, un crédito de nómina puede ser una solución inteligente: te permite resolver la emergencia de inmediato con pagos cómodos distribuidos en meses, sin recurrir a préstamos informales o tarjetas de crédito con tasas altísimas. Mientras pagas el crédito, puedes al mismo tiempo ir construyendo tu fondo de emergencia para que la próxima vez no necesites endeudarte. Si quieres saber si calificas para un crédito de nómina como trabajador del sector público, simula tu crédito en nuestra página o escríbenos por WhatsApp: te respondemos sin costo y sin compromiso."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "negocio-desde-casa-trabajadores-gobierno-mexico-2026",
+    "metaTitle": "Negocio Desde Casa para Trabajadores del Gobierno México 2026 | Credipro",
+    "metaDescription": "Descubre cómo emprender un negocio desde casa siendo trabajador del gobierno en México. Ideas reales, consejos prácticos y opciones de financiamiento en 2026.",
+    "titulo": "Cómo Emprender un Negocio Desde Casa Siendo Trabajador del Gobierno en México",
+    "resumen": "Tener un trabajo estable en el gobierno es la plataforma perfecta para emprender. Aquí te decimos cómo hacerlo, qué negocios funcionan y cómo conseguir capital.",
+    "imagen": "../src/assets/images/blog/negocio-desde-casa-trabajadores-gobierno-mexico-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Trabajador del gobierno emprendiendo un negocio desde su casa en México",
+    "categoria": "Emprendimiento",
+    "tags": ["negocio desde casa México", "emprendimiento trabajadores gobierno", "ingresos extra México", "ideas de negocio 2026", "emprender con empleo", "negocio propio México", "freelance gobierno", "cómo emprender en México"],
+    "fecha": "2026-05-05",
+    "fechaISO": "2026-05-05T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "8 min",
+    "destacado": false,
+    "faq": [
+      {
+        "pregunta": "¿Puedo tener un negocio propio siendo trabajador del gobierno federal?",
+        "respuesta": "En términos generales sí, siempre que no exista un conflicto de interés con tus funciones en el servicio público y que tu actividad no esté prohibida por el puesto que desempeñas. Si trabajas en la SEP, el IMSS, municipios o gobiernos estatales, la restricción más común es no realizar actividades que compitan directamente con tu institución. Consulta el reglamento de tu dependencia para estar seguro."
+      },
+      {
+        "pregunta": "¿Qué negocios son más viables para hacer desde casa en México en 2026?",
+        "respuesta": "Los negocios con menores costos de arranque y mayor potencial en México en 2026 incluyen: venta de productos por redes sociales o plataformas como Mercado Libre, servicios de consultoría o asesoría en tu área de expertise, cursos y clases en línea, servicios de diseño o redacción, y venta de comida o repostería a pedido. Elige uno que aproveche tus habilidades y conocimientos actuales."
+      },
+      {
+        "pregunta": "¿Necesito darme de alta en el SAT si tengo un negocio desde casa?",
+        "respuesta": "Sí. Si generas ingresos adicionales a tu salario, debes reportarlos al SAT como persona física con actividad empresarial o actividad profesional (régimen simplificado de confianza si tus ingresos no superan $3.5 millones anuales). Formalizarte también te permite emitir facturas y acceder a financiamiento formal más fácilmente."
+      },
+      {
+        "pregunta": "¿Puedo usar mi crédito de nómina para financiar mi negocio?",
+        "respuesta": "Sí, es una estrategia válida y muy usada en México. Un crédito de nómina para trabajadores del gobierno puede ser el capital semilla de tu negocio, ya que ofrece tasas más bajas que las tarjetas de crédito y un descuento automático de nómina que facilita el control del flujo de efectivo del negocio."
+      },
+      {
+        "pregunta": "¿Cuánto capital necesito para empezar un negocio desde casa en México?",
+        "respuesta": "Depende del tipo de negocio. Algunos negocios digitales (consultoría, diseño, tutorías en línea) pueden iniciarse con menos de $5,000 pesos para publicidad y herramientas básicas. Negocios físicos como repostería o artesanías pueden requerir entre $5,000 y $30,000 pesos de inversión inicial. Un crédito de nómina puede cubrir ese arranque cómodamente."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "h2",
+        "texto": "¿Por qué ser trabajador del gobierno es el mejor punto de partida para emprender?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Muchos trabajadores del sector público en México no se dan cuenta de que su empleo estable les da una ventaja enorme frente a otros emprendedores: un ingreso fijo garantizado quincena tras quincena. Esta estabilidad significa que puedes construir tu negocio desde casa sin la presión de que sea tu única fuente de ingresos desde el primer día. Puedes experimentar, aprender y crecer a un ritmo sostenible mientras tu salario cubre las necesidades del hogar."
+      },
+      {
+        "tipo": "p",
+        "texto": "Además, tu empleo en el gobierno te da acceso a condiciones de crédito muy favorables —como el crédito de nómina— que puedes usar como capital semilla para iniciar tu proyecto sin recurrir a préstamos informales o a inversores externos. En México, miles de maestros, enfermeros, administrativos y trabajadores municipales tienen negocios propios funcionando en paralelo a su empleo público."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Ideas de negocio desde casa para empleados del sector público en México"
+      },
+      {
+        "tipo": "p",
+        "texto": "La clave para elegir el negocio correcto es aprovechar las habilidades y conocimientos que ya tienes. Aquí algunas ideas probadas que funcionan especialmente bien para trabajadores del gobierno que quieren emprender desde casa:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Clases o tutorías en línea: si eres maestro, puedes ofrecer tutorías particulares de matemáticas, español, inglés u otras materias a través de plataformas como Preply, Superprof o redes sociales",
+          "Venta de productos en Mercado Libre o Shopify: desde artesanías y ropa hasta productos de limpieza o alimentos caseros — ideal si tienes habilidades manuales o acceso a proveedores locales",
+          "Repostería y comida a pedido: uno de los negocios más rentables desde casa con inversión inicial baja; los pedidos por WhatsApp y redes sociales eliminan la necesidad de local propio",
+          "Asesoría o consultoría en tu área: si trabajas en recursos humanos, contabilidad, salud, leyes o cualquier área técnica, puedes ofrecer consultoría a particulares y pequeñas empresas en tu tiempo libre",
+          "Diseño gráfico, redacción de contenidos o community management: si tienes habilidades digitales, puedes ofrecer estos servicios de forma freelance a pequeños negocios de tu comunidad",
+          "Reventa de productos: comprar productos a precio de mayoreo para revenderlos con ganancia, ya sea de forma presencial o a través de catálogos digitales"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Cómo organizar tu tiempo siendo empleado de gobierno y emprendedor"
+      },
+      {
+        "tipo": "p",
+        "texto": "El mayor reto de emprender con un empleo de tiempo completo es la gestión del tiempo. Aquí algunos consejos prácticos que funcionan para trabajadores del sector público en México:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Dedica al menos 1 a 2 horas diarias a tu negocio, preferentemente antes o después de tu jornada laboral",
+          "Usa los fines de semana para las tareas que requieren mayor concentración: preparar pedidos, grabar contenido, hacer publicidad",
+          "Automatiza lo que puedas: usa WhatsApp Business, Instagram Shopping o sistemas de pedido automático para reducir el tiempo que inviertes en operaciones repetitivas",
+          "Empieza pequeño: no intentes hacer todo a la vez. Lanza un producto o servicio, pruébalo, ajústalo y luego escala",
+          "Separa claramente el dinero del negocio de tus finanzas personales desde el primer día: abre una cuenta bancaria exclusiva para el negocio"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Opciones de financiamiento para emprendedores con nómina de gobierno"
+      },
+      {
+        "tipo": "p",
+        "texto": "El acceso a capital inicial es uno de los mayores obstáculos para emprender en México. Pero si eres trabajador del gobierno con plaza base, tienes a tu disposición opciones de financiamiento que la mayoría de los emprendedores no tiene. El crédito de nómina es la opción más práctica: te permite obtener entre $30,000 y $200,000 pesos o más (según tu salario) con tasas competitivas, aprobación rápida y descuento automático de quincena, sin necesidad de presentar plan de negocios ni avalar con propiedades."
+      },
+      {
+        "tipo": "p",
+        "texto": "Otras opciones complementarias incluyen los fondos de apoyo a emprendedores del gobierno federal como INADEM (actualmente incorporado en el Instituto Nacional del Emprendedor, dependiente de la SE), NAFIN con sus programas de garantías para pequeños negocios, y algunos apoyos de gobiernos estatales para emprendedores de primer piso. La combinación de un crédito de nómina más algún apoyo gubernamental puede ser el impulso que necesitas para arrancar."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Herramientas digitales para emprender desde casa en México en 2026"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "WhatsApp Business: para gestionar pedidos, enviar catálogos y dar seguimiento a clientes sin costo",
+          "Mercado Libre y Mercado Shops: la plataforma de e-commerce más grande de México, ideal para vender productos físicos",
+          "Instagram y TikTok: para atraer clientes a través de contenido orgánico sin inversión inicial en publicidad",
+          "Canva: para crear publicidad, catálogos y contenido visual profesional de forma gratuita",
+          "Conekta o Clip: para cobrar con tarjeta desde tu celular sin necesidad de terminal bancaria",
+          "SAT en línea (sat.gob.mx): para tramitar tu RFC, régimen fiscal y emitir facturas electrónicas"
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Necesitas capital para arrancar tu negocio? Credipro puede ayudarte"
+      },
+      {
+        "tipo": "p",
+        "texto": "Si eres trabajador del gobierno y tienes una idea de negocio pero te falta el capital inicial para arrancar, un crédito de nómina puede ser exactamente la herramienta que necesitas. En Credipro te asesoramos sin costo para que encuentres el monto y el plazo que más te convengan según tu salario y tu proyecto. Hemos ayudado a maestros, enfermeras, administrativos municipales y muchos otros empleados del sector público a dar el primer paso hacia su independencia financiera. Simula tu crédito en nuestra página o contáctanos por WhatsApp: la primera consulta siempre es gratuita."
+      }
+    ]
+  },
+  {
     "id": 1,
     "slug": "credito-nomina-trabajadores-gobierno-2026",
-    "metaTitle": "Crédito de Nómina para Trabajadores del Gobierno 2026 | CrediPro",
-    "metaDescription": "¿Eres trabajador del gobierno y necesitas un crédito de nómina? Descubre cómo funciona, requisitos, ventajas y cómo solicitarlo fácil y rápido con CrediPro.",
+    "metaTitle": "Crédito de Nómina para Trabajadores del Gobierno 2026 | Credipro",
+    "metaDescription": "¿Eres trabajador del gobierno y necesitas un crédito de nómina? Descubre cómo funciona, requisitos, ventajas y cómo solicitarlo fácil y rápido con Credipro.",
     "titulo": "Crédito de Nómina para Trabajadores del Gobierno: Guía Completa 2026",
     "resumen": "Descubre todo lo que necesitas saber sobre el crédito de nómina para trabajadores del sector público: requisitos, beneficios, tasas y cómo solicitarlo hoy mismo.",
     "imagen": "../src/assets/images/blog/credito-nomina-trabajadores-gobierno-2026.jpg",
@@ -12,9 +656,9 @@
     "tags": ["crédito de nómina", "trabajadores de gobierno", "préstamo nómina gobierno", "crédito sector público", "crédito federal", "ISSSTE", "crédito nómina México"],
     "fecha": "2026-03-15",
     "fechaISO": "2026-03-15T00:00:00-06:00",
-    "autor": "Equipo CrediPro",
+    "autor": "Equipo Credipro",
     "tiempoLectura": "7 min",
-    "destacado": true,
+    "destacado": false,
     "faq": [
       {
         "pregunta": "¿Qué es un crédito de nómina para trabajadores del gobierno?",
@@ -30,7 +674,7 @@
       },
       {
         "pregunta": "¿Cuánto tarda en aprobarse un crédito de nómina para gobierno?",
-        "respuesta": "Con CrediPro, el proceso puede tomar de 24 a 72 horas hábiles una vez que entregues toda tu documentación."
+        "respuesta": "Con Credipro, el proceso puede tomar de 24 a 72 horas hábiles una vez que entregues toda tu documentación."
       }
     ],
     "contenido": [
@@ -96,11 +740,11 @@
       },
       {
         "tipo": "h2",
-        "texto": "CrediPro: Tu aliado en créditos de nómina para gobierno"
+        "texto": "Credipro: Tu aliado en créditos de nómina para gobierno"
       },
       {
         "tipo": "p",
-        "texto": "En CrediPro nos especializamos en gestionar créditos de nómina para trabajadores del sector público en México. Nuestro equipo de asesores te acompaña en cada paso del proceso, desde la pre-calificación hasta la recepción del dinero en tu cuenta. Sin letra pequeña, sin sorpresas, con total transparencia."
+        "texto": "En Credipro nos especializamos en gestionar créditos de nómina para trabajadores del sector público en México. Nuestro equipo de asesores te acompaña en cada paso del proceso, desde la pre-calificación hasta la recepción del dinero en tu cuenta. Sin letra pequeña, sin sorpresas, con total transparencia."
       },
       {
         "tipo": "p",
@@ -111,7 +755,7 @@
   {
     "id": 2,
     "slug": "5-consejos-salud-financiera-empleado-gobierno",
-    "metaTitle": "5 Consejos de Salud Financiera para Empleados del Gobierno | CrediPro",
+    "metaTitle": "5 Consejos de Salud Financiera para Empleados del Gobierno | Credipro",
     "metaDescription": "Aprende a optimizar tus finanzas personales como trabajador del sector público. Consejos prácticos para ahorrar, invertir y usar bien tu crédito de nómina.",
     "titulo": "5 Consejos para Mejorar tu Salud Financiera como Empleado del Gobierno",
     "resumen": "Aprende hábitos clave para organizar tus finanzas personales como trabajador del sector público y tomar mejores decisiones con tu dinero.",
@@ -121,7 +765,7 @@
     "tags": ["salud financiera", "ahorro", "trabajadores gobierno", "finanzas personales", "presupuesto", "inversión"],
     "fecha": "2026-03-01",
     "fechaISO": "2026-03-01T00:00:00-06:00",
-    "autor": "Equipo CrediPro",
+    "autor": "Equipo Credipro",
     "tiempoLectura": "5 min",
     "destacado": false,
     "faq": [
@@ -163,10 +807,10 @@
         "tipo": "h2",
         "texto": "3. Evita el sobreendeudamiento"
       },
-{
-  "tipo": "p",
-  "texto": "Como trabajador del gobierno, eres sujeto de crédito atractivo para muchas instituciones. No comprometas más del 30% de tu ingreso neto en el pago de créditos o préstamos. Si ya estás por encima de ese porcentaje, considera consolidar tus deudas en un solo crédito de nómina con mejor tasa."
-},
+      {
+        "tipo": "p",
+        "texto": "Como trabajador del gobierno, eres sujeto de crédito atractivo para muchas instituciones. No comprometas más del 30% de tu ingreso neto en el pago de créditos o préstamos. Si ya estás por encima de ese porcentaje, considera consolidar tus deudas en un solo crédito de nómina con mejor tasa."
+      },
       {
         "tipo": "h2",
         "texto": "4. Aprovecha tus prestaciones de ley"
@@ -188,26 +832,26 @@
   {
     "id": 3,
     "slug": "por-que-elegir-credipro-credito-nomina",
-    "metaTitle": "¿Por Qué Elegir CrediPro para tu Crédito de Nómina? | CrediPro México",
-    "metaDescription": "Conoce las razones por las que CrediPro es la mejor opción para gestionar tu crédito de nómina en México. Atención personalizada, proceso ágil y 100% transparente.",
-    "titulo": "¿Por Qué Elegir CrediPro para tu Crédito de Nómina?",
+    "metaTitle": "¿Por Qué Elegir Credipro para tu Crédito de Nómina? | Credipro México",
+    "metaDescription": "Conoce las razones por las que Credipro es la mejor opción para gestionar tu crédito de nómina en México. Atención personalizada, proceso ágil y 100% transparente.",
+    "titulo": "¿Por Qué Elegir Credipro para tu Crédito de Nómina?",
     "resumen": "Descubre las razones por las que somos tu mejor opción en gestión de créditos de nómina. Atención personalizada, procesos ágiles y confianza garantizada.",
     "imagen": "../src/assets/images/3.png",
-    "imagenAlt": "Asesora de CrediPro ayudando a cliente con crédito de nómina",
-    "categoria": "Sobre CrediPro",
-    "tags": ["CrediPro", "crédito nómina México", "asesoría crediticia", "préstamo nómina confiable", "crédito sin complicaciones"],
+    "imagenAlt": "Asesora de Credipro ayudando a cliente con crédito de nómina",
+    "categoria": "Sobre Credipro",
+    "tags": ["Credipro", "crédito nómina México", "asesoría crediticia", "préstamo nómina confiable", "crédito sin complicaciones"],
     "fecha": "2026-02-15",
     "fechaISO": "2026-02-15T00:00:00-06:00",
-    "autor": "Equipo CrediPro",
+    "autor": "Equipo Credipro",
     "tiempoLectura": "4 min",
     "destacado": false,
     "faq": [
       {
-        "pregunta": "¿CrediPro es confiable?",
-        "respuesta": "Sí. CrediPro opera de forma transparente y con total apego a la ley. Nos especializamos en asesorarte para que obtengas el mejor crédito de nómina según tu perfil."
+        "pregunta": "¿Credipro es confiable?",
+        "respuesta": "Sí. Credipro opera de forma transparente y con total apego a la ley. Nos especializamos en asesorarte para que obtengas el mejor crédito de nómina según tu perfil."
       },
       {
-        "pregunta": "¿Cuánto cobra CrediPro por sus servicios de asesoría?",
+        "pregunta": "¿Cuánto cobra Credipro por sus servicios de asesoría?",
         "respuesta": "La asesoría inicial es gratuita. Nuestros honorarios se informan de forma transparente antes de iniciar cualquier trámite, sin costos ocultos."
       }
     ],
@@ -218,7 +862,7 @@
       },
       {
         "tipo": "p",
-        "texto": "En CrediPro creemos que todos los trabajadores —especialmente los del sector público— merecen acceso a financiamiento justo, transparente y sin trámites interminables. Desde nuestra fundación, hemos ayudado a cientos de familias mexicanas a cumplir sus metas financieras a través de créditos de nómina bien estructurados."
+        "texto": "En Credipro creemos que todos los trabajadores —especialmente los del sector público— merecen acceso a financiamiento justo, transparente y sin trámites interminables. Desde nuestra fundación, hemos ayudado a cientos de familias mexicanas a cumplir sus metas financieras a través de créditos de nómina bien estructurados."
       },
       {
         "tipo": "h2",
@@ -241,11 +885,11 @@
       },
       {
         "tipo": "p",
-        "texto": "Juan, maestro de primaria con 15 años de antigüedad, obtuvo un crédito de nómina con CrediPro en 48 horas para remodelar su casa. Laura, enfermera del IMSS, consolidó tres deudas en un solo crédito y redujo su pago mensual en un 40%. Estas son solo dos de las miles de historias que hemos ayudado a escribir."
+        "texto": "Juan, maestro de primaria con 15 años de antigüedad, obtuvo un crédito de nómina con Credipro en 48 horas para remodelar su casa. Laura, enfermera del IMSS, consolidó tres deudas en un solo crédito y redujo su pago mensual en un 40%. Estas son solo dos de las miles de historias que hemos ayudado a escribir."
       },
       {
         "tipo": "h2",
-        "texto": "¿Cómo empezar con CrediPro?"
+        "texto": "¿Cómo empezar con Credipro?"
       },
       {
         "tipo": "p",

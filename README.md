@@ -1,2 +1,2 @@
 # credi-pro
-CrediPro website
+Credipro website
