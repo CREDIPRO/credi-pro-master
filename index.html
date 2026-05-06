@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Credipro | Créditos de Nómina para Trabajadores del Gobierno – Rápido, Seguro y Sin Complicaciones</title>
+
+  <!-- ===========================
+     SEO GENERAL (Home)
+=========================== -->
+  <meta name="description"
+    content="Solicita tu crédito de nómina de forma rápida, segura y sin complicaciones. Simula tu crédito en segundos y recibe acompañamiento profesional durante todo el proceso." />
+
+  <meta name="keywords"
+    content="crédito de nómina, créditos por nómina, créditos para empleados de gobierno, préstamos rápidos México, simulador crediticio, préstamos confiables, Credipro" />
+
+  <meta name="author" content="Credipro" />
+
+  <!-- ===========================
+     OPEN GRAPH (Facebook, WhatsApp)
+=========================== -->
+<meta property="og:title"
+  content="Credipro | Créditos para Trabajadores del Gobierno – Rápido, Seguro y Sin Complicaciones" />
+
+<meta property="og:description"
+  content="Simula tu crédito en segundos. Acompañamiento profesional, transparencia y un proceso sin complicaciones." />
+
+<meta property="og:image" content="https://credipro.com.mx" />
+<meta property="og:url" content="https://credipro.com.mx" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Credipro" />
+
+
+<!-- ===========================
+     TWITTER CARD
+=========================== -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title"
+  content="Credipro | Simula tu Crédito de Nómina en Segundos" />
+<meta name="twitter:description"
+  content="Créditos rápidos, simples y seguros para empleados del gobierno." />
+<meta name="twitter:image" content="https://credipro.com.mx" />
+
+
+  <link rel="stylesheet" href="./src/styles/global.css" />
+  <link rel="icon" type="image/png" href="./src/assets/images/CREDIPROLOGO.png" />
+  <link rel="icon" type="image/x-icon" href="./src/assets/images/CREDIPROLOGO.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Credipro",
+    "url": "https://www.credipro.com.mx",
+    "description": "Gestión de créditos de nómina para trabajadores del gobierno con asesoría profesional y trámites ágiles.",
+    "image": "https://www.credipro.com.mx",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MX"
+    },
+    "serviceType": "Créditos de nómina",
+    "areaServed": "México",
+    "brand": {
+      "@type": "Brand",
+      "name": "Credipro"
+    }
+  }
+  </script>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#023047",
+            "primary-light": "#219EBC",
+            secondary: "#0F5132",
+            back: "#8ECAE6",
+            accent: "#FFB703",
+            "neutral-bg": "#F4F6F8",
+            alerts: "#FB8500",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <style>
+    #hero-background-picture {
+      background-image: url("./src/assets/images/credi4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100vw;
+      height: calc(100vh - 2.5rem);
+    }
+
+    #carrousel {
+      transition: transform 0.5 ease-in-out;
+    }
+
+    #inicio::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #2c3e50;
+      z-index: 0;
+      transform: skewY(6deg);
+      transform-origin: top right;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .button-hover-effect:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .icon-bounce:hover {
+      animation: bounce 0.5s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    @keyframes slide-scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-33.333%);
+      }
+    }
+
+    .animate-slide-scroll {
+      animation: slide-scroll 18s linear infinite;
+    }
+
+    @keyframes slideX {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-slide-x {
+      animation: slideX 40s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <!-- Navigation menu  -->
+    <header x-data="{ open: false }" class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="#" class="flex-shrink-0">
+            <img class="h-10" src="./src/assets/images/logo_paleta.png" alt="Logo" />
+          </a>
+
+          <!-- Botón hamburguesa -->
+          <div class="flex md:hidden">
+            <button @click="open = !open" type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-slate-800 hover:bg-blue-100 focus:outline-none transition duration-300"
+              aria-controls="mobile-menu" :aria-expanded="open">
+              <svg class="h-6 w-6" x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="h-6 w-6" x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menú escritorio con efecto -->
+          <nav class="hidden md:flex space-x-6 items-center">
+            <a href="#" onclick="return false;"
+              class="relative group text-sm font-[montserrat-semibold] text-slate-800 hover:text-primary-light transition">
+              Inicio
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="./nosotros"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">
+              ¿Quiénes Somos?
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="./simulador"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">
+              Solicita tu Crédito
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="./blog"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">
+              Blog
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="./contacto"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">
+              Contacto
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Menú móvil (slide down con mismo estilo visual) -->
+      <div x-show="open" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="transform opacity-0 -translate-y-4"
+        x-transition:enter-end="transform opacity-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="transform opacity-100 translate-y-0"
+        x-transition:leave-end="transform opacity-0 -translate-y-4"
+        class="md:hidden bg-white/95 backdrop-blur-md shadow-md px-4 pt-4 pb-6 space-y-3">
+        <!-- Mismo estilo de efecto en móvil -->
+        <a href="#" onclick="return false;"
+          class="relative group block text-sm font-medium text-slate-800 hover:text-blue-700 transition">
+          Inicio
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="./nosotros"
+          class="relative group block text-sm font-medium text-slate-800 hover:text-blue-700 transition">
+          ¿Quiénes Somos?
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="./simulador"
+          class="relative group block text-sm font-medium text-slate-800 hover:text-blue-700 transition">
+          Solicita tu Crédito
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="./blog" class="relative group block text-sm font-medium text-slate-800 hover:text-blue-700 transition">
+          Blog
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="./contacto"
+          class="relative group block text-sm font-medium text-slate-800 hover:text-blue-700 transition">
+          Contacto
+          <span
+            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!--Inicio  -->
+
+      <!-- Hero con imagen y capa oscura -->
+      <section x-data="{
+                      current: 0,
+                      interval: null,
+                      slides: [
+                      {
+                        image: './src/assets/images/1.png',
+                        title: 'Tu crédito de nómina, sin complicaciones',
+                        text: 'Te ayudamos a conseguirlo fácil, rápido y sin letra chiquita. Desde la solicitud hasta el depósito, aquí estamos contigo.'
+                      },
+                      {
+                        image: './src/assets/images/credi4.jpg',
+                        title: 'Tu crédito de nómina, sin complicaciones',
+                        text: 'Te ayudamos a conseguirlo fácil, rápido y sin letra chiquita. Desde la solicitud hasta el depósito, aquí estamos contigo.'
+                      },
+                      {
+                        image: './src/assets/images/credi4.jpg',
+                        title: 'Tu crédito de nómina, sin complicaciones',
+                        text: 'Te ayudamos a conseguirlo fácil, rápido y sin letra chiquita. Desde la solicitud hasta el depósito, aquí estamos contigo.'
+                      }
+                      ],
+                      next() { this.current = (this.current + 1) % this.slides.length },
+                      prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
+                      goTo(index) { this.current = index },
+                      start() {
+                     
+                      },
+                      stop() {
+                      clearInterval(this.interval);
+                      }
+                     }" x-init="start" @mouseenter="stop" @mouseleave="start"
+        class="relative h-screen w-full overflow-hidden">
+        <!-- Slides -->
+        <template x-for="(slide, index) in slides" :key="index">
+          <div x-show="current === index" class="absolute inset-0 transition-opacity duration-700" x-transition.opacity>
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center"
+              :style="`background-image: url(${slide.image})`"></div>
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
+              <div class="text-white max-w-2xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4" x-text="slide.title"></h1>
+                <p class="text-lg md:text-xl mb-6" x-text="slide.text"></p>
+                <a href="https://wa.me/525568701352" target="_blank"
+                  class="relative inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 overflow-hidden">
+                  <span class="relative z-10">Solicita tu crédito</span>
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <!-- Controles  
+         slide 
+         start() {
+                      this.interval = setInterval(() => this.next(), 6000);
+                      },
+                      stop() {
+                      clearInterval(this.interval);
+                      }
+                     }"  x-init="start" @mouseenter="stop" @mouseleave="start"  
+
+        <button @click="prev"
+          class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full z-20">&#8592;</button>
+        <button @click="next"
+          class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full z-20">&#8594;</button>  -->
+
+        <!-- Indicadores 
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+          <template x-for="(slide, index) in slides" :key="index">
+            <button @click="goTo(index)" :class="{
+                                  'bg-white w-3 h-3 rounded-full': true,
+                                  'opacity-80': current !== index,
+                                  'opacity-100 scale-110': current === index
+                                }" class="transition-transform duration-300 ease-in-out"></button>
+          </template>
+        </div>   -->
+      </section>
+
+      <!--Entrada-->
+      <section id="inicio" class="bg-[#F2F4F8] pt-14 pb-7 px-6 sm:px-12 lg:px-24">
+        <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-6xl mx-auto">
+          <!-- Texto -->
+          <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">¿Quién te ayuda a conseguir tu
+              crédito? Nosotros.</h2>
+            <p class="text-lg text-primary mb-8 text-justify">
+              En <span class="text-primary-light font-semibold">Credipro</span> no solo te ayudamos a solicitar tu
+              crédito de nómina te acompañamos en todo el proceso.
+              Desde que nos contactas hasta que recibes tu depósito, estamos contigo para que todo sea claro, rápido y
+              sin estrés.
+            </p>
+            <!-- <a href="#simulador"
+              class="inline-block bg-primary-light hover:bg-alerts text-white px-6 py-3 rounded-lg font-medium shadow-md transition duration-300">
+              Mas Informacion
+            </a> -->
+          </div>
+
+          <!-- Imagen -->
+          <div class="lg:w-1/2" data-aos="fade-left">
+            <img src="./src/assets/images/nueva1.png" alt="ejecutivo"
+              class="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-lg object-cover aspect-square ring-4 ring-white" />
+          </div>
+        </div>
+      </section>
+
+      <!--Nosotros-->
+      <section id="nosotros" class="relative bg-[#F2F4F8] pt-7 pb-14 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12"
+          data-aos="fade-up" data-aos-delay="200">
+          <!-- Texto -->
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">¿Quiénes somos?</h2>
+            <p class="text-lg text-slate-700 mb-6 text-justify">
+              En <span class="font-bold text-primary-light">Credipro</span> creemos que un crédito no debería ser motivo
+              de estrés. Por eso formamos un equipo
+              <strong>comprometido, profesional y humano,</strong> que te acompaña desde la solicitud hasta que el
+              dinero llega a tus manos.
+              <br /><br />
+              No somos una financiera. Somos intermediarios que hablan claro, te explican paso a paso y hacen el trámite
+              contigo, no por encima de ti.
+              Tu tranquilidad es nuestra prioridad.
+
+
+            </p>
+            <a href="./contacto"
+              class="inline-block bg-primary-light hover:bg-alerts text-white px-6 py-3 rounded-lg font-medium shadow-md transition duration-300">
+              Descubre cómo ayudarte
+            </a>
+          </div>
+
+          <!-- Imagen -->
+          <div class="lg:w-1/2 relative" data-aos="zoom-in">
+            <div class="relative rounded-xl overflow-hidden shadow-xl">
+              <img src="./src/assets/images/nueva2.png" alt="who-we-are"
+                class="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-lg object-cover aspect-square ring-4 ring-white"
+                style="mix-blend-mode: multiply" />
+              <div class="absolute inset-0 bg-[#007BFF]/10 backdrop"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decoraciones flotantes -->
+        <div class="absolute top-10 left-0 w-40 h-40 bg-[#007BFF]/10 rounded-full blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-10 right-0 w-32 h-32 bg-[#e28743]/20 rounded-full blur-3xl animate-float"></div>
+      </section>
+
+      <!--Call to Action Dark-->
+      <section
+        class="relative bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 py-14 text-white text-center overflow-hidden">
+        <!-- Fondo animado decorativo -->
+        <div class="absolute top-0 left-0 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-ping"></div>
+        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto px-4" data-aos="zoom-in">
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Convierte tus metas en realidad</h2>
+          <p class="text-xl md:text-2xl text-blue-100 mb-8">Solicita tu crédito hoy mismo y da el primer paso con
+            respaldo profesional.</p>
+
+          <a href="https://wa.me/525568701352" target="_blank"
+            class="inline-block bg-primary-light text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-alerts hover:scale-105 transition-transform duration-300">
+            Habla con un asesor
+          </a>
+        </div>
+      </section>
+
+      <!-- Entrada Mejorada -->
+      <section class="bg-[#F4F6F8] py-24 px-6 text-center relative overflow-hidden">
+        <!-- Fondos animados -->
+        <div class="absolute -top-10 left-10 w-32 h-32 bg-[#002E5D]/10 rounded-full blur-2xl animate-ping">
+        </div>
+        <div class="absolute -bottom-20 right-0 w-40 h-40 bg-[#C59E33]/20 rounded-full blur-3xl animate-pulse">
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-[#002E5D] mb-6 leading-tight" data-aos="fade-down">Simula
+            tu Crédito de Nómina</h2>
+          <p class="text-lg text-[#114A7E] mb-8" data-aos="fade-up">
+            Descubre cuánto puedes solicitar y cómo quedarían tus pagos. Es fácil, rápido y sin compromiso.
+          </p>
+          <a href="#calculator-form"
+            class="inline-block bg-primary-light hover:bg-alerts text-white font-semibold px-8 py-4 rounded-lg shadow-lg transition duration-300"
+            data-aos="zoom-in">
+            Simular Ahora
+          </a>
+        </div>
+
+        <!-- Carrusel de Beneficios -->
+        <div class="mt-16 max-w-6xl mx-auto overflow-hidden">
+          <div
+            class="flex gap-6 overflow-x-auto snap-x snap-mandatory px-2 scroll-smooth pb-4 scrollbar-hide animate-slide-horizontal"
+            data-aos="fade-up">
+            <!-- Tarjeta 1 -->
+            <div
+              class="min-w-[280px] snap-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-[#003B73] mb-2">✅ Rápido y en línea</h3>
+              <p class="text-gray-600">Simula tu crédito sin salir de casa y obtén resultados al instante.
+              </p>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div
+              class="min-w-[280px] snap-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-[#003B73] mb-2">🔐 Seguro y confiable</h3>
+              <p class="text-gray-600">Tus datos están protegidos. Nada se guarda ni se comparte.</p>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div
+              class="min-w-[280px] snap-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-[#003B73] mb-2">📊 Resultados claros</h3>
+              <p class="text-gray-600">Ve de inmediato tu pago estimado quincenal y total.</p>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div
+              class="min-w-[280px] snap-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1">
+              <h3 class="text-xl font-semibold text-[#003B73] mb-2">🆓 Totalmente gratis</h3>
+              <p class="text-gray-600">No tienes que pagar nada. Es una herramienta de orientación.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--cotizacion-->
+      <section id="simulador" class="relative bg-[#F2F4F8] py-14 px-6 overflow-hidden">
+        <div class="max-w-4xl mx-auto rounded-2xl shadow-xl" data-aos="fade-right" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-12">¿Cuánto dinero necesitas?</h2>
+
+          <form id="calculator-form" class="bg-white rounded-xl shadow-lg p-10 space-y-8">
+            <!-- Monto visual -->
+            <div class="text-center">
+              <h3 id="amount-text" class="text-5xl font-extrabold text-primary-light tracking-wide mb-4">$3,000.00</h3>
+              <input type="range" value="3000" min="3000" max="300000" step="3000" name="amount" id="amount"
+                class="w-full accent-[#219EBC]" />
+              <div class="flex justify-between text-sm font-medium text-gray-600 pt-2">
+                <span>$3,000</span>
+                <span>$300,000</span>
+              </div>
+            </div>
+
+            <!-- Periodo de pago -->
+            <div>
+              <h4 class="text-center text-lg font-semibold text-primary mb-2">¿En cuántas quincenas quieres pagar?</h4>
+              <input type="range" value="24" min="12" max="60" step="12" name="period" id="period"
+                class="w-full accent-[#219EBC]" />
+              <div class="flex justify-between text-sm font-medium text-gray-600 pt-2">
+                <span>12</span><span>24</span><span>36</span><span>48</span><span>60</span>
+              </div>
+            </div>
+
+            <!-- Resultado -->
+            <div class="text-center">
+              <p class="text-lg text-gray-700 mb-2">Tu pago quincenal será de:</p>
+              <input type="text" disabled id="results"
+                class="text-2xl text-center font-bold text-white bg-black rounded-lg px-2 py-1 w-60 sm:w-1/6 mx-auto" />
+            </div>
+
+            <!-- Botón -->
+            <div class="text-center">
+              <a href="https://wa.me/525568701352" target="_blank"
+                class="relative inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 overflow-hidden">
+                <span class="relative z-10">Solicita tu crédito</span>
+                <span
+                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </div>
+          </form>
+          <div class="bg-gray-50 border border-gray-200 rounded-md p-3 shadow-sm mt-4">
+            <p class="text-[10px] md:text-[11px] text-gray-700 text-justify leading-tight">
+              <strong>Aviso Legal:</strong> Esta simulación es únicamente informativa y no garantiza aprobación del
+              crédito.
+              Las condiciones finales pueden variar según evaluación del solicitante y políticas de la institución
+              financiera.
+              Tasa mensual entre <strong>2% y 3.5%</strong> vigente al <strong>31 de diciembre de 2025</strong>.
+              Comisión por administración: <strong>0.0%</strong>. CAT promedio: <strong>88.10% sin IVA</strong>,
+              calculado con un
+              monto de <strong>$10,000.00 M.N.</strong> a <strong>72 quincenas</strong>. Productos disponibles a nivel
+              nacional.
+              El uso de esta herramienta implica la aceptación de estos términos.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Elementos decorativos -->
+        <div class="absolute top-0 right-0 w-40 h-40 bg-[#007BFF]/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#e28743]/10 rounded-full blur-3xl"></div>
+      </section>
+
+      <!--Secion2 DarkBlue-->
+      <section
+        class="relative bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 py-14 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16" data-aos="fade-down">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Da el siguiente paso</h2>
+            <p class="text-lg text-white/90 max-w-2xl mx-auto">
+              Tu futuro financiero comienza con una decisión. Credipro te acompaña para convertir tus planes en logros
+              concretos.
+            </p>
+          </div>
+
+          <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 px-2 md:px-0" data-aos="zoom-in-up">
+            <!-- Card 1 -->
+            <div
+              class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
+              <div
+                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
+                🎯
+              </div>
+              <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Convierte tus metas en realidad
+              </h3>
+              <p class="text-gray-600 mb-4 block h-[96px]">No es solo un crédito. Es la herramienta que te ayudará a
+                avanzar. Te guiamos en cada paso.</p>
+              <a href="./simulador"
+                class="text-primary-light hover:text-orange-500 font-semibold transition-colors">Simula tu crédito →</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
+              <div
+                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
+                🚀
+              </div>
+              <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Oportunidades a tu alcance</h3>
+              <p class="text-gray-600 mb-4 block h-[96px]">Con herramientas personalizadas y atención directa, tus
+                objetivos están más cerca que nunca.</p>
+              <a href="/blog" class="text-primary-light hover:text-orange-500 font-semibold transition-colors">Conoce
+                más →</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
+              <div
+                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
+                🌟
+              </div>
+              <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Tu futuro comienza hoy</h3>
+              <p class="text-gray-600 mb-4 block h-[96px]">Nuestro apoyo está diseñado para impulsarte, desde la
+                asesoría hasta la tranquilidad financiera.</p>
+              <a href="https://wa.me/525568701352" target="_blank"
+                class="text-primary-light hover:text-orange-500 font-semibold transition-colors">Empieza ahora →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Efecto de fondo decorativo -->
+        <div class="absolute -top-20 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+      </section>
+
+      <!-- Testimonios Slider -->
+      <section class="relative bg-gradient-to-br from-[#EAF2F8] via-white to-[#F2F6FC] py-14 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-12">💬 Testimonios Reales</h2>
+
+          <div class="relative overflow-hidden">
+            <div class="flex space-x-6 animate-slide-x snap-x snap-mandatory px-4 pb-4 w-max">
+              <!-- Testimonios -->
+              <div
+                class="flex-shrink-0 snap-center bg-white rounded-3xl shadow-lg p-6 min-w-[280px] text-center relative transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <div
+                  class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden transform transition-transform duration-500 hover:scale-110">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria G"
+                    class="object-cover w-full h-full" />
+                </div>
+                <p class="text-gray-700 italic mb-2">“Gracias a CrediPRO pude remodelar mi casa sin complicaciones.”</p>
+                <h4 class="text-primary font-semibold">María G.</h4>
+              </div>
+
+              <div
+                class="flex-shrink-0 snap-center bg-white rounded-3xl shadow-lg p-6 min-w-[280px] text-center relative transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <div
+                  class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden transform transition-transform duration-500 hover:scale-110">
+                  <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Luis R"
+                    class="object-cover w-full h-full" />
+                </div>
+                <p class="text-gray-700 italic mb-2">“El crédito llegó en menos de 48 horas. Excelente atención.”</p>
+                <h4 class="text-primary font-semibold">Luis R.</h4>
+              </div>
+
+              <div
+                class="flex-shrink-0 snap-center bg-white rounded-3xl shadow-lg p-6 min-w-[280px] text-center relative transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <div
+                  class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden transform transition-transform duration-500 hover:scale-110">
+                  <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Elena M"
+                    class="object-cover w-full h-full" />
+                </div>
+                <p class="text-gray-700 italic mb-2">“Me explicaron todo con claridad. ¡Recomiendo CrediPRO!”</p>
+                <h4 class="text-primary font-semibold">Elena M.</h4>
+              </div>
+
+              <!-- Copias para looping visual (puedes duplicar más si lo deseas) -->
+              <div
+                class="flex-shrink-0 snap-center bg-white rounded-3xl shadow-lg p-6 min-w-[280px] text-center transition-transform duration-300 hover:-translate-y-2">
+                <div
+                  class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden transform transition-transform duration-500 hover:scale-110">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria G"
+                    class="object-cover w-full h-full" />
+                </div>
+                <p class="text-gray-700 italic mb-2">“Gracias a CrediPRO pude remodelar mi casa sin complicaciones.”</p>
+                <h4 class="text-primary font-semibold">María G.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- decoraciones -->
+        <div
+          class="absolute top-10 left-0 w-40 h-40 bg-[#00B7C2]/20 rounded-full blur-3xl pointer-events-none animate-ping">
+        </div>
+        <div
+          class="absolute bottom-0 right-0 w-48 h-48 bg-[#007BFF]/10 rounded-full blur-2xl pointer-events-none animate-pulse">
+        </div>
+      </section>
+
+      <!-- Section media
+      <section class="relative bg-[#F2F4F8] py-24 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up">
+          <!-- Card 1 
+          <div
+            class="group bg-white shadow-lg rounded-2xl p-8 transition-transform hover:-translate-y-2 hover:shadow-2xl">
+            <div class="text-[#007BFF] text-5xl mb-4">🎯</div>
+            <h3 class="text-2xl font-semibold text-[#003B73] mb-4">Convierte tus metas en realidad</h3>
+            <p class="text-gray-600 mb-4 block h-[134px]">
+              No es solo un crédito. Es la herramienta que te ayudará a avanzar. Nosotros te guiamos en cada paso.
+            </p>
+            <ul class="text-sm text-[#003B73] mb-8 space-y-1">
+              <li>✅ Rápido</li>
+              <li>✅ Transparente</li>
+              <li>✅ Sin complicaciones</li>
+            </ul>
+            <a href="#calculator-form"
+              class="inline-block bg-primary-light hover:bg-primary text-white px-5 py-3 rounded-lg font-medium transition w-full text-center">Simula
+              tu crédito ahora</a>
+          </div>
+
+          <!-- Card 2
+          <div
+            class="group bg-white shadow-lg rounded-2xl p-8 transition-transform hover:-translate-y-2 hover:shadow-2xl">
+            <div class="text-[#007BFF] text-5xl mb-4">🚀</div>
+            <h3 class="text-2xl font-semibold text-[#003B73] mb-4">Oportunidades a tu alcance</h3>
+            <p class="text-gray-600 mb-4 block h-[134px]">
+              Descubre cómo nuestras soluciones pueden transformar tu vida. Con herramientas personalizadas, tus
+              objetivos están
+              más cerca que nunca.
+            </p>
+            <ul class="text-sm text-[#003B73] mb-8 space-y-1">
+              <li>✅ Personalizado</li>
+              <li>✅ Seguro</li>
+              <li>✅ Eficiente</li>
+            </ul>
+            <a href="#calculator-form"
+              class="inline-block bg-primary-light hover:bg-primary text-white px-5 py-3 rounded-lg font-medium transition w-full text-center">Conoce
+              más</a>
+          </div>
+
+          <!-- Card 3 
+          <div
+            class="group bg-white shadow-lg rounded-2xl p-8 transition-transform hover:-translate-y-2 hover:shadow-2xl">
+            <div class="text-[#007BFF] text-5xl mb-4">🌟</div>
+            <h3 class="text-2xl font-semibold text-[#003B73] mb-4">Tu futuro comienza hoy</h3>
+            <p class="text-gray-600 mb-4 block h-[134px]">
+              No esperes más para crear la vida que deseas. Nuestro apoyo está diseñado para impulsar tu crecimiento.
+            </p>
+            <ul class="text-sm text-[#003B73] mb-8 space-y-1">
+              <li>✅ Innovador</li>
+              <li>✅ Accesible</li>
+              <li>✅ Confiable</li>
+            </ul>
+            <a href="#calculator-form"
+              class="inline-block bg-primary-light hover:bg-primary text-white px-5 py-3 rounded-lg font-medium transition w-full text-center">Empieza
+              ahora</a>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Blog Section -->
+      <section id="blog" class="relative bg-white py-14 px-6">
+        <div class="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="150">
+          <!-- Encabezado -->
+          <header class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-4">📝 Ideas, Tips y Novedades</h2>
+            <p class="text-lg md:text-xl text-primary max-w-3xl mx-auto">
+              Inspírate con los artículos de nuestro blog que te ayudan a tomar decisiones financieras más inteligentes
+              y dar el siguiente paso con confianza.
+            </p>
+          </header>
+
+          <!-- Grid con layout personalizado -->
+          <div class="md:grid md:grid-cols-2 gap-4 gap-4 blog-container-hero flex flex-col">
+            <!-- Artículo destacado -->
+            <article
+              class="group bg-white overflow-hidden lg:col-span-2 row-span-2 transition-transform duration-300 hover:-translate-y-1 rounded-2xl shadow-2xl"
+              data-aos="fade-right">
+              <img src="./src/assets/images/credi3.jpg" alt="Artículo destacado"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-4">¿Qué es un crédito de nómina?</h3>
+                <p class="text-gray-600 mb-4 text-primary">
+                  Explora a fondo cómo transformar tus finanzas, mejorar tu estabilidad económica y alcanzar tus metas
+                  con pasos seguros.
+                </p>
+                <p class="text-primary">
+                  <strong>¿Quieres mejorar tu situación financiera sin complicarte?</strong>
+                  <br />
+                  La estabilidad económica es una necesidad, y en CrediPRO estamos aquí para ayudarte a lograrla. Ya sea
+                  para saldar deudas, iniciar un
+                  proyecto o tener mayor control de tus finanzas, con el acompañamiento correcto puedes transformar tu
+                  realidad. Te invitamos a descubrir cómo
+                  una buena estrategia financiera puede darte tranquilidad, abrirte nuevas oportunidades y acercarte a
+                  tus metas.
+                </p>
+                <a href="./blog" class="text-primary-light hover:text-orange-500 font-semibold hover:underline">Leer más
+                  →</a>
+              </div>
+            </article>
+
+            <!-- Artículo secundario 1 -->
+            <article
+              class="group bg-white overflow-hidden transition-transform duration-300 hover:-translate-y-1 rounded-2xl shadow-2xl"
+              data-aos="fade-right">
+              <img src="./src/assets/images/2.png" alt="Artículo 2"
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-primary mb-2">5 consejos para mejorar tu salud financiera</h3>
+                <p class="text-gray-600 mb-4">Descubre tips financieros útiles para aplicar en tu día a día.</p>
+                <a href="./blog/" class="text-primary-light hover:text-orange-500 font-semibold hover:underline">Leer
+                  más
+                  →</a>
+              </div>
+            </article>
+
+            <!-- Artículo secundario 2 -->
+            <article
+              class="group bg-white overflow-hidden transition-transform duration-300 hover:-translate-y-1 rounded-2xl shadow-2xl"
+              data-aos="fade-right">
+              <img src="./src/assets/images/3.png" alt="Artículo 3"
+                class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-[#003B73] mb-2">Historias de Éxito</h3>
+                <p class="text-gray-600 mb-4">Testimonios de personas que aprovecharon su crédito para transformar su
+                  vida.</p>
+                <a href="./blog/" class="text-primary-light hover:text-orange-500 font-semibold hover:underline">Leer
+                  más
+                  →</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- CTA final -->
+          <div class="text-center mt-16">
+            <a href="./blog"
+              class="inline-block bg-primary-light hover:bg-alerts text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md transition">
+              Ir al Blog
+            </a>
+          </div>
+        </div>
+
+        <!-- Decoración flotante -->
+        <div class="absolute -top-10 right-10 w-32 h-32 bg-[#007BFF]/10 rounded-full blur-3xl animate-pulse"></div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="relative bg-white py-14 px-6">
+        <div class="max-w-5xl mx-auto" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-primary text-center mb-12">Preguntas Frecuentes</h2>
+          <div class="space-y-6 divide-y divide-blue/20" data-aos="fade-right">
+            <details
+              class="group bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-500 transform hover:scale-[1.02] rounded-2xl shadow-xl"
+              data-aos="fade-right">
+              <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-primary">
+                ¿Qué necesito para solicitar un crédito?
+                <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-primary-light" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <p class="text-primary mt-4">Solo necesitas tu identificación oficial, comprobante de ingresos y llenar
+                nuestro formulario en línea.</p>
+            </details>
+            <details
+              class="group bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-500 transform hover:scale-[1.02] rounded-2xl shadow-xl"
+              data-aos="fade-right">
+              <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-primary">
+                ¿Cuánto tiempo tarda la aprobación?
+                <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-primary-light" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <p class="text-gray-700 mt-4">Generalmente entre 24 y 72 horas hábiles dependiendo del perfil del
+                solicitante.</p>
+            </details>
+            <details
+              class="group bg-white p-6 rounded-xl shadow hover:shadow-lg transition duration-500 transform hover:scale-[1.02]">
+              <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-primary"
+                data-aos="fade-right">
+                ¿Puedo pagar anticipadamente?
+                <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-primary-light" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <p class="text-gray-700 mt-4">Sí, puedes liquidar tu crédito anticipadamente sin penalización.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto Mejorado con fondo y estilo coherente -->
+      <section id="contacto" class="relative w-full bg-[#EAF2F8] pb-24 pt-40 px-6 overflow-hidden">
+        <!-- Decoraciones suaves -->
+        <div
+          class="absolute top-10 left-10 w-24 h-24 bg-[#007BFF]/20 rounded-full blur-3xl animate-ping pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-10 right-10 w-32 h-32 bg-[#00B7C2]/20 rounded-full blur-2xl animate-pulse pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 relative z-10">
+          <!-- Formulario -->
+          <div class="w-full lg:w-1/2 bg-white p-10 rounded-2xl shadow-xl" data-aos="fade-right">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 text-center"> Contáctanos</h2>
+            <form class="space-y-6">
+              <div>
+                <label for="fullname" class="block text-sm font-semibold text-slate-700 mb-1">Nombre completo</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Escribe tu nombre"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#007BFF] transition shadow-sm hover:shadow-md" />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1"> Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#007BFF] transition shadow-sm hover:shadow-md" />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">Numero de telefono</label>
+                <input type="number" id="phone" name="phone" placeholder="664 1234567"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#007BFF] transition shadow-sm hover:shadow-md" />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-slate-700 mb-1">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="¿En qué podemos ayudarte?"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#007BFF] transition shadow-sm hover:shadow-md"></textarea>
+              </div>
+
+              <div class="text-center">
+                <a href="https://wa.me/525568701352" target="_blank"
+                  class="relative inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 overflow-hidden">
+                  <span class="relative z-10">Enviar Mensaje</span>
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <!-- Imagen -->
+          <div class="w-full lg:w-1/2 flex justify-center" data-aos="fade-left">
+            <img src="https://img.freepik.com/free-psd/portrait-middle-aged-woman_23-2151825943.jpg" alt="Contacto"
+              class="w-[420px] max-w-full rounded-2xl object-cover shadow-2xl hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+      </section>
+
+      <!--Google Map
+      <section class="relative w-full border-t border-gray-200 overflow-hidden group" id="google-maps">
+         Título flotante 
+        <div
+          class="absolute top-6 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-md text-primary-light font-semibold md:text-lg z-10 animate-fade-in-down">
+          📍 Estamos aquí
+        </div>
+
+        Mapa interactivo 
+        <div
+          class="relative w-full h-[450px] transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out rounded-lg shadow-xl">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28822.01587240633!2d-101.02044328307028!3d25.446554042883374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86886d50f00cafb1%3A0x59bbe09517b08121!2sCredipro!5e0!3m2!1sen!2smx!4v1749349426539!5m2!1sen!2smx"
+            class="w-full h-full rounded-lg filter group-hover:filter-none transition duration-700 ease-in-out"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section> -->
+    </main>
+
+    <!--Footer-->
+    <footer
+      class="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 text-slate-700 dark:text-gray-200">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Logo y redes -->
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="text-3xl font-extrabold text-primary-light dark:text-primary-light">Credipro</span>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed">
+            Tu tranquilidad financiera está más cerca de lo que imaginas. Te acompañamos desde la asesoría inicial hasta
+            la entrega de tu crédito.
+          </p>
+          <div class="flex mt-6 space-x-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/crediprotj/" target="_blank" class="hover:scale-110 transition-transform"
+              aria-label="Facebook">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.491v-9.294H9.691V11.01h3.125V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.696h-3.12V24h6.116C23.406 24 24 23.406 24 22.675V1.325C24 .593 23.406 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="hover:scale-110 transition-transform" aria-label="Instagram">
+              <svg width="25px" height="25px" viewBox="0 0 20 20" version="1.1" fill="#e5e7eb">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-340.000000, -7439.000000)" fill="#e5e7eb">
+                      <g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path
+                          d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a href="#" class="hover:scale-110 transition-transform" aria-label="Twitter">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.951.555-2.005.959-3.127 1.184-.897-.959-2.173-1.559-3.591-1.559-2.717 0-4.924 2.206-4.924 4.924 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.708.869 3.215 2.188 4.099-.807-.026-1.566-.248-2.229-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.418-1.68 1.319-3.809 2.105-6.102 2.105-.395 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.21 7.557 2.21 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.637.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light dark:text-primary-light">Créditos</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>
+                <a href="#" onclick="return false;" class="hover:text-blue-600">Créditos Financieros</a>
+              </li>
+              <li><a href="./contacto" class="hover:text-blue-600">Asesoría</a></li>
+              <li><a href="./simulador" class="hover:text-blue-600">Solicita tu Crédito</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light dark:text-primary-light">Nosotros</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="./nosotros" class="hover:text-blue-600">¿Quiénes somos?</a></li>
+              <li><a href="./nosotros" class="hover:text-blue-600">¿Qué ofrecemos?</a></li>
+              <li><a href="./blog" class="hover:text-blue-600">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h3 class="text-lg font-semibold text-primary-light dark:text-primary-light">Contáctanos</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="./contacto" class="hover:text-blue-600">Ayuda</a></li>
+            <li>
+              <a href="#" onclick="return false;" class="hover:text-blue-600">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="#" onclick="return false;" class="hover:text-blue-600">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright" class="border-t border-slate-200 dark:border-slate-700 mt-12 text-center py-6 text-sm"></div>
+    </footer>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/525568701352" target="_blank"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+    aria-label="WhatsApp" title="¡Envíanos un WhatsApp!">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
+      <path
+        d="M16 2.938c-7.308 0-13.25 5.943-13.25 13.25 0 2.338.617 4.633 1.781 6.663l-2.032 6.396a1 1 0 0 0 1.26 1.26l6.398-2.033c2.029 1.164 4.323 1.782 6.661 1.782 7.308 0 13.25-5.943 13.25-13.25s-5.943-13.25-13.25-13.25zm0 24.062a11.155 11.155 0 0 1-5.654-1.541l-.403-.236-4.165 1.324 1.324-4.166-.237-.402a11.224 11.224 0 1 1 9.135 4.89zm6.233-8.418c-.087-.145-.32-.232-.672-.406-.352-.174-2.086-1.025-2.41-1.142-.324-.116-.561-.174-.798.174-.237.348-.916 1.142-1.124 1.377-.209.233-.414.262-.766.087-.352-.174-1.486-.547-2.83-1.743-1.046-.936-1.753-2.093-1.96-2.441-.204-.349-.022-.535.153-.708.158-.157.352-.406.528-.609.174-.201.232-.348.353-.58.116-.233.058-.436-.029-.609-.086-.174-.798-1.924-1.092-2.635-.287-.692-.58-.598-.798-.609-.206-.008-.442-.009-.678-.009s-.623.09-.951.436c-.328.348-1.247 1.219-1.247 2.974 0 1.755 1.28 3.448 1.458 3.688.174.232 2.519 3.85 6.114 5.247.854.295 1.52.471 2.041.601.857.205 1.638.176 2.255.107.688-.078 2.085-.852 2.379-1.677.295-.826.295-1.534.206-1.677z" />
+    </svg>
+  </a>
+</body>
+
+<!--Scripts-->
+<script src="./src/javascript/dom.js"></script>
+<script>
+  const carrousel = document.querySelector("#carrousel");
+  const slides = document.querySelectorAll(".slide");
+  const periodInputElement = document.querySelector("input#period");
+  const amountInputElement = document.querySelector("input#amount");
+  const amountTextElement = document.querySelector("h3#amount-text");
+  const resultInputElement = document.querySelector("#results");
+  const formElement = document.querySelector("form#calculator-form");
+  const mexicanCurrency = { style: "currency", currency: "MXN" };
+  let index = 0;
+
+  const nextSlide = () => {
+    index = (index + 1) % slides.length;
+    carrousel.style.tansform = `translateX(-${index * 100}%)`;
+  };
+
+  const calculateCreditAmount = () => {
+    try {
+      const amount = parseFloat(amountInputElement.value.replace(/,/g, ""));
+      const time = parseInt(periodInputElement.value);
+      const rate = 0.03;
+
+      if (isNaN(amount) || isNaN(time)) throw new Error("Por favor, ingresa valores válidos.");
+
+      const payment = (amount * rate) / (1 - Math.pow(1 + rate, -time));
+      const textContext = getCurrencyFormat(payment.toFixed(2));
+      const currency = getCurrencyFormat(amount);
+
+      amountTextElement.textContent = currency ?? 0;
+      resultInputElement.value = textContext ?? 0;
+    } catch (error) {
+      window.alert(error.message);
+    }
+  };
+
+  const getCurrencyFormat = (value) => new Intl.NumberFormat("es-MX", mexicanCurrency).format(value);
+
+  periodInputElement.addEventListener("input", calculateCreditAmount);
+  amountInputElement.addEventListener("input", calculateCreditAmount);
+  formElement.addEventListener("submit", (e) => e.preventDefault());
+
+  calculateCreditAmount();
+
+  setInterval(() => nextSlide(), 4000);
+</script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+</script>
+
+</html>
