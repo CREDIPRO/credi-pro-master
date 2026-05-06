@@ -163,11 +163,10 @@
         "tipo": "h2",
         "texto": "3. Evita el sobreendeudamiento"
       },
-      {
-        "tipo": "p",
-        "texto": "Como trabajador del gobierno, eres sujeto de crédito atractivo para muchas instituciones. No comprometas más del 30% de tu ingreso neto en el pago de créditos o préstamos. Si ya estás por
-encima de ese porcentaje, considera consolidar tus deudas en un solo crédito de nómina con mejor tasa."
-      },
+{
+  "tipo": "p",
+  "texto": "Como trabajador del gobierno, eres sujeto de crédito atractivo para muchas instituciones. No comprometas más del 30% de tu ingreso neto en el pago de créditos o préstamos. Si ya estás por encima de ese porcentaje, considera consolidar tus deudas en un solo crédito de nómina con mejor tasa."
+},
       {
         "tipo": "h2",
         "texto": "4. Aprovecha tus prestaciones de ley"
