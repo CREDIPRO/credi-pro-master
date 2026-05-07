@@ -1,0 +1,530 @@
+#!/usr/bin/env python3
+"""
+Genera páginas estáticas HTML por cada artículo del blog Credipro.
+
+Lee /blog/articles.json y crea un archivo /blog/p/{slug}/index.html
+con todos los meta tags pre-renderizados (SEO + Open Graph + Schema.org).
+
+Esto resuelve el problema de Facebook/WhatsApp/LinkedIn/Google que no
+ejecutan JavaScript y por lo tanto no leen los meta tags llenados
+dinámicamente en articulo.html.
+
+Uso:
+    python3 generate-static-pages.py
+"""
+
+import json
+import os
+import sys
+from html import escape
+from pathlib import Path
+
+# --------- Configuración ---------
+SITE_BASE_URL = "https://credipro.com.mx"
+ARTICLES_JSON_PATH = Path(__file__).parent / "articles.json"
+OUTPUT_DIR = Path(__file__).parent / "p"
+PROJECT_ROOT = Path(__file__).parent.parent
+
+# Imagen genérica de fallback (si la imagen del artículo aún no existe)
+DEFAULT_FALLBACK_IMAGE = "/src/assets/images/credi2.jpg"
+
+
+def absolute_image_url(article: dict) -> str:
+    """
+    Devuelve la URL absoluta de la imagen del artículo.
+    Si el archivo no existe en disco, usa el fallback.
+    """
+    # imagen viene como "../src/assets/images/blog/<slug>.jpg"
+    relative = article.get("imagen", "").lstrip(".").lstrip("/")
+    if not relative:
+        relative = DEFAULT_FALLBACK_IMAGE.lstrip("/")
+
+    # Verificar existencia en disco
+    disk_path = PROJECT_ROOT / relative
+    if not disk_path.exists():
+        fallback = article.get("imagenFallback", "../src/assets/images/credi2.jpg")
+        relative = fallback.lstrip(".").lstrip("/")
+        # Si el fallback tampoco existe, usar el por defecto
+        if not (PROJECT_ROOT / relative).exists():
+            relative = DEFAULT_FALLBACK_IMAGE.lstrip("/")
+
+    return f"{SITE_BASE_URL}/{relative}"
+
+
+def render_content_block(block: dict) -> str:
+    """Renderiza un bloque de contenido a HTML."""
+    tipo = block.get("tipo")
+    if tipo == "h2":
+        return f'<h2>{escape(block.get("texto", ""))}</h2>'
+    if tipo == "h3":
+        return f'<h3>{escape(block.get("texto", ""))}</h3>'
+    if tipo == "p":
+        return f'<p>{escape(block.get("texto", ""))}</p>'
+    if tipo == "lista":
+        items = block.get("items", [])
+        lis = "\n".join(f"        <li>{escape(item)}</li>" for item in items)
+        return f"<ul>\n{lis}\n      </ul>"
+    return ""
+
+
+def render_faq_html(faqs: list) -> str:
+    """Renderiza el bloque FAQ como HTML estático con Alpine.js para acordeón."""
+    if not faqs:
+        return ""
+    html = ['<section id="faq-section" class="mt-12">',
+            '<h2 class="text-2xl font-bold text-[#002E5D] mb-6">Preguntas Frecuentes</h2>',
+            '<div class="space-y-2">']
+    for i, faq in enumerate(faqs):
+        pregunta = escape(faq.get("pregunta", ""))
+        respuesta = escape(faq.get("respuesta", ""))
+        html.append(f'''<div class="faq-item pb-4" x-data="{{ open: {str(i == 0).lower()} }}">
+        <button @click="open = !open" class="w-full text-left flex justify-between items-center py-3 font-semibold text-[#002E5D] hover:text-primary-light transition">
+          <span>{pregunta}</span>
+          <svg class="w-5 h-5 transition-transform" :class="{{ 'rotate-180': open }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="text-gray-600 text-sm pb-3">{respuesta}</div>
+      </div>''')
+    html.append('</div></section>')
+    return "\n".join(html)
+
+
+def render_tags_html(tags: list) -> str:
+    if not tags:
+        return ""
+    items = "\n".join(
+        f'<span class="bg-blue-50 text-primary-light text-xs px-3 py-1 rounded-full">#{escape(t)}</span>'
+        for t in tags
+    )
+    return f'<div class="mt-10 flex flex-wrap gap-2">\n{items}\n</div>'
+
+
+def render_related_html(related: list) -> str:
+    if not related:
+        return ""
+    items = []
+    for a in related:
+        slug = escape(a.get("slug", ""))
+        titulo = escape(a.get("titulo", ""))
+        imagen = a.get("imagen", "../src/assets/images/credi2.jpg")
+        # Ajustar ruta relativa: en /blog/p/{slug}/index.html → ../../../...
+        if imagen.startswith("../"):
+            imagen_rel = imagen.replace("../", "../../../", 1)
+        else:
+            imagen_rel = imagen
+        tiempo = escape(a.get("tiempoLectura", ""))
+        items.append(f'''<a href="../{slug}/" class="block group">
+        <div class="flex gap-3 items-start">
+          <img src="{imagen_rel}" alt="{titulo}" class="w-16 h-16 object-cover rounded-lg flex-shrink-0 group-hover:opacity-90 transition" loading="lazy" />
+          <div>
+            <p class="text-sm font-semibold text-[#002E5D] group-hover:text-primary-light transition leading-tight">{titulo}</p>
+            <p class="text-xs text-gray-400 mt-1">{tiempo}</p>
+          </div>
+        </div>
+      </a>''')
+    return "\n".join(items)
+
+
+def format_date_es(iso_date: str) -> str:
+    """Formatea YYYY-MM-DD a 'DD de mes de YYYY' en español."""
+    meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+             "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+    try:
+        # iso_date puede ser "2026-05-05" o "2026-05-05T00:00:00-06:00"
+        date_part = iso_date.split("T")[0]
+        y, m, d = date_part.split("-")
+        return f"{int(d)} de {meses[int(m) - 1]} de {y}"
+    except Exception:
+        return iso_date
+
+
+def build_schemas(article: dict, page_url: str, image_url: str) -> str:
+    """Construye los 3 bloques JSON-LD: Article, FAQPage, BreadcrumbList."""
+    titulo = article.get("titulo", "")
+    resumen = article.get("resumen", "")
+    fecha_iso = article.get("fechaISO", article.get("fecha", ""))
+    autor = article.get("autor", "Equipo Credipro")
+    tags = article.get("tags", [])
+    faqs = article.get("faq", [])
+
+    schemas = []
+
+    # Article schema
+    article_schema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": titulo,
+        "description": resumen,
+        "image": image_url,
+        "datePublished": fecha_iso,
+        "dateModified": fecha_iso,
+        "author": {"@type": "Organization", "name": autor, "url": SITE_BASE_URL},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Credipro",
+            "url": SITE_BASE_URL,
+            "logo": {
+                "@type": "ImageObject",
+                "url": f"{SITE_BASE_URL}/src/assets/images/CREDIPROLOGO.png"
+            }
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
+        "keywords": ", ".join(tags)
+    }
+    schemas.append(f'<script type="application/ld+json">\n{json.dumps(article_schema, ensure_ascii=False, indent=2)}\n</script>')
+
+    # FAQ schema
+    if faqs:
+        faq_schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": f.get("pregunta", ""),
+                    "acceptedAnswer": {"@type": "Answer", "text": f.get("respuesta", "")}
+                }
+                for f in faqs
+            ]
+        }
+        schemas.append(f'<script type="application/ld+json">\n{json.dumps(faq_schema, ensure_ascii=False, indent=2)}\n</script>')
+
+    # Breadcrumb schema
+    breadcrumb_schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": SITE_BASE_URL},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{SITE_BASE_URL}/blog"},
+            {"@type": "ListItem", "position": 3, "name": titulo, "item": page_url}
+        ]
+    }
+    schemas.append(f'<script type="application/ld+json">\n{json.dumps(breadcrumb_schema, ensure_ascii=False, indent=2)}\n</script>')
+
+    return "\n".join(schemas)
+
+
+PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{meta_title}</title>
+  <meta name="description" content="{meta_description}" />
+  <meta name="author" content="{autor}" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="{page_url}" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Credipro" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="{meta_title}" />
+  <meta property="og:description" content="{meta_description}" />
+  <meta property="og:url" content="{page_url}" />
+  <meta property="og:image" content="{image_url}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:image:alt" content="{image_alt}" />
+  <meta property="article:published_time" content="{fecha_iso}" />
+  <meta property="article:modified_time" content="{fecha_iso}" />
+  <meta property="article:author" content="{autor}" />
+  <meta property="article:section" content="{categoria}" />
+  {article_tags_meta}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{meta_title}" />
+  <meta name="twitter:description" content="{meta_description}" />
+  <meta name="twitter:image" content="{image_url}" />
+
+  <!-- Schema.org JSON-LD -->
+  {schemas}
+
+  <link rel="stylesheet" href="../../../src/styles/global.css" />
+  <link rel="icon" type="image/png" href="../../../src/assets/images/CREDIPROLOGO.png" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {{
+      theme: {{
+        extend: {{
+          colors: {{
+            primary: "#023047",
+            "primary-light": "#219EBC",
+            secondary: "#0F5132",
+            back: "#8ECAE6",
+            accent: "#FFB703",
+            "neutral-bg": "#F4F6F8",
+            alerts: "#FB8500",
+          }},
+        }},
+      }},
+    }};
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    .article-content h2 {{ font-size: 1.5rem; font-weight: 700; color: #002E5D; margin: 2rem 0 1rem; }}
+    .article-content h3 {{ font-size: 1.25rem; font-weight: 600; color: #114A7E; margin: 1.5rem 0 0.75rem; }}
+    .article-content p {{ color: #334155; line-height: 1.8; margin-bottom: 1rem; }}
+    .article-content ul {{ list-style: none; padding: 0; margin-bottom: 1rem; }}
+    .article-content ul li {{ padding: 0.4rem 0 0.4rem 2rem; position: relative; color: #334155; }}
+    .article-content ul li::before {{ content: "✅"; position: absolute; left: 0; }}
+    .faq-item {{ border-bottom: 1px solid #e2e8f0; }}
+    .prose-credipro {{ max-width: 72ch; }}
+  </style>
+</head>
+<body class="bg-[#F4F6F8]">
+
+  <!-- Navigation -->
+  <header x-data="{{ open: false }}" class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../../../" class="flex-shrink-0">
+          <img class="h-10" src="../../../src/assets/images/logo_paleta.png" alt="Logo Credipro" />
+        </a>
+        <div class="flex md:hidden">
+          <button @click="open = !open" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-800 hover:bg-blue-100 focus:outline-none transition duration-300" aria-label="Abrir menú">
+            <svg class="h-6 w-6" x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="h-6 w-6" x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="hidden md:flex space-x-6 items-center">
+          <a href="../../../" class="relative group text-sm font-medium text-slate-800 hover:text-primary-light transition">Inicio<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span></a>
+          <a href="../../../nosotros" class="relative group text-sm font-medium text-slate-800 hover:text-primary-light transition">¿Quiénes Somos?<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span></a>
+          <a href="../../../simulador" class="relative group text-sm font-medium text-slate-800 hover:text-primary-light transition">Solicita tu Crédito<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span></a>
+          <a href="../../" class="relative group text-sm font-medium text-slate-800 hover:text-primary-light transition">Blog<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span></a>
+          <a href="../../../contacto" class="relative group text-sm font-medium text-slate-800 hover:text-primary-light transition">Contacto<span class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span></a>
+        </nav>
+      </div>
+    </div>
+    <div x-show="open" x-transition class="md:hidden bg-white/95 backdrop-blur-md shadow-md px-4 pt-4 pb-6 space-y-3">
+      <a href="../../../" class="block text-sm font-medium text-slate-800 hover:text-blue-700">Inicio</a>
+      <a href="../../../nosotros" class="block text-sm font-medium text-slate-800 hover:text-blue-700">¿Quiénes Somos?</a>
+      <a href="../../../simulador" class="block text-sm font-medium text-slate-800 hover:text-blue-700">Solicita tu Crédito</a>
+      <a href="../../" class="block text-sm font-medium text-slate-800 hover:text-blue-700">Blog</a>
+      <a href="../../../contacto" class="block text-sm font-medium text-slate-800 hover:text-blue-700">Contacto</a>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <nav class="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-500" aria-label="Migas de pan">
+      <a href="../../../" class="hover:text-primary-light">Inicio</a>
+      <span class="mx-2">›</span>
+      <a href="../../" class="hover:text-primary-light">Blog</a>
+      <span class="mx-2">›</span>
+      <span class="text-gray-700 font-medium">{titulo}</span>
+    </nav>
+
+    <section class="max-w-4xl mx-auto px-6 pb-8">
+      <div class="inline-block bg-primary-light/10 text-primary-light text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-4">{categoria}</div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-[#002E5D] mb-4 leading-tight">{titulo}</h1>
+      <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+        <span>📅 {fecha_humana}</span>
+        <span>✍️ {autor}</span>
+        <span>⏱️ {tiempo_lectura} de lectura</span>
+      </div>
+      <img src="{image_url_local}" onerror="this.onerror=null;this.src='{image_url_fallback}';" alt="{image_alt}" class="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg mb-8" />
+    </section>
+
+    <div class="max-w-6xl mx-auto px-6 pb-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <article class="lg:col-span-2 bg-white rounded-2xl shadow-md p-8">
+        <div class="article-content prose-credipro">
+          {content_html}
+        </div>
+
+        {faq_html}
+
+        {tags_html}
+
+        <div class="mt-10 bg-gradient-to-r from-primary to-primary-light rounded-2xl p-6 text-white text-center">
+          <h3 class="text-xl font-bold mb-2">¿Listo para solicitar tu crédito de nómina?</h3>
+          <p class="text-sm mb-4 opacity-90">Simula tu crédito gratis y recibe asesoría personalizada hoy mismo.</p>
+          <a href="../../../simulador" class="inline-block bg-accent hover:bg-alerts text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+            Simular mi crédito ahora →
+          </a>
+        </div>
+      </article>
+
+      <aside class="space-y-6">
+
+        <div class="bg-white rounded-2xl shadow-md p-6 text-center sticky top-24">
+          <div class="text-4xl mb-3">💳</div>
+          <h3 class="text-lg font-bold text-[#002E5D] mb-2">Simula tu crédito</h3>
+          <p class="text-sm text-gray-600 mb-4">Descubre cuánto puedes solicitar según tu salario. Rápido y sin compromisos.</p>
+          <a href="../../../simulador" class="block bg-primary-light hover:bg-primary text-white font-semibold px-4 py-3 rounded-lg transition w-full text-center">
+            Calcular ahora
+          </a>
+          <a href="https://wa.me/525568701352" target="_blank" rel="noopener" class="block mt-3 border border-green-500 text-green-600 hover:bg-green-50 font-semibold px-4 py-3 rounded-lg transition w-full text-center text-sm">
+            💬 Habla con un asesor
+          </a>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="text-lg font-bold text-[#002E5D] mb-4">Más artículos</h3>
+          <div class="space-y-4">
+            {related_html}
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="bg-gradient-to-b from-white to-blue-50 text-slate-700">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div>
+        <span class="text-2xl font-extrabold text-primary-light">Credipro</span>
+        <p class="mt-3 text-sm leading-relaxed">Tu tranquilidad financiera está más cerca de lo que imaginas.</p>
+        <div class="flex mt-4 space-x-4">
+          <a href="https://www.facebook.com/crediprotj/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.491v-9.294H9.691V11.01h3.125V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.587l-.467 3.696h-3.12V24h6.116C23.406 24 24 23.406 24 22.675V1.325C24 .593 23.406 0 22.675 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-semibold text-primary-light mb-3">Créditos</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../../../simulador" class="hover:text-blue-600">Solicita tu Crédito</a></li>
+            <li><a href="../../../contacto" class="hover:text-blue-600">Asesoría</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-primary-light mb-3">Nosotros</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="../../../nosotros" class="hover:text-blue-600">¿Quiénes somos?</a></li>
+            <li><a href="../../" class="hover:text-blue-600">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-primary-light mb-3">Contáctanos</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="../../../contacto" class="hover:text-blue-600">Ayuda</a></li>
+          <li><a href="https://wa.me/525568701352" target="_blank" rel="noopener" class="hover:text-blue-600">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-200 text-center py-4 text-xs text-gray-500">
+      © <span id="footer-year"></span> Credipro. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <a href="https://wa.me/525568701352" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300" aria-label="WhatsApp">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 32 32">
+      <path d="M16 2.938c-7.308 0-13.25 5.943-13.25 13.25 0 2.338.617 4.633 1.781 6.663l-2.032 6.396a1 1 0 0 0 1.26 1.26l6.398-2.033c2.029 1.164 4.323 1.782 6.661 1.782 7.308 0 13.25-5.943 13.25-13.25s-5.943-13.25-13.25-13.25zm0 24.062a11.155 11.155 0 0 1-5.654-1.541l-.403-.236-4.165 1.324 1.324-4.166-.237-.402a11.224 11.224 0 1 1 9.135 4.89zm6.233-8.418c-.087-.145-.32-.232-.672-.406-.352-.174-2.086-1.025-2.41-1.142-.324-.116-.561-.174-.798.174-.237.348-.916 1.142-1.124 1.377-.209.233-.414.262-.766.087-.352-.174-1.486-.547-2.83-1.743-1.046-.936-1.753-2.093-1.96-2.441-.204-.349-.022-.535.153-.708.158-.157.352-.406.528-.609.174-.201.232-.348.353-.58.116-.233.058-.436-.029-.609-.086-.174-.798-1.924-1.092-2.635-.287-.692-.58-.598-.798-.609-.206-.008-.442-.009-.678-.009s-.623.09-.951.436c-.328.348-1.247 1.219-1.247 2.974 0 1.755 1.28 3.448 1.458 3.688.174.232 2.519 3.85 6.114 5.247.854.295 1.52.471 2.041.601.857.205 1.638.176 2.255.107.688-.078 2.085-.852 2.379-1.677.295-.826.295-1.534.206-1.677z"/>
+    </svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({{ duration: 800, once: true }});
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+"""
+
+
+def render_article_page(article: dict, related: list) -> str:
+    slug = article.get("slug", "")
+    page_url = f"{SITE_BASE_URL}/blog/p/{slug}/"
+    image_url = absolute_image_url(article)
+
+    # Para el <img> en el cuerpo (HTML local), usar ruta relativa al asset
+    imagen_local = article.get("imagen", "")
+    if imagen_local.startswith("../"):
+        imagen_local_rel = imagen_local.replace("../", "../../../", 1)
+    else:
+        imagen_local_rel = imagen_local
+    fallback_local = article.get("imagenFallback", "../src/assets/images/credi2.jpg")
+    if fallback_local.startswith("../"):
+        fallback_local_rel = fallback_local.replace("../", "../../../", 1)
+    else:
+        fallback_local_rel = fallback_local
+
+    content_html = "\n".join(
+        render_content_block(b) for b in article.get("contenido", [])
+    )
+    faq_html = render_faq_html(article.get("faq", []))
+    tags_html = render_tags_html(article.get("tags", []))
+    related_html = render_related_html(related)
+    schemas = build_schemas(article, page_url, image_url)
+
+    article_tags_meta = "\n  ".join(
+        f'<meta property="article:tag" content="{escape(t)}" />'
+        for t in article.get("tags", [])
+    )
+
+    return PAGE_TEMPLATE.format(
+        meta_title=escape(article.get("metaTitle", article.get("titulo", ""))),
+        meta_description=escape(article.get("metaDescription", article.get("resumen", ""))),
+        autor=escape(article.get("autor", "Equipo Credipro")),
+        page_url=page_url,
+        image_url=image_url,
+        image_alt=escape(article.get("imagenAlt", article.get("titulo", ""))),
+        image_url_local=imagen_local_rel,
+        image_url_fallback=fallback_local_rel,
+        fecha_iso=article.get("fechaISO", ""),
+        fecha_humana=format_date_es(article.get("fechaISO", article.get("fecha", ""))),
+        categoria=escape(article.get("categoria", "")),
+        titulo=escape(article.get("titulo", "")),
+        tiempo_lectura=escape(article.get("tiempoLectura", "")),
+        article_tags_meta=article_tags_meta,
+        schemas=schemas,
+        content_html=content_html,
+        faq_html=faq_html,
+        tags_html=tags_html,
+        related_html=related_html,
+    )
+
+
+def main():
+    if not ARTICLES_JSON_PATH.exists():
+        print(f"ERROR: No existe {ARTICLES_JSON_PATH}", file=sys.stderr)
+        sys.exit(1)
+
+    with open(ARTICLES_JSON_PATH, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    generated = []
+    for article in articles:
+        slug = article.get("slug")
+        if not slug:
+            print(f"  ⚠️  Artículo sin slug, salto: {article.get('titulo', '?')}")
+            continue
+
+        # 3 artículos relacionados (excluye el actual)
+        related = [a for a in articles if a.get("slug") != slug][:3]
+
+        html = render_article_page(article, related)
+
+        slug_dir = OUTPUT_DIR / slug
+        slug_dir.mkdir(parents=True, exist_ok=True)
+        out_path = slug_dir / "index.html"
+        out_path.write_text(html, encoding="utf-8")
+        generated.append((slug, out_path))
+        print(f"  ✅ {slug}")
+
+    print(f"\n✨ Generadas {len(generated)} páginas estáticas en {OUTPUT_DIR}")
+    print("\nURLs públicas:")
+    for slug, _ in generated:
+        print(f"  https://credipro.com.mx/blog/p/{slug}/")
+
+
+if __name__ == "__main__":
+    main()

@@ -336,7 +336,7 @@
             </div>
             <h3 class="text-2xl font-bold text-[#002E5D] mb-3">${featured.titulo}</h3>
             <p class="text-[#114A7E] mb-4">${featured.resumen}</p>
-            <a href="articulo.html?slug=${featured.slug}" class="inline-flex items-center gap-2 bg-primary-light hover:bg-alerts text-white font-semibold text-sm px-5 py-2 rounded-md shadow transition-all hover:scale-105">
+            <a href="p/${featured.slug}/" class="inline-flex items-center gap-2 bg-primary-light hover:bg-alerts text-white font-semibold text-sm px-5 py-2 rounded-md shadow transition-all hover:scale-105">
               Leer artículo completo →
             </a>
           </div>
@@ -359,7 +359,7 @@
           <p class="inline-flex items-center gap-2 text-gray-400 text-xs mb-2"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>${new Date(a.fechaISO).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })} <span class="inline-flex items-center gap-1"><svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>${a.tiempoLectura}</span></p>
           <h3 class="text-lg font-bold text-[#002E5D] mb-2 group-hover:text-primary-light transition leading-snug">${a.titulo}</h3>
           <p class="text-gray-500 text-sm mb-4 line-clamp-2">${a.resumen}</p>
-          <a href="articulo.html?slug=${a.slug}" class="inline-flex items-center gap-1 text-primary-light hover:text-alerts font-semibold text-sm transition">
+          <a href="p/${a.slug}/" class="inline-flex items-center gap-1 text-primary-light hover:text-alerts font-semibold text-sm transition">
             Leer más →
           </a>
         </div>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blog/articulo.html
+
+Sitemap: https://credipro.com.mx/sitemap.xml

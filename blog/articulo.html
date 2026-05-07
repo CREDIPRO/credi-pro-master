@@ -17,8 +17,30 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta id="twitter-title" name="twitter:title" content="" />
   <meta id="twitter-description" name="twitter:description" content="" />
-  <meta name="robots" content="index, follow" />
+  <!-- noindex: esta plantilla dinámica es solo un fallback de compatibilidad.
+       La URL canónica e indexable vive en /blog/p/{slug}/ -->
+  <meta name="robots" content="noindex, follow" />
   <link id="canonical" rel="canonical" href="" />
+
+  <!-- Redirect inmediato a la URL canónica estática (preserva SEO + arregla previews sociales) -->
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var slug = params.get('slug');
+      if (slug) {
+        // Update canonical antes de redirigir para que cualquier crawler que llegue lo lea
+        var canonicalUrl = 'https://credipro.com.mx/blog/p/' + slug + '/';
+        var canonical = document.getElementById('canonical');
+        if (canonical) canonical.setAttribute('href', canonicalUrl);
+        window.location.replace('/blog/p/' + slug + '/');
+      } else {
+        window.location.replace('/blog/');
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/blog/" />
+  </noscript>
 
   <!-- Schema.org JSON-LD (se llena dinámicamente) -->
   <script id="schema-article" type="application/ld+json"></script>
