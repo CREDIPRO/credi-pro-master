@@ -1,0 +1,68 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Variables de entorno y secretos (NUNCA subir a git)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+serviceAccountKey.json
+
+# Bloquear HTMLs guardados de Google Docs/Drive (suelen traer API keys embebidas)
+**/assets/**/*.html
+!**/blog/articulo.html
+!**/blog/index.html
+!**/blog/p/**/index.html
+
+# Logs
+*.log
+logs/
+
+# Backups
+*.bak
+*.backup
+*.orig
+
+# Archivos temporales
+*.tmp
+.temp/
+.cache/
+
+# Builds
+dist/
+build/
+.next/
+.nuxt/
+.parcel-cache/
+
+# Archivos del sistema operativo
+$RECYCLE.BIN/
+*.lnk
