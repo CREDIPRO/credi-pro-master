@@ -26,7 +26,7 @@ Donde `{slug}` es exactamente el slug que aparece en el prompt y en `articles.js
 ## Especificaciones técnicas para las imágenes
 
 - **Formato:** JPG (preferido) o WebP
-- **Resolución:** mínimo 1200 x 675 px (16:9)
-- **Peso:** menor a 250 KB (comprimir con TinyPNG si es necesario)
+- **Resolución:** **1200 x 630 px exactos** (relación 1.91:1) — esta es la dimensión oficial recomendada por Facebook para mostrar el preview GRANDE en el feed (imagen completa arriba, texto abajo). Si usas otra relación, FB muestra el preview compacto y la imagen se ve pequeña/borrosa.
+- **Peso:** menor a 250 KB (comprimir con TinyPNG si es necesario; FB acepta hasta 8 MB pero pesado = lento)
 - **Estilo:** fotografía profesional o ilustración moderna, paleta de marca (azul #023047, turquesa #219EBC, ámbar #FFB703)
-- **Sin texto sobre la imagen** (el sitio agrega el título encima)
+- **Sin texto sobre la imagen** (el sitio agrega el título encima, además FB castiga imágenes con mucho texto)

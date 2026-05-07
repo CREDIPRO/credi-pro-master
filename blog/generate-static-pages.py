@@ -227,7 +227,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:url" content="{page_url}" />
   <meta property="og:image" content="{image_url}" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="675" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="{image_alt}" />
   <meta property="article:published_time" content="{fecha_iso}" />
   <meta property="article:modified_time" content="{fecha_iso}" />
@@ -272,7 +272,17 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     .article-content p {{ color: #334155; line-height: 1.8; margin-bottom: 1rem; }}
     .article-content ul {{ list-style: none; padding: 0; margin-bottom: 1rem; }}
     .article-content ul li {{ padding: 0.4rem 0 0.4rem 2rem; position: relative; color: #334155; }}
-    .article-content ul li::before {{ content: "✅"; position: absolute; left: 0; }}
+    .article-content ul li::before {{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23219EBC'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }}
     .faq-item {{ border-bottom: 1px solid #e2e8f0; }}
     .prose-credipro {{ max-width: 72ch; }}
   </style>
@@ -327,10 +337,25 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <section class="max-w-4xl mx-auto px-6 pb-8">
       <div class="inline-block bg-primary-light/10 text-primary-light text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-4">{categoria}</div>
       <h1 class="text-3xl md:text-4xl font-extrabold text-[#002E5D] mb-4 leading-tight">{titulo}</h1>
-      <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
-        <span>📅 {fecha_humana}</span>
-        <span>✍️ {autor}</span>
-        <span>⏱️ {tiempo_lectura} de lectura</span>
+      <div class="flex items-center gap-x-4 gap-y-2 text-sm text-gray-500 mb-6 flex-wrap">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-primary-light" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+          </svg>
+          <span>{fecha_humana}</span>
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-primary-light" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+          </svg>
+          <span>{autor}</span>
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-primary-light" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span>{tiempo_lectura} de lectura</span>
+        </span>
       </div>
       <img src="{image_url_local}" onerror="this.onerror=null;this.src='{image_url_fallback}';" alt="{image_alt}" class="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg mb-8" />
     </section>
