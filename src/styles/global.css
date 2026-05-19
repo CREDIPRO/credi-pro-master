@@ -73,27 +73,43 @@ body {
     font-size: 1rem;
     line-height: 1.5;
 }
-input,
-form,
-button select {
+/* Formularios: reglas acotadas (no afectan botones del menú ni Tailwind) */
+#contact-form input:not([type="hidden"]),
+#contact-form textarea,
+#contact-form select {
     display: block;
     margin-bottom: 1rem;
     width: 100%;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="tel"],
-select {
     min-height: 2.5rem;
-    display: block;
     border: 1px solid #33333365;
     border-radius: 2px;
     font-size: 1rem;
     font-family: "montserrat", sans-serif;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+#contact-form textarea {
+    min-height: auto;
+    padding: 1rem;
+}
+
+#contact-form button[type="submit"] {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+}
+
+#calculator-form input[type="range"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+header button {
+    display: inline-flex;
+    width: auto;
+    margin-bottom: 0;
 }
 
 a[role="link"] {
@@ -208,7 +224,8 @@ h6 {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
 
     & .section-spaced {
         padding: 2rem 0;
@@ -525,14 +542,21 @@ header.navigation-menu {
     }
 }
 
-/* Hero a pantalla completa */
+/* Hero a pantalla completa (respeta header fijo) */
 .hero-banner {
     position: relative;
     width: 100%;
-    max-width: 100vw;
-    min-height: 100vh;
-    min-height: 100dvh;
+    max-width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
+    padding-top: var(--header-height);
+    box-sizing: border-box;
     overflow: hidden;
+}
+
+.hero-banner > .relative.z-10 {
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100dvh - var(--header-height));
 }
 
 .hero-banner__media {
