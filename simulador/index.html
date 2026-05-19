@@ -280,19 +280,18 @@
 
                         <!-- Resultado -->
                         <div class="text-center">
-                            <p class="text-lg text-gray-700 mb-2">Tu pago quincenal será de:</p>
-                            <input type="text" disabled id="results"
-                                class="text-2xl text-center font-bold text-white bg-black rounded-lg px-2 py-1 w-60 sm:w-1/6 mx-auto" />
+                            <p class="text-lg text-gray-700 mb-1">Tu pago quincenal estimado:</p>
+                            <p id="period-label" class="text-sm text-gray-500 mb-3">24 quincenas</p>
+                            <p id="results" class="sim-result" aria-live="polite">$0.00</p>
+                            <p id="total-payment" class="text-sm text-gray-600 mt-3"></p>
                         </div>
 
                         <!-- Botón -->
                         <div class="text-center">
-                            <a href="https://wa.me/525568701352" target="_blank"
-                                class="relative inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 overflow-hidden">
-                                <span class="relative z-10">Solicita tu crédito</span>
-                                <span
-                                    class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                            </a>
+                            <a href="https://wa.me/525568701352" target="_blank" rel="noopener noreferrer" data-sim-whatsapp
+                class="inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300">
+                Solicita tu crédito
+              </a>
                         </div>
                     </form>
                     <div class="bg-gray-50 border border-gray-200 rounded-md p-3 shadow-sm mt-4">
@@ -324,7 +323,7 @@
 
             <!--Secion2 DarkBlue-->
             <section
-                class="relative bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 py-14 px-6 overflow-hidden">
+                class="section-cta-steps relative py-14 px-6 overflow-hidden text-white">
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-16" data-aos="fade-down">
                         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Da el siguiente paso</h2>
@@ -437,7 +436,7 @@
 
             <!--Call to Action Dark-->
             <section
-                class="relative bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 py-14 text-white text-center overflow-hidden">
+                class="section-cta-banner relative py-14 text-white text-center overflow-hidden">
                 <!-- Fondo animado decorativo -->
                 <div class="absolute top-0 left-0 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-ping"></div>
                 <div class="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
@@ -445,7 +444,7 @@
                 <div class="relative z-10 max-w-3xl mx-auto px-4" data-aos="zoom-in">
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Convierte tus metas en realidad
                     </h2>
-                    <p class="text-xl md:text-2xl text-blue-100 mb-8">Solicita tu crédito hoy mismo y da el primer paso
+                    <p class="text-xl md:text-2xl text-white/90 mb-8">Solicita tu crédito hoy mismo y da el primer paso
                         con respaldo profesional.</p>
 
                     <a href="https://wa.me/525568701352" target="_blank"
@@ -563,51 +562,7 @@
 
 <!--Scripts-->
 <script src="../src/javascript/dom.js"></script>
-<script>
-    const carrousel = document.querySelector("#carrousel");
-    const slides = document.querySelectorAll(".slide");
-    const periodInputElement = document.querySelector("input#period");
-    const amountInputElement = document.querySelector("input#amount");
-    const amountTextElement = document.querySelector("h3#amount-text");
-    const resultInputElement = document.querySelector("#results");
-    const formElement = document.querySelector("form#calculator-form");
-    const mexicanCurrency = { style: "currency", currency: "MXN" };
-    let index = 0;
-
-    const nextSlide = () => {
-        index = (index + 1) % slides.length;
-        carrousel.style.tansform = `translateX(-${index * 100}%)`;
-    };
-
-    const calculateCreditAmount = () => {
-        try {
-            const amount = parseFloat(amountInputElement.value.replace(/,/g, ""));
-            const time = parseInt(periodInputElement.value);
-            const rate = 0.03;
-
-            if (isNaN(amount) || isNaN(time)) throw new Error("Por favor, ingresa valores válidos.");
-
-            const payment = (amount * rate) / (1 - Math.pow(1 + rate, -time));
-            const textContext = getCurrencyFormat(payment.toFixed(2));
-            const currency = getCurrencyFormat(amount);
-
-            amountTextElement.textContent = currency ?? 0;
-            resultInputElement.value = textContext ?? 0;
-        } catch (error) {
-            window.alert(error.message);
-        }
-    };
-
-    const getCurrencyFormat = (value) => new Intl.NumberFormat("es-MX", mexicanCurrency).format(value);
-
-    periodInputElement.addEventListener("input", calculateCreditAmount);
-    amountInputElement.addEventListener("input", calculateCreditAmount);
-    formElement.addEventListener("submit", (e) => e.preventDefault());
-
-    calculateCreditAmount();
-
-    setInterval(() => nextSlide(), 4000);
-</script>
+<script src="../src/javascript/credit-calculator.js"></script>
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>

@@ -524,3 +524,33 @@ header.navigation-menu {
         animation-delay: 0.5s;
     }
 }
+
+/* Secciones CTA con contraste legible */
+.section-cta-banner {
+    background: linear-gradient(135deg, #023047 0%, #219ebc 100%);
+}
+
+.section-cta-steps {
+    background: linear-gradient(180deg, #023047 0%, #034d6e 100%);
+}
+
+.sim-result {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #219ebc;
+    line-height: 1.2;
+}
+
+.testimonial-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #219ebc, #023047);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
