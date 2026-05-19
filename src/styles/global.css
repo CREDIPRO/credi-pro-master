@@ -525,6 +525,25 @@ header.navigation-menu {
     }
 }
 
+/* Hero a pantalla completa */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+}
+
+.hero-banner__media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Secciones CTA con contraste legible */
 .section-cta-banner {
     background: linear-gradient(135deg, #023047 0%, #219ebc 100%);
