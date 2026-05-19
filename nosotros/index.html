@@ -12,6 +12,7 @@
         content="crédito de nómina, créditos por nómina, créditos para empleados de gobierno, préstamos rápidos México, simulador crediticio, préstamos confiables, Credipro" />
     <meta name="author" content="Credipro" />
     <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="preload" as="image" href="../src/assets/images/hero-nosotros.jpg" fetchpriority="high" />
     <link rel="icon" type="image/png" href="../src/assets/images/CREDIPROLOGO.png" />
     <link rel="icon" type="image/x-icon" href="../src/assets/images/CREDIPROLOGO.png" />
     <!-- AOS CSS -->
@@ -39,7 +40,7 @@
 
     <style>
         #hero-background-picture {
-            background-image: url("../src/assets/images/credi4.jpg");
+            background-image: url("../src/assets/images/hero-nosotros.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -248,85 +249,28 @@
 
         <main>
 
-            <!-- Hero con imagen y capa oscura -->
-            <section x-data="{
-                      current: 0,
-                      interval: null,
-                      slides: [
-                      {
-                        image: '../src/assets/images/credi4.jpg',
-                        title: '¿Quiénes somos?',
-                        text: 'En Credipro, nuestra misión es facilitar el acceso a créditos de nómina de forma clara, segura y sin complicaciones.'
-                      },
-                      {
-                        image: '../src/assets/images/credi4.jpg',
-                        title: 'Tu crédito de nómina, sin complicaciones',
-                        text: 'Te ayudamos a conseguirlo fácil, rápido y sin letra chiquita. Desde la solicitud hasta el depósito, aquí estamos contigo.'
-                      },
-                      {
-                        image: '../src/assets/images/credi4.jpg',
-                        title: 'Tu crédito de nómina, sin complicaciones',
-                        text: 'Te ayudamos a conseguirlo fácil, rápido y sin letra chiquita. Desde la solicitud hasta el depósito, aquí estamos contigo.'
-                      }
-                      ],
-                      next() { this.current = (this.current + 1) % this.slides.length },
-                      prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
-                      goTo(index) { this.current = index },
-                      start() {
-                     
-                      },
-                      stop() {
-                      clearInterval(this.interval);
-                      }
-                     }" x-init="start" @mouseenter="stop" @mouseleave="start"
-                class="relative h-screen w-full overflow-hidden">
-                <!-- Slides -->
-                <template x-for="(slide, index) in slides" :key="index">
-                    <div x-show="current === index" class="absolute inset-0 transition-opacity duration-700"
-                        x-transition.opacity>
-                        <div class="absolute inset-0 w-full h-full bg-cover bg-center"
-                            :style="`background-image: url(${slide.image})`"></div>
-                        <div class="absolute inset-0 bg-black/60"></div>
-                        <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
-                            <div class="text-white max-w-2xl mx-auto">
-                                <h1 class="text-4xl md:text-5xl font-extrabold mb-4" x-text="slide.title"></h1>
-                                <p class="text-lg md:text-xl mb-6" x-text="slide.text"></p>
-                                <a href="https://wa.me/525568701352" target="_blank"
-                                    class="relative inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 overflow-hidden">
-                                    <span class="relative z-10">Solicita tu crédito</span>
-                                    <span
-                                        class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                                </a>
-                            </div>
-                        </div>
+            <!-- Hero -->
+            <section class="hero-banner">
+                <img
+                    src="../src/assets/images/hero-nosotros.jpg"
+                    alt="Equipo Credipro asesorando sobre créditos de nómina"
+                    class="hero-banner__media"
+                    width="1920"
+                    height="1080"
+                    fetchpriority="high"
+                    decoding="async"
+                />
+                <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+                <div class="relative z-10 flex items-center justify-center min-h-[inherit] h-full text-center px-4 py-20">
+                    <div class="text-white max-w-2xl mx-auto">
+                        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">¿Quiénes somos?</h1>
+                        <p class="text-lg md:text-xl mb-6">En Credipro, nuestra misión es facilitar el acceso a créditos de nómina de forma clara, segura y sin complicaciones.</p>
+                        <a href="https://wa.me/525568701352" target="_blank" rel="noopener noreferrer"
+                            class="inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300">
+                            Solicita tu crédito
+                        </a>
                     </div>
-                </template>
-
-                <!-- Controles  
-         slide 
-         start() {
-                      this.interval = setInterval(() => this.next(), 6000);
-                      },
-                      stop() {
-                      clearInterval(this.interval);
-                      }
-                     }"  x-init="start" @mouseenter="stop" @mouseleave="start"  
-
-        <button @click="prev"
-          class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full z-20">&#8592;</button>
-        <button @click="next"
-          class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full z-20">&#8594;</button>  -->
-
-                <!-- Indicadores 
-        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
-          <template x-for="(slide, index) in slides" :key="index">
-            <button @click="goTo(index)" :class="{
-                                  'bg-white w-3 h-3 rounded-full': true,
-                                  'opacity-80': current !== index,
-                                  'opacity-100 scale-110': current === index
-                                }" class="transition-transform duration-300 ease-in-out"></button>
-          </template>
-        </div>   -->
+                </div>
             </section>
 
             <!--Nosotros-->
@@ -561,8 +505,7 @@
             </section>
 
             <!--Secion2 DarkBlue-->
-            <section
-                class="relative bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 py-14 px-6 overflow-hidden">
+            <section class="section-cta-steps relative py-14 px-6 overflow-hidden text-white">
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-16" data-aos="fade-down">
                         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Elegir Credipro es elegir
@@ -578,8 +521,8 @@
                         <div
                             class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
                             <div
-                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
-                                🎯
+                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md scale-[1.5]">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/><line x1="5" y1="15" x2="9" y2="15"/></svg>
                             </div>
                             <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Convierte tus metas
                             </h3>
@@ -594,8 +537,8 @@
                         <div
                             class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
                             <div
-                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
-                                🚀
+                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md scale-[1.5]">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                             </div>
                             <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Oportunidades a tu
                                 alcance</h3>
@@ -610,8 +553,8 @@
                         <div
                             class="relative bg-white rounded-xl shadow-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-105">
                             <div
-                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full text-xl shadow-md scale-[1.5]">
-                                🌟
+                                class="absolute -top-6 left-6 bg-primary-light text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md scale-[1.5]">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                             </div>
                             <h3 class="text-2xl font-semibold text-primary mt-4 mb-8 block h-[3rem]">Tu futuro comienza
                                 hoy</h3>
