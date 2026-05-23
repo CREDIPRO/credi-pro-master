@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Términos y Condiciones | Credipro</title>
+  <meta name="description"
+    content="Términos y condiciones de uso del sitio Credipro, simulador crediticio, intermediación de créditos de nómina y canales de atención." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://credipro.com.mx/terminos/" />
+
+  <link rel="stylesheet" href="../src/styles/global.css?v=3" />
+  <link rel="stylesheet" href="../src/styles/critical-layout.css?v=1" />
+  <link rel="icon" type="image/png" href="../src/assets/images/CREDIPROLOGO.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#023047",
+            "primary-light": "#219EBC",
+            secondary: "#0F5132",
+            back: "#8ECAE6",
+            accent: "#FFB703",
+            "neutral-bg": "#F4F6F8",
+            alerts: "#FB8500",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body>
+  <div id="content">
+    <header x-data="{ open: false }" class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="../" class="flex-shrink-0">
+            <img class="h-10" src="../src/assets/images/logo_paleta.png" alt="Credipro" />
+          </a>
+          <div class="flex md:hidden">
+            <button @click="open = !open" type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-slate-800 hover:bg-blue-100 focus:outline-none transition duration-300"
+              aria-controls="mobile-menu" :aria-expanded="open">
+              <svg class="h-6 w-6" x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="h-6 w-6" x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-6 items-center">
+            <a href="../"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Inicio
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../nosotros"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">¿Quiénes
+              Somos?
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../simulador"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Solicita
+              tu Crédito
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../blog"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Blog
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../contacto"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Contacto
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div x-show="open" x-transition class="md:hidden bg-white/95 backdrop-blur-md shadow-md px-4 pt-4 pb-6 space-y-3">
+        <a href="../" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Inicio</a>
+        <a href="../nosotros" class="block text-sm font-medium text-slate-800 hover:text-primary-light">¿Quiénes Somos?</a>
+        <a href="../simulador" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Solicita tu
+          Crédito</a>
+        <a href="../blog" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Blog</a>
+        <a href="../contacto" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Contacto</a>
+      </div>
+    </header>
+
+    <main class="pt-16">
+      <section class="section-cta-banner relative py-16 md:py-20 px-6 text-white text-center overflow-hidden">
+        <div class="absolute top-0 left-0 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-ping pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse pointer-events-none">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-normal mb-4">Términos y Condiciones</h1>
+          <p class="text-lg text-white/90 mb-6">Condiciones de uso del sitio web, simulador y servicios de intermediación
+            de Credipro.</p>
+          <span class="inline-block bg-white/15 text-sm px-4 py-1.5 rounded-full">Última actualización: mayo de
+            2026</span>
+        </div>
+      </section>
+
+      <div class="bg-[#F4F6F8] py-12 md:py-16 px-4 sm:px-6">
+        <article class="legal-content max-w-3xl mx-auto text-slate-700 text-base leading-relaxed">
+
+          <nav class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-10" aria-label="Contenido">
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-primary-light mb-4">Contenido</h2>
+            <ol class="list-decimal pl-5 space-y-2 text-sm md:text-base">
+              <li><a href="#aceptacion">Aceptación de los términos</a></li>
+              <li><a href="#identidad">Identidad del prestador</a></li>
+              <li><a href="#servicio">Naturaleza del servicio</a></li>
+              <li><a href="#sitio">Uso del sitio web</a></li>
+              <li><a href="#simulador">Simulador crediticio</a></li>
+              <li><a href="#tramite">Solicitud y trámite de crédito</a></li>
+              <li><a href="#canales">Canales de atención y WhatsApp</a></li>
+              <li><a href="#propiedad">Propiedad intelectual</a></li>
+              <li><a href="#terceros">Enlaces y servicios de terceros</a></li>
+              <li><a href="#responsabilidad">Limitación de responsabilidad</a></li>
+              <li><a href="#privacidad">Privacidad y datos personales</a></li>
+              <li><a href="#modificaciones">Modificaciones</a></li>
+              <li><a href="#ley">Ley aplicable y jurisdicción</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ol>
+          </nav>
+
+          <section id="aceptacion" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">1. Aceptación
+              de los términos</h2>
+            <p class="mt-4">Al acceder y utilizar el sitio web <strong>credipro.com.mx</strong>, sus secciones, formularios,
+              simulador, blog y canales de contacto (incluido WhatsApp), usted declara haber leído, entendido y aceptado
+              estos Términos y Condiciones en su totalidad.</p>
+            <p>Si no está de acuerdo con alguna disposición, le solicitamos abstenerse de utilizar nuestros servicios y
+              canales digitales.</p>
+          </section>
+
+          <section id="identidad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">2. Identidad del
+              prestador</h2>
+            <p class="mt-4">Los servicios descritos en este sitio son ofrecidos por <strong>ASESORIA ESPECIALIZADA CSG SAS
+                DE CV</strong>, en adelante «Credipro», con domicilio en los Estados Unidos Mexicanos y marca comercial
+              Credipro.</p>
+            <p>Para consultas relacionadas con estos términos puede escribir a <a
+                href="mailto:contacto@credipro.com.mx">contacto@credipro.com.mx</a> o utilizar los medios indicados en la
+              sección de <a href="#contacto">contacto</a>.</p>
+          </section>
+
+          <section id="servicio" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">3. Naturaleza
+              del servicio</h2>
+            <p class="mt-4">Credipro es un <strong>intermediario</strong> en la gestión de créditos de nómina dirigidos a
+              trabajadores del sector público y afines. <strong>No somos una institución financiera</strong>, no otorgamos
+              créditos con recursos propios ni tomamos decisiones finales de autorización.</p>
+            <p>Nuestro rol consiste en:</p>
+            <ul>
+              <li>Brindar información y orientación sobre productos de crédito de nómina</li>
+              <li>Facilitar la comunicación entre el solicitante e instituciones financieras autorizadas</li>
+              <li>Acompañar al cliente durante el proceso de solicitud y seguimiento</li>
+            </ul>
+            <p>La contratación, tasa, plazo, comisiones, CAT y demás condiciones del crédito serán determinadas
+              exclusivamente por la institución financiera que apruebe y formalice el producto.</p>
+          </section>
+
+          <section id="sitio" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">4. Uso del sitio
+              web</h2>
+            <p class="mt-4">El usuario se compromete a utilizar el sitio de manera lícita, respetuosa y conforme a la
+              buena fe. Queda prohibido:</p>
+            <ul>
+              <li>Proporcionar información falsa, incompleta o de terceros sin autorización</li>
+              <li>Intentar acceder sin autorización a sistemas, cuentas o datos de Credipro o de otros usuarios</li>
+              <li>Reproducir, distribuir o modificar contenidos del sitio sin permiso escrito</li>
+              <li>Utilizar el sitio para fines ilícitos, fraudulentos o que vulneren derechos de terceros</li>
+              <li>Realizar actividades que afecten la disponibilidad o seguridad del sitio</li>
+            </ul>
+            <p>Credipro se reserva el derecho de suspender o negar el acceso a quien incumpla estas obligaciones.</p>
+          </section>
+
+          <section id="simulador" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">5. Simulador
+              crediticio</h2>
+            <p class="mt-4">El simulador disponible en el sitio tiene fines <strong>únicamente informativos y de
+                orientación</strong>. Los montos, plazos y pagos estimados:</p>
+            <ul>
+              <li>No constituyen una oferta vinculante ni una promesa de aprobación</li>
+              <li>Pueden diferir de las condiciones finales otorgadas por la institución financiera</li>
+              <li>Dependen del perfil crediticio, políticas internas y evaluación del solicitante</li>
+            </ul>
+
+            <div class="bg-[#EAF2F8] border-l-4 border-primary-light rounded-r-xl p-4 md:p-5 my-6">
+              <p class="mb-0 text-sm md:text-base"><strong class="text-primary">Aviso importante:</strong> El uso del
+                simulador implica la aceptación del aviso legal que se muestra junto a los resultados. Consulte siempre
+                el contrato y la carátula del producto antes de firmar cualquier crédito.</p>
+            </div>
+          </section>
+
+          <section id="tramite" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">6. Solicitud y
+              trámite de crédito</h2>
+            <p class="mt-4">Al iniciar una solicitud de crédito a través de Credipro, el usuario:</p>
+            <ul>
+              <li>Autoriza el tratamiento de sus datos conforme a nuestra <a href="../privacidad/">Política de
+                  Privacidad</a></li>
+              <li>Reconoce que deberá entregar documentación veraz y vigente</li>
+              <li>Acepta que la aprobación, rechazo o condiciones del crédito son decisión de la institución financiera
+              </li>
+              <li>Entiende que Credipro puede cobrar comisiones o recibir contraprestaciones de instituciones aliadas,
+                las cuales serán informadas cuando la ley o la regulación así lo exijan</li>
+            </ul>
+            <p>Credipro no garantiza tiempos de respuesta, montos autorizados ni la concreción del crédito.</p>
+          </section>
+
+          <section id="canales" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">7. Canales de
+              atención y WhatsApp</h2>
+            <p class="mt-4">Credipro ofrece atención por medios digitales, incluido WhatsApp y el asistente virtual
+              «Luz». Al utilizar estos canales:</p>
+            <ul>
+              <li>Usted es responsable de la veracidad de la información que comparte</li>
+              <li>Las respuestas automatizadas tienen carácter orientativo y no sustituyen asesoría personalizada cuando
+                la situación lo requiera</li>
+              <li>Un asesor humano podrá intervenir para validar datos o continuar el trámite</li>
+              <li>El uso de WhatsApp está sujeto también a los términos de Meta/WhatsApp</li>
+            </ul>
+            <p>Credipro no se hace responsable por interrupciones, fallas o indisponibilidad de plataformas de terceros.
+            </p>
+          </section>
+
+          <section id="propiedad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">8. Propiedad
+              intelectual</h2>
+            <p class="mt-4">El sitio web, logotipos, textos, imágenes, diseño, código y demás contenidos son propiedad de
+              Credipro o de sus licenciantes y están protegidos por la legislación aplicable en materia de propiedad
+              intelectual.</p>
+            <p>Queda prohibida su reproducción, distribución o uso comercial sin autorización previa y por escrito.</p>
+          </section>
+
+          <section id="terceros" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">9. Enlaces y
+              servicios de terceros</h2>
+            <p class="mt-4">El sitio puede contener enlaces a sitios de instituciones financieras, redes sociales u otros
+              proveedores. Credipro no controla ni es responsable del contenido, políticas o prácticas de dichos sitios.
+            </p>
+            <p>La relación contractual del crédito se establece directamente entre el usuario y la institución financiera
+              correspondiente, bajo los términos que esta determine.</p>
+          </section>
+
+          <section id="responsabilidad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">10. Limitación
+              de responsabilidad</h2>
+            <p class="mt-4">En la medida permitida por la ley, Credipro no será responsable por:</p>
+            <ul>
+              <li>Decisiones de crédito adoptadas por instituciones financieras</li>
+              <li>Daños derivados del uso indebido del sitio o de información proporcionada por el usuario</li>
+              <li>Interrupciones temporales del sitio por mantenimiento, fallas técnicas o causas de fuerza mayor</li>
+              <li>Contenidos de carácter general publicados en el blog, que no constituyen asesoría legal ni financiera
+                personalizada</li>
+            </ul>
+            <p>Nada en estos términos limita los derechos irrenunciables del consumidor reconocidos por la legislación
+              mexicana aplicable.</p>
+          </section>
+
+          <section id="privacidad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">11. Privacidad
+              y datos personales</h2>
+            <p class="mt-4">El tratamiento de datos personales se rige por nuestra <a href="../privacidad/">Política de
+                Privacidad</a>, la cual forma parte integrante de estos Términos y Condiciones. Le recomendamos leerla
+              antes de enviar información a través del sitio o de nuestros canales de contacto.</p>
+          </section>
+
+          <section id="modificaciones" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">12.
+              Modificaciones</h2>
+            <p class="mt-4">Credipro puede modificar estos Términos y Condiciones en cualquier momento. Las versiones
+              actualizadas se publicarán en <a href="https://credipro.com.mx/terminos/">credipro.com.mx/terminos</a> con
+              indicación de la fecha de última actualización.</p>
+            <p>El uso continuado del sitio después de la publicación de cambios implica la aceptación de los términos
+              revisados.</p>
+          </section>
+
+          <section id="ley" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">13. Ley
+              aplicable y jurisdicción</h2>
+            <p class="mt-4">Estos términos se interpretan conforme a las leyes de los <strong>Estados Unidos
+                Mexicanos</strong>.</p>
+            <p>Para cualquier controversia derivada de su interpretación o cumplimiento, las partes se someten a los
+              tribunales competentes de la República Mexicana, renunciando a cualquier otro fuero que pudiera
+              corresponderles por razón de su domicilio presente o futuro, salvo disposición imperativa en contrario a
+              favor del consumidor.</p>
+          </section>
+
+          <section id="contacto" class="mb-4">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">14. Contacto
+            </h2>
+            <p class="mt-4">Para dudas sobre estos Términos y Condiciones:</p>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mt-4 space-y-2">
+              <p><strong class="text-primary">Empresa:</strong> ASESORIA ESPECIALIZADA CSG SAS DE CV</p>
+              <p><strong class="text-primary">Marca comercial:</strong> Credipro</p>
+              <p><strong class="text-primary">Sitio web:</strong> <a href="https://credipro.com.mx">credipro.com.mx</a>
+              </p>
+              <p><strong class="text-primary">Correo:</strong> <a href="mailto:contacto@credipro.com.mx">contacto@credipro.com.mx</a>
+              </p>
+              <p><strong class="text-primary">WhatsApp:</strong> <a href="https://wa.me/525568701352" target="_blank"
+                  rel="noopener noreferrer">+52 556 870 1352</a></p>
+              <p class="pt-2 flex flex-wrap gap-3">
+                <a href="../contacto"
+                  class="inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 no-underline">Contacto</a>
+                <a href="../privacidad"
+                  class="inline-block text-primary font-medium border-2 border-primary-light hover:bg-primary-light hover:text-white px-6 py-3 rounded-lg transition duration-300 no-underline">Privacidad</a>
+              </p>
+            </div>
+          </section>
+
+        </article>
+      </div>
+    </main>
+
+    <footer
+      class="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 text-slate-700 dark:text-gray-200">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <span class="text-3xl font-extrabold text-primary-light">Credipro</span>
+          <p class="mt-4 text-sm leading-relaxed">Tu tranquilidad financiera está más cerca de lo que imaginas. Te
+            acompañamos desde la asesoría inicial hasta la entrega de tu crédito.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light">Créditos</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="../simulador" class="hover:text-blue-600">Solicita tu Crédito</a></li>
+              <li><a href="../contacto" class="hover:text-blue-600">Asesoría</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light">Nosotros</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="../nosotros" class="hover:text-blue-600">¿Quiénes somos?</a></li>
+              <li><a href="../blog" class="hover:text-blue-600">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary-light">Legal</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="../contacto" class="hover:text-blue-600">Ayuda</a></li>
+            <li><a href="../privacidad" class="hover:text-blue-600">Política de privacidad</a></li>
+            <li><a href="./" class="text-primary-light hover:text-alerts">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright" class="border-t border-slate-200 mt-12 text-center py-6 text-sm"></div>
+    </footer>
+  </div>
+
+  <a href="https://wa.me/525568701352" target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+    aria-label="WhatsApp">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+    <svg class="w-8 h-8 text-white relative" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        d="M16 2.938c-7.308 0-13.25 5.943-13.25 13.25 0 2.338.617 4.633 1.781 6.663l-2.032 6.396a1 1 0 0 0 1.26 1.26l6.398-2.033c2.029 1.164 4.323 1.782 6.661 1.782 7.308 0 13.25-5.943 13.25-13.25s-5.943-13.25-13.25-13.25zm0 24.062a11.155 11.155 0 0 1-5.654-1.541l-.403-.236-4.165 1.324 1.324-4.166-.237-.402a11.224 11.224 0 1 1 9.135 4.89zm6.233-8.418c-.087-.145-.32-.232-.672-.406-.352-.174-2.086-1.025-2.41-1.142-.324-.116-.561-.174-.798.174-.237.348-.916 1.142-1.124 1.377-.209.233-.414.262-.766.087-.352-.174-1.486-.547-2.83-1.743-1.046-.936-1.753-2.093-1.96-2.441-.204-.349-.022-.535.153-.708.158-.157.352-.406.528-.609.174-.201.232-.348.353-.58.116-.233.058-.436-.029-.609-.086-.174-.798-1.924-1.092-2.635-.287-.692-.58-.598-.798-.609-.206-.008-.442-.009-.678-.009s-.623.09-.951.436c-.328.348-1.247 1.219-1.247 2.974 0 1.755 1.28 3.448 1.458 3.688.174.232 2.519 3.85 6.114 5.247.854.295 1.52.471 2.041.601.857.205 1.638.176 2.255.107.688-.078 2.085-.852 2.379-1.677.295-.826.295-1.534.206-1.677z" />
+    </svg>
+  </a>
+
+  <script src="../src/javascript/dom.js"></script>
+</body>
+
+</html>
