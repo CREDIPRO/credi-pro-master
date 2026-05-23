@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Política de Privacidad | Credipro</title>
+  <meta name="description"
+    content="Conoce cómo Credipro recopila, usa y protege tus datos personales conforme a la LFPDPPP. Información sobre WhatsApp, derechos ARCO y seguridad." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://credipro.com.mx/privacidad/" />
+
+  <link rel="stylesheet" href="../src/styles/global.css?v=3" />
+  <link rel="stylesheet" href="../src/styles/critical-layout.css?v=1" />
+  <link rel="icon" type="image/png" href="../src/assets/images/CREDIPROLOGO.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#023047",
+            "primary-light": "#219EBC",
+            secondary: "#0F5132",
+            back: "#8ECAE6",
+            accent: "#FFB703",
+            "neutral-bg": "#F4F6F8",
+            alerts: "#FB8500",
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body>
+  <div id="content">
+    <header x-data="{ open: false }" class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="../" class="flex-shrink-0">
+            <img class="h-10" src="../src/assets/images/logo_paleta.png" alt="Credipro" />
+          </a>
+          <div class="flex md:hidden">
+            <button @click="open = !open" type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-slate-800 hover:bg-blue-100 focus:outline-none transition duration-300"
+              aria-controls="mobile-menu" :aria-expanded="open">
+              <svg class="h-6 w-6" x-show="!open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg class="h-6 w-6" x-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-6 items-center">
+            <a href="../"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Inicio
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../nosotros"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">¿Quiénes
+              Somos?
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../simulador"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Solicita
+              tu Crédito
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../blog"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Blog
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="../contacto"
+              class="relative group text-sm font-[montserrat-medium] text-slate-800 hover:text-primary-light transition">Contacto
+              <span
+                class="absolute left-0 bottom-0 w-0 h-[2px] bg-alerts transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div x-show="open" x-transition class="md:hidden bg-white/95 backdrop-blur-md shadow-md px-4 pt-4 pb-6 space-y-3">
+        <a href="../" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Inicio</a>
+        <a href="../nosotros" class="block text-sm font-medium text-slate-800 hover:text-primary-light">¿Quiénes Somos?</a>
+        <a href="../simulador" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Solicita tu
+          Crédito</a>
+        <a href="../blog" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Blog</a>
+        <a href="../contacto" class="block text-sm font-medium text-slate-800 hover:text-primary-light">Contacto</a>
+      </div>
+    </header>
+
+    <main class="pt-16">
+      <section class="section-cta-banner relative py-16 md:py-20 px-6 text-white text-center overflow-hidden">
+        <div class="absolute top-0 left-0 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-ping pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse pointer-events-none">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">Política de Privacidad</h1>
+          <p class="text-lg text-white/90 mb-6">Tu privacidad es importante para nosotros. Aquí explicamos cómo
+            recopilamos, usamos y protegemos tu información personal.</p>
+          <span class="inline-block bg-white/15 text-sm px-4 py-1.5 rounded-full">Última actualización: mayo de
+            2026</span>
+        </div>
+      </section>
+
+      <div class="bg-[#F4F6F8] py-12 md:py-16 px-4 sm:px-6">
+        <article class="legal-content max-w-3xl mx-auto text-slate-700 text-base leading-relaxed">
+
+          <nav class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mb-10" aria-label="Contenido">
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-primary-light mb-4">Contenido</h2>
+            <ol class="list-decimal pl-5 space-y-2 text-sm md:text-base">
+              <li><a href="#responsable">Responsable del tratamiento de datos</a></li>
+              <li><a href="#datos">Datos personales que recopilamos</a></li>
+              <li><a href="#finalidad">Finalidad del tratamiento</a></li>
+              <li><a href="#whatsapp">Uso de WhatsApp y mensajería</a></li>
+              <li><a href="#transferencia">Transferencia de datos</a></li>
+              <li><a href="#derechos">Derechos ARCO</a></li>
+              <li><a href="#seguridad">Seguridad de la información</a></li>
+              <li><a href="#cookies">Cookies y tecnologías similares</a></li>
+              <li><a href="#menores">Menores de edad</a></li>
+              <li><a href="#cambios">Cambios a esta política</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ol>
+          </nav>
+
+          <section id="responsable" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">1. Responsable
+              del tratamiento</h2>
+            <p class="mt-4"><strong>ASESORIA ESPECIALIZADA CSG SAS DE CV</strong>, en adelante «Credipro», con domicilio
+              en los Estados Unidos Mexicanos, es responsable del tratamiento de sus datos personales conforme a la Ley
+              Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento.</p>
+            <p>Credipro actúa como intermediario en la gestión de créditos de nómina para trabajadores del gobierno, en
+              colaboración con instituciones financieras autorizadas. No somos una institución financiera; facilitamos y
+              acompañamos el proceso de solicitud.</p>
+          </section>
+
+          <section id="datos" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">2. Datos
+              personales que recopilamos</h2>
+            <p class="mt-4">Para la prestación de nuestros servicios de gestión de crédito de nómina, podemos recopilar
+              los siguientes datos:</p>
+
+            <h3 class="text-lg font-semibold text-primary">Datos de identificación</h3>
+            <ul>
+              <li>Nombre completo</li>
+              <li>Identificación oficial vigente (INE/IFE)</li>
+              <li>RFC y CURP</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold text-primary">Datos de contacto</h3>
+            <ul>
+              <li>Número de teléfono celular</li>
+              <li>Correo electrónico</li>
+              <li>Domicilio</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold text-primary">Datos laborales</h3>
+            <ul>
+              <li>Institución empleadora</li>
+              <li>Número de empleado</li>
+              <li>Tipo de plaza y antigüedad</li>
+              <li>Talón de nómina</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold text-primary">Datos financieros</h3>
+            <ul>
+              <li>CLABE interbancaria</li>
+              <li>Institución bancaria</li>
+              <li>Información de capacidad de pago</li>
+            </ul>
+
+            <div class="bg-[#EAF2F8] border-l-4 border-primary-light rounded-r-xl p-4 md:p-5 my-6">
+              <p class="mb-0 text-sm md:text-base"><strong class="text-primary">Datos sensibles:</strong> Algunos de los
+                datos anteriores pueden ser considerados sensibles conforme a la ley. Su tratamiento se realizará
+                únicamente con su consentimiento expreso y para las finalidades descritas en esta política.</p>
+            </div>
+          </section>
+
+          <section id="finalidad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">3. Finalidad
+              del tratamiento</h2>
+            <p class="mt-4">Sus datos personales serán utilizados para las siguientes finalidades:</p>
+
+            <h3 class="text-lg font-semibold text-primary-light">Finalidades primarias (necesarias para el servicio)</h3>
+            <ul>
+              <li>Evaluar su perfil crediticio y verificar su elegibilidad para productos de crédito de nómina</li>
+              <li>Gestionar su solicitud de crédito ante instituciones financieras autorizadas</li>
+              <li>Contactarle para dar seguimiento a su trámite</li>
+              <li>Cumplir con obligaciones legales y regulatorias</li>
+              <li>Prevención de fraudes y verificación de identidad</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold text-primary-light">Finalidades secundarias (opcionales)</h3>
+            <ul>
+              <li>Envío de información sobre nuevos productos y servicios financieros</li>
+              <li>Encuestas de satisfacción</li>
+              <li>Comunicaciones de marketing personalizado</li>
+            </ul>
+
+            <p>Si no desea que sus datos sean utilizados para finalidades secundarias, puede manifestarlo enviando un
+              correo a <a href="mailto:privacidad@credipro.com.mx"><strong>privacidad@credipro.com.mx</strong></a>.</p>
+          </section>
+
+          <section id="whatsapp" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">4. Uso de
+              WhatsApp y mensajería</h2>
+            <p class="mt-4">Credipro utiliza la plataforma de WhatsApp Business para brindar atención a clientes mediante
+              un asistente virtual automatizado (en adelante «Luz»), así como asesores humanos cuando sea necesario.</p>
+
+            <h3 class="text-lg font-semibold text-primary">Al interactuar con nosotros por WhatsApp, usted acepta que:</h3>
+            <ul>
+              <li>Sus mensajes pueden ser procesados por sistemas automatizados para responder sus consultas</li>
+              <li>La información que comparta será recopilada y almacenada para gestionar su solicitud de crédito</li>
+              <li>Sus conversaciones pueden ser revisadas por asesores humanos para garantizar la calidad del servicio
+              </li>
+              <li>Los documentos e imágenes que envíe se utilizarán exclusivamente para el trámite de su crédito</li>
+            </ul>
+
+            <div class="bg-[#EAF2F8] border-l-4 border-primary-light rounded-r-xl p-4 md:p-5 my-6">
+              <p class="mb-0 text-sm md:text-base">El uso de WhatsApp también está sujeto a los <a
+                  href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Términos
+                  y Política de Privacidad de WhatsApp</a>. Le recomendamos revisarlos.</p>
+            </div>
+
+            <h3 class="text-lg font-semibold text-primary">Datos recopilados a través de WhatsApp</h3>
+            <ul>
+              <li>Número de teléfono</li>
+              <li>Contenido de los mensajes enviados</li>
+              <li>Imágenes y documentos compartidos</li>
+              <li>Fecha y hora de las conversaciones</li>
+            </ul>
+          </section>
+
+          <section id="transferencia" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">5.
+              Transferencia de datos</h2>
+            <p class="mt-4">Sus datos personales podrán ser transferidos a las siguientes entidades para el cumplimiento
+              de las finalidades descritas:</p>
+            <ul>
+              <li><strong>Instituciones financieras autorizadas:</strong> para la gestión y autorización de créditos de
+                nómina</li>
+              <li><strong>Instituciones bancarias:</strong> para la dispersión del crédito aprobado</li>
+              <li><strong>Autoridades competentes:</strong> cuando sea requerido por ley</li>
+              <li><strong>Proveedores de servicios tecnológicos:</strong> para el funcionamiento de nuestra plataforma
+                (por ejemplo, servicios de mensajería, almacenamiento en la nube y herramientas de atención), bajo
+                estrictas condiciones de confidencialidad y contratos de tratamiento de datos</li>
+            </ul>
+            <p>No venderemos, cederemos ni transferiremos sus datos a terceros no relacionados con la prestación de
+              nuestros servicios sin su consentimiento previo, salvo las excepciones previstas por la ley.</p>
+          </section>
+
+          <section id="derechos" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">6. Derechos
+              ARCO</h2>
+            <p class="mt-4">Usted tiene derecho a:</p>
+            <ul>
+              <li><strong>Acceso:</strong> conocer qué datos personales tenemos de usted y cómo los utilizamos</li>
+              <li><strong>Rectificación:</strong> solicitar la corrección de sus datos cuando sean inexactos o incompletos
+              </li>
+              <li><strong>Cancelación:</strong> solicitar la eliminación de sus datos cuando considere que no están siendo
+                utilizados conforme a la ley</li>
+              <li><strong>Oposición:</strong> oponerse al uso de sus datos para finalidades específicas</li>
+            </ul>
+            <p>Para ejercer sus derechos ARCO, envíe su solicitud a <a
+                href="mailto:privacidad@credipro.com.mx"><strong>privacidad@credipro.com.mx</strong></a> indicando: nombre
+              completo, datos de contacto, descripción clara del derecho que desea ejercer y documentos que acrediten su
+              identidad.</p>
+            <p>Atenderemos su solicitud en un plazo máximo de <strong>20 días hábiles</strong>, conforme a la LFPDPPP.
+            </p>
+          </section>
+
+          <section id="seguridad" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">7. Seguridad de
+              la información</h2>
+            <p class="mt-4">Credipro implementa medidas técnicas, administrativas y físicas para proteger sus datos
+              personales contra pérdida, robo, uso no autorizado, acceso, divulgación, alteración o destrucción, entre
+              ellas:</p>
+            <ul>
+              <li>Transmisión cifrada de datos (HTTPS/TLS) en nuestro sitio web</li>
+              <li>Almacenamiento en servidores con controles de acceso</li>
+              <li>Acceso restringido al personal y proveedores autorizados</li>
+              <li>Políticas internas de confidencialidad y capacitación</li>
+            </ul>
+            <p>Ningún sistema de transmisión o almacenamiento es completamente seguro. Le recomendamos no compartir
+              información sensible por canales no verificados.</p>
+          </section>
+
+          <section id="cookies" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">8. Cookies y
+              tecnologías similares</h2>
+            <p class="mt-4">Nuestro sitio web <strong>credipro.com.mx</strong> puede utilizar cookies y tecnologías
+              similares para:</p>
+            <ul>
+              <li>Recordar preferencias de navegación</li>
+              <li>Analizar el tráfico y uso del sitio</li>
+              <li>Mejorar el funcionamiento y la experiencia de usuario</li>
+            </ul>
+            <p>Puede configurar su navegador para rechazar cookies; ello podría afectar algunas funciones del sitio.</p>
+          </section>
+
+          <section id="menores" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">9. Menores de
+              edad</h2>
+            <p class="mt-4">Nuestros servicios están dirigidos exclusivamente a personas mayores de 18 años. No
+              recopilamos intencionalmente datos personales de menores. Si tiene conocimiento de que un menor nos ha
+              proporcionado información, contáctenos para proceder a su eliminación.</p>
+          </section>
+
+          <section id="cambios" class="mb-10">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">10. Cambios a
+              esta política</h2>
+            <p class="mt-4">Credipro se reserva el derecho de modificar esta Política de Privacidad en cualquier momento.
+              Los cambios se publicarán en <a href="https://credipro.com.mx/privacidad/">credipro.com.mx/privacidad</a>
+              y, cuando sea posible, se notificarán por los canales de contacto que tenga registrados.</p>
+            <p>Le recomendamos revisar periódicamente esta política para mantenerse informado sobre cómo protegemos su
+              información.</p>
+          </section>
+
+          <section id="contacto" class="mb-4">
+            <h2 class="text-2xl font-bold text-primary border-b-2 border-primary-light inline-block pb-1">11. Contacto
+            </h2>
+            <p class="mt-4">Para consultas, quejas o solicitudes relacionadas con el tratamiento de sus datos personales:
+            </p>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 mt-4 space-y-2">
+              <p><strong class="text-primary">Empresa:</strong> ASESORIA ESPECIALIZADA CSG SAS DE CV</p>
+              <p><strong class="text-primary">Marca comercial:</strong> Credipro</p>
+              <p><strong class="text-primary">Sitio web:</strong> <a href="https://credipro.com.mx">credipro.com.mx</a>
+              </p>
+              <p><strong class="text-primary">Correo de privacidad:</strong> <a
+                  href="mailto:privacidad@credipro.com.mx">privacidad@credipro.com.mx</a></p>
+              <p><strong class="text-primary">WhatsApp:</strong> <a href="https://wa.me/525568701352" target="_blank"
+                  rel="noopener noreferrer">+52 556 870 1352</a></p>
+              <p class="pt-2"><a href="../contacto"
+                  class="inline-block text-white font-medium bg-primary-light hover:bg-alerts px-6 py-3 rounded-lg transition duration-300 no-underline">Ir
+                  a contacto</a></p>
+            </div>
+          </section>
+
+        </article>
+      </div>
+    </main>
+
+    <footer
+      class="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 text-slate-700 dark:text-gray-200">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <span class="text-3xl font-extrabold text-primary-light">Credipro</span>
+          <p class="mt-4 text-sm leading-relaxed">Tu tranquilidad financiera está más cerca de lo que imaginas. Te
+            acompañamos desde la asesoría inicial hasta la entrega de tu crédito.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light">Créditos</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="../simulador" class="hover:text-blue-600">Solicita tu Crédito</a></li>
+              <li><a href="../contacto" class="hover:text-blue-600">Asesoría</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-primary-light">Nosotros</h3>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li><a href="../nosotros" class="hover:text-blue-600">¿Quiénes somos?</a></li>
+              <li><a href="../blog" class="hover:text-blue-600">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary-light">Legal</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="../contacto" class="hover:text-blue-600">Ayuda</a></li>
+            <li><a href="./" class="font-medium text-primary-light hover:text-alerts">Política de privacidad</a></li>
+            <li><a href="#" onclick="return false;" class="hover:text-blue-600">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright" class="border-t border-slate-200 mt-12 text-center py-6 text-sm"></div>
+    </footer>
+  </div>
+
+  <a href="https://wa.me/525568701352" target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+    aria-label="WhatsApp">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+    <svg class="w-8 h-8 text-white relative" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        d="M16 2.938c-7.308 0-13.25 5.943-13.25 13.25 0 2.338.617 4.633 1.781 6.663l-2.032 6.396a1 1 0 0 0 1.26 1.26l6.398-2.033c2.029 1.164 4.323 1.782 6.661 1.782 7.308 0 13.25-5.943 13.25-13.25s-5.943-13.25-13.25-13.25zm0 24.062a11.155 11.155 0 0 1-5.654-1.541l-.403-.236-4.165 1.324 1.324-4.166-.237-.402a11.224 11.224 0 1 1 9.135 4.89zm6.233-8.418c-.087-.145-.32-.232-.672-.406-.352-.174-2.086-1.025-2.41-1.142-.324-.116-.561-.174-.798.174-.237.348-.916 1.142-1.124 1.377-.209.233-.414.262-.766.087-.352-.174-1.486-.547-2.83-1.743-1.046-.936-1.753-2.093-1.96-2.441-.204-.349-.022-.535.153-.708.158-.157.352-.406.528-.609.174-.201.232-.348.353-.58.116-.233.058-.436-.029-.609-.086-.174-.798-1.924-1.092-2.635-.287-.692-.58-.598-.798-.609-.206-.008-.442-.009-.678-.009s-.623.09-.951.436c-.328.348-1.247 1.219-1.247 2.974 0 1.755 1.28 3.448 1.458 3.688.174.232 2.519 3.85 6.114 5.247.854.295 1.52.471 2.041.601.857.205 1.638.176 2.255.107.688-.078 2.085-.852 2.379-1.677.295-.826.295-1.534.206-1.677z" />
+    </svg>
+  </a>
+
+  <script src="../src/javascript/dom.js"></script>
+</body>
+
+</html>
