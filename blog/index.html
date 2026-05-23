@@ -112,7 +112,7 @@
   <main>
     <!-- Hero Slider -->
     <section x-data="{ current: 0, interval: null, slides: [
-      { image: '../src/assets/images/credi.jpg', title: 'Blog CrediPro', text: 'Guías y consejos sobre crédito de nómina para trabajadores del gobierno. Toma el control de tus finanzas hoy.' },
+      { image: '../src/assets/images/credi.jpg', title: 'Blog Credipro', text: 'Guías y consejos sobre crédito de nómina para trabajadores del gobierno. Toma el control de tus finanzas hoy.' },
       { image: '../src/assets/images/credi2.jpg', title: 'Crédito de Nómina', text: 'Te asesoramos desde el inicio hasta la entrega del crédito. Seguro, ágil y personalizado.' },
       { image: '../src/assets/images/credi.jpg', title: 'Finanzas Inteligentes', text: 'Tu tranquilidad financiera está más cerca de lo que imaginas. CrediPro está contigo.' }
     ], next() { this.current = (this.current + 1) % this.slides.length }, prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length }, goTo(index) { this.current = index }, start() { this.interval = setInterval(() => this.next(), 6000); }, stop() { clearInterval(this.interval); } }" x-init="start" @mouseenter="stop" @mouseleave="start" class="relative h-screen w-full overflow-hidden">
@@ -219,7 +219,7 @@
   <footer class="bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-slate-800 text-slate-700 dark:text-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
       <div>
-        <span class="text-3xl font-extrabold text-primary-light">Credipro</span>
+        <a href="../" class="inline-block"><img class="h-10" src="../src/assets/images/logo_paleta.png" alt="Credipro" /></a>
         <p class="mt-4 text-sm leading-relaxed">Tu tranquilidad financiera está más cerca de lo que imaginas. Te acompañamos desde la asesoría inicial hasta la entrega de tu crédito.</p>
         <div class="flex mt-6 space-x-4">
           <a href="https://www.facebook.com/crediprotj/" target="_blank" class="hover:scale-110 transition-transform" aria-label="Facebook">

@@ -599,27 +599,64 @@ header.navigation-menu {
 }
 
 /* Páginas legales (privacidad, términos) */
+.legal-content {
+    text-align: left;
+}
+
 .legal-content section {
     scroll-margin-top: 5.5rem;
+    text-align: left;
 }
 
-.legal-content section h2 {
+.legal-content p,
+.legal-content li,
+.legal-content ol,
+.legal-content nav,
+.legal-content .legal-toc {
+    text-align: left;
+}
+
+.legal-section-title {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #023047;
+    border-bottom: 2px solid #219ebc;
+    padding-bottom: 0.35rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
-.legal-content section h3 {
+.legal-subsection-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #023047;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.legal-subsection-title--light {
+    color: #219ebc;
 }
 
 .legal-content ul {
     list-style: disc;
     padding-left: 1.5rem;
     margin-bottom: 1rem;
+    text-align: left;
+}
+
+.legal-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .legal-content li {
     margin-bottom: 0.35rem;
+    text-align: left;
 }
 
 .legal-content a {
@@ -630,4 +667,34 @@ header.navigation-menu {
 
 .legal-content a:hover {
     color: #fb8500;
+}
+
+.legal-content a.legal-cta {
+    color: #fff;
+    text-decoration: none;
+}
+
+.legal-content a.legal-cta:hover {
+    color: #fff;
+}
+
+.legal-content a.legal-cta-outline {
+    color: #023047;
+    text-decoration: none;
+}
+
+.legal-content a.legal-cta-outline:hover {
+    color: #fff;
+}
+
+.legal-contact-card {
+    text-align: left;
+}
+
+.legal-contact-card p {
+    text-align: left;
+}
+
+.legal-callout {
+    text-align: left;
 }
