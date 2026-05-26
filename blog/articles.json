@@ -1,5 +1,658 @@
 [
   {
+    "slug": "credito-sindical-sntss-trabajadores-imss-2026",
+    "metaTitle": "Crédito Sindical SNTSS para Trabajadores IMSS 2026 | Credipro",
+    "metaDescription": "Descubre cómo funciona el crédito sindical del SNTSS para trabajadores del IMSS: requisitos, montos, plazos y cómo solicitarlo en 2026. Infórmate aquí.",
+    "titulo": "Crédito Sindical SNTSS: Guía Completa para Trabajadores del IMSS 2026",
+    "resumen": "Si trabajas en el IMSS y eres agremiado del SNTSS, tienes acceso a créditos sindicales con tasas preferenciales. Conoce todo sobre este beneficio en 2026.",
+    "imagen": "../src/assets/images/blog/credito-sindical-sntss-trabajadores-imss-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Trabajador del IMSS revisando información sobre crédito sindical SNTSS en su oficina",
+    "categoria": "Créditos de Nómina",
+    "tags": [
+      "imss-trabajadores",
+      "sntss",
+      "imss-activos",
+      "crédito sindical",
+      "préstamo trabajadores imss",
+      "sindicato imss",
+      "crédito nómina imss 2026"
+    ],
+    "fecha": "2026-05-24",
+    "fechaISO": "2026-05-24T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "6 min",
+    "destacado": true,
+    "audiencia": "E",
+    "faq": [
+      {
+        "pregunta": "¿Quién puede solicitar el crédito sindical del SNTSS?",
+        "respuesta": "Cualquier trabajador activo del IMSS que esté afiliado al Sindicato Nacional de Trabajadores del Seguro Social (SNTSS). Debes tener al menos 6 meses de antigüedad en tu plaza y estar al corriente en tus cuotas sindicales para calificar."
+      },
+      {
+        "pregunta": "¿Cuánto puedo pedir de crédito sindical en el SNTSS?",
+        "respuesta": "Los montos varían según tu categoría, antigüedad y sección sindical. Generalmente oscilan entre $10,000 y $100,000 pesos. Tu delegación sindical local te dará el límite específico que aplica a tu caso."
+      },
+      {
+        "pregunta": "¿Cómo se descuenta el crédito sindical del SNTSS?",
+        "respuesta": "El descuento se aplica directamente a tu nómina del IMSS, en pagos quincenales o mensuales según las condiciones que pactaste. Al ser descuento automático, no corres el riesgo de olvidar un pago ni de reportes negativos en buró."
+      },
+      {
+        "pregunta": "¿El crédito sindical SNTSS afecta mi historial en Buró de Crédito?",
+        "respuesta": "En la mayoría de los casos, los créditos sindicales internos del SNTSS no se reportan al Buró de Crédito porque son operados directamente por el sindicato. Sin embargo, si el crédito involucra a una institución financiera externa, sí puede aparecer."
+      },
+      {
+        "pregunta": "¿Puedo tener un crédito sindical y un crédito de nómina al mismo tiempo?",
+        "respuesta": "Sí, siempre que tu capacidad de descuento total no supere el límite permitido sobre tu salario neto. La regla general es que los descuentos no deben rebasar el 30% de tu salario, aunque esto puede variar. Un asesor de Credipro puede ayudarte a calcular tu disponibilidad real."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "p",
+        "texto": "Si eres trabajador activo del Instituto Mexicano del Seguro Social (IMSS) y perteneces al Sindicato Nacional de Trabajadores del Seguro Social (SNTSS), tienes acceso a uno de los beneficios laborales más valiosos de tu contrato colectivo: el crédito sindical. Sin embargo, muchos empleados del IMSS no saben exactamente cómo funciona, cuánto pueden pedir o cómo diferenciarlo de otros productos financieros. En esta guía te explicamos todo lo que necesitas saber sobre el crédito sindical SNTSS en 2026."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es el Crédito Sindical del SNTSS?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El crédito sindical del SNTSS es un préstamo que el sindicato otorga directamente a sus agremiados —los trabajadores activos del IMSS— con condiciones preferenciales respecto al mercado financiero. A diferencia de un préstamo bancario, este crédito está diseñado específicamente para empleados del Seguro Social, con tasas de interés más bajas y descuento automático vía nómina."
+      },
+      {
+        "tipo": "p",
+        "texto": "El Sindicato Nacional de Trabajadores del Seguro Social (SNTSS) es uno de los sindicatos más grandes de México, y su fuerza de negociación le ha permitido incluir en el Contrato Colectivo de Trabajo condiciones financieras favorables para sus miembros. Esto incluye, además de los créditos sindicales, prestaciones como la caja de ahorro, seguros de vida complementarios y apoyos económicos por distintas situaciones."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Diferencia entre Crédito Sindical SNTSS y Crédito de Nómina"
+      },
+      {
+        "tipo": "p",
+        "texto": "Es común que los trabajadores del IMSS confundan el crédito sindical con el crédito de nómina que ofrecen instituciones financieras externas. Aquí te mostramos las diferencias clave:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Origen: el crédito sindical lo gestiona directamente el SNTSS; el crédito de nómina lo otorga un banco o financiera.",
+          "Reporte al buró: los créditos sindicales internos generalmente no reportan al Buró de Crédito; los de nómina sí.",
+          "Tasas: los créditos sindicales suelen tener tasas más bajas al ser un beneficio laboral, no un producto comercial.",
+          "Montos: los créditos de nómina externos pueden ofrecer montos más altos si tu capacidad de descuento lo permite.",
+          "Requisitos: el crédito sindical exige afiliación activa al SNTSS y estar al corriente en cuotas; el de nómina requiere buen historial crediticio.",
+          "Plazo: los créditos sindicales suelen ser de corto o mediano plazo (6 a 36 meses); los de nómina pueden llegar hasta 60-84 meses."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Requisitos para Solicitar el Crédito Sindical como Trabajador del IMSS"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los requisitos específicos pueden variar ligeramente según la sección sindical a la que perteneces —ya que el SNTSS tiene secciones en toda la república—, pero en términos generales necesitas cumplir con lo siguiente:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Ser trabajador activo del IMSS con plaza definitiva.",
+          "Estar afiliado al Sindicato Nacional de Trabajadores del Seguro Social (SNTSS) y al corriente en tus cuotas sindicales.",
+          "Tener mínimo 6 meses de antigüedad en tu puesto (algunas secciones piden más).",
+          "No tener adeudos pendientes con el sindicato ni créditos sindicales en mora.",
+          "Contar con capacidad de descuento disponible en nómina.",
+          "Presentar identificación oficial, comprobante de domicilio y recibos de nómina recientes."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cómo Solicitar el Crédito Sindical del SNTSS?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El proceso de solicitud del crédito sindical para trabajadores del IMSS se realiza a través de tu delegación o sección sindical local. Los pasos generales son los siguientes:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Acude a la oficina de tu sección del SNTSS y solicita información sobre los productos de crédito disponibles.",
+          "Verifica que estás al corriente en tus cuotas sindicales. Si tienes adeudos, liquídalos primero.",
+          "Llena la solicitud de crédito con los datos requeridos y entrega la documentación solicitada.",
+          "Espera la revisión y autorización. Los tiempos varían, pero generalmente son de 5 a 15 días hábiles.",
+          "Una vez autorizado, el monto se deposita en tu cuenta bancaria o se entrega en efectivo según las políticas de tu sección.",
+          "Los descuentos inician automáticamente en la siguiente quincena o mes de nómina."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Caja de Ahorro del IMSS y Otros Beneficios Financieros del SNTSS"
+      },
+      {
+        "tipo": "p",
+        "texto": "Además del crédito sindical, como trabajador del IMSS y miembro del SNTSS tienes acceso a otros instrumentos financieros que vale la pena conocer. La caja de ahorro es uno de los más importantes: funciona como un fondo al que aportas quincenalmente y que genera rendimientos, además de permitirte solicitar préstamos con condiciones preferenciales."
+      },
+      {
+        "tipo": "p",
+        "texto": "Otros beneficios incluyen apoyos económicos por fallecimiento de familiares, becas para hijos de trabajadores, fondos de retiro complementarios y seguros de gastos médicos mayores adicionales a los del IMSS. Te recomendamos hablar con tu representante sindical para conocer todos los beneficios a los que tienes derecho."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cuándo Conviene un Crédito de Nómina Externo en lugar del Sindical?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El crédito sindical del SNTSS es una excelente opción para necesidades de corto y mediano plazo, pero hay situaciones en las que un crédito de nómina externo puede ser más conveniente. Por ejemplo, si necesitas un monto mayor para remodelar tu casa, pagar una deuda o financiar un proyecto importante, es posible que el techo del crédito sindical no sea suficiente."
+      },
+      {
+        "tipo": "p",
+        "texto": "En Credipro somos especialistas en asesorar a trabajadores del IMSS para encontrar la mejor combinación de créditos según su situación específica. Si ya tienes un crédito sindical activo y quieres saber si puedes acceder a financiamiento adicional sin comprometer tu nómina, puedes usar nuestro simulador en línea o escribirnos por WhatsApp para una asesoría gratuita sin compromisos."
+      }
+    ],
+    "id": 19
+  },
+  {
+    "slug": "fovissste-maestros-credito-vivienda-docentes-2026",
+    "metaTitle": "FOVISSSTE para Maestros: Crédito de Vivienda Docentes 2026 | Credipro",
+    "metaDescription": "Aprende cómo los maestros del magisterio pueden acceder al crédito FOVISSSTE en 2026: sorteos, Alia2+, Respalda2, requisitos y tips para docentes con plaza.",
+    "titulo": "FOVISSSTE para Maestros: Cómo Obtener Crédito de Vivienda Siendo Docente en 2026",
+    "resumen": "Los docentes del magisterio con plaza federal o estatal tienen derecho al crédito FOVISSSTE. Te explicamos las opciones, requisitos y cómo aprovecharlos al máximo.",
+    "imagen": "../src/assets/images/blog/fovissste-maestros-credito-vivienda-docentes-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Maestra del magisterio revisando documentos de crédito FOVISSSTE para comprar su casa",
+    "categoria": "Créditos de Nómina",
+    "tags": [
+      "sep",
+      "magisterio",
+      "maestros",
+      "fovissste",
+      "crédito vivienda docentes",
+      "issste maestros",
+      "plaza federal docentes",
+      "crédito hipotecario magisterio 2026"
+    ],
+    "fecha": "2026-05-24",
+    "fechaISO": "2026-05-24T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "7 min",
+    "destacado": false,
+    "audiencia": "A",
+    "faq": [
+      {
+        "pregunta": "¿Todos los maestros tienen derecho al crédito FOVISSSTE?",
+        "respuesta": "Solo los docentes con plaza federal o estatal que cotizan al ISSSTE y al FOVISSSTE tienen derecho a este crédito. Los maestros que trabajan por honorarios o en escuelas privadas no cotizan al FOVISSSTE y deben buscar otras opciones de financiamiento de vivienda."
+      },
+      {
+        "pregunta": "¿Qué es el sorteo FOVISSSTE y cómo participan los maestros?",
+        "respuesta": "El sorteo FOVISSSTE es el mecanismo tradicional para asignar créditos de vivienda entre los derechohabientes. Los maestros del magisterio inscritos en el ISSSTE se registran en el sorteo y se seleccionan aleatoriamente. El registro se realiza en línea en la plataforma de FOVISSSTE durante los períodos que anuncian."
+      },
+      {
+        "pregunta": "¿Cuánto crédito FOVISSSTE puede obtener un maestro en 2026?",
+        "respuesta": "El monto depende del salario básico y las Veces Salario Mínimo (VSM) acumuladas. En 2026, los créditos FOVISSSTE van desde $450,000 hasta más de $2,000,000 pesos según el perfil del maestro. Los docentes con mayor antigüedad y sueldo base más alto tienen acceso a montos más elevados."
+      },
+      {
+        "pregunta": "¿Qué es Alia2+ y para qué sirve a los maestros del magisterio?",
+        "respuesta": "Alia2+ es un esquema de crédito FOVISSSTE que permite a los maestros del magisterio combinar su crédito individual con el de su cónyuge o familiar derechohabiente, o bien complementarlo con financiamiento bancario. Esto les permite acceder a viviendas de mayor valor que con el crédito individual."
+      },
+      {
+        "pregunta": "¿Los maestros de educación básica estatal también califican para FOVISSSTE?",
+        "respuesta": "Depende del estado. Los maestros con plaza estatal cotizan al ISSSTE estatal correspondiente y no siempre tienen acceso al FOVISSSTE federal. Sin embargo, muchos estados tienen acuerdos con FOVISSSTE o sus propios fondos de vivienda. Es importante verificar con el ISSTE de tu estado la situación específica."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "p",
+        "texto": "Para los maestros del magisterio, comprar una casa propia es una de las metas financieras más importantes de su vida. El crédito FOVISSSTE para maestros es una de las herramientas más valiosas para lograrlo, pero el proceso puede ser confuso: sorteos, esquemas cofinanciados, diferencias entre plazas federales y estatales... En esta guía te explicamos todo lo que necesitas saber sobre el FOVISSSTE para docentes en 2026 para que puedas tomar las mejores decisiones."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es FOVISSSTE y Por Qué Es Importante para los Maestros?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El Fondo de la Vivienda del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (FOVISSSTE) es el organismo encargado de otorgar créditos hipotecarios a los trabajadores del gobierno federal que cotizan al ISSSTE. Los maestros con plaza federal —docentes de educación básica, media superior y superior bajo el sistema SEP— son derechohabientes del ISSSTE y, por tanto, del FOVISSSTE."
+      },
+      {
+        "tipo": "p",
+        "texto": "A diferencia de un crédito bancario convencional, el crédito FOVISSSTE para maestros tiene condiciones especiales: tasa de interés fija del 4% anual (en la mayoría de los esquemas), descuento directo de nómina y plazos de hasta 30 años. Esto lo convierte en uno de los créditos hipotecarios más accesibles del mercado mexicano."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Tipos de Crédito FOVISSSTE para Docentes del Magisterio"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los maestros del magisterio tienen acceso a varios esquemas de crédito FOVISSSTE, cada uno con características distintas. Conocerlos te ayudará a elegir el que mejor se adapte a tu situación:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Crédito FOVISSSTE por Sorteo: el esquema tradicional. Te registras en el sorteo anual y, si eres seleccionado, recibes el crédito. No tienes que pagar nada por participar. El monto depende de tu VSM acumulado.",
+          "Crédito Alia2+: permite combinar tu crédito con el de tu cónyuge (si también es derechohabiente) o complementarlo con financiamiento bancario para adquirir viviendas de mayor valor. Ideal para maestros con pareja que también trabaja en el gobierno.",
+          "Crédito Respalda2M: dirigido a maestros que ya tienen una hipoteca con un banco y quieren trasladarla al FOVISSSTE para obtener mejores condiciones. Requiere que la vivienda cumpla ciertos criterios.",
+          "Crédito en Pesos (TUCA): algunos esquemas permiten contratar el crédito directamente en pesos con tasas de interés fijas, eliminando la incertidumbre del Salario Mínimo.",
+          "Crédito Cofinanciado con banco: FOVISSSTE puede complementarse con un crédito de una institución bancaria participante para acceder a viviendas de mayor valor en zonas como Tijuana, Monterrey o CDMX."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Requisitos para que un Maestro Acceda al Crédito FOVISSSTE"
+      },
+      {
+        "tipo": "p",
+        "texto": "Para calificar al crédito FOVISSSTE como docente del magisterio debes cumplir con los siguientes requisitos básicos:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Ser derechohabiente del ISSSTE con cotización activa (plaza federal o con convenio estatal).",
+          "Tener al menos 18 meses de cotización al FOVISSSTE al momento del sorteo o solicitud.",
+          "No haber ejercido previamente un crédito FOVISSSTE (solo se otorga una vez por derechohabiente).",
+          "No tener adeudos con el ISSSTE ni con el FOVISSSTE.",
+          "Presentar identificación oficial, CURP, constancia de trabajo, comprobante de domicilio y estados de cuenta bancarios recientes.",
+          "La vivienda a adquirir debe cumplir con el valor máximo permitido por FOVISSSTE según la zona geográfica."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Cómo Funciona el Sorteo FOVISSSTE para Maestros"
+      },
+      {
+        "tipo": "p",
+        "texto": "El sorteo FOVISSSTE es el principal mecanismo de asignación de créditos. Cada año, FOVISSSTE abre el período de registro y los maestros del magisterio que desean participar deben inscribirse en línea a través del portal oficial. El proceso es gratuito y se puede hacer desde cualquier dispositivo."
+      },
+      {
+        "tipo": "p",
+        "texto": "Una vez cerrado el registro, se realiza el sorteo público y los acreedores seleccionados son notificados para iniciar el proceso de trámite. Los maestros que no son seleccionados en un sorteo pueden volver a registrarse en el siguiente. El número de créditos disponibles varía cada año según el presupuesto del FOVISSSTE."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Tips para Maximizar tus Posibilidades con el FOVISSSTE"
+      },
+      {
+        "tipo": "p",
+        "texto": "Aquí algunos consejos prácticos para los docentes del magisterio que quieren aprovechar al máximo el FOVISSSTE en 2026:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Registra tus semanas de cotización: cada año que cotizas acumulas más VSM, lo que aumenta el monto de crédito al que puedes acceder.",
+          "Considera el esquema Alia2+ si tu cónyuge también es trabajador del gobierno: combinan los créditos y pueden adquirir una vivienda más amplia.",
+          "Estudia la zona donde quieres comprar: los valores máximos de vivienda varían por ciudad. En Tijuana y otras zonas metropolitanas los límites son mayores.",
+          "Mantén tu historial crediticio limpio: aunque FOVISSSTE no siempre verifica Buró de Crédito, algunas instituciones bancarias cofinanciadoras sí lo hacen.",
+          "Prepara tu documentación con anticipación: tener listos tus comprobantes acelera el trámite una vez que seas seleccionado.",
+          "Asesórate con un experto: un asesor de Credipro puede ayudarte a entender cuánto puedes recibir y cuál es el mejor esquema para ti."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Necesitas Orientación sobre tu Crédito FOVISSSTE como Maestro?"
+      },
+      {
+        "tipo": "p",
+        "texto": "En Credipro hemos ayudado a cientos de maestros del magisterio a entender sus opciones de crédito y a complementar el FOVISSSTE con otros productos financieros cuando han necesitado un puente de liquidez. Si tienes dudas sobre cuánto te corresponde, si ya ejerciste tu crédito FOVISSSTE y necesitas explorar otras opciones, o si simplemente quieres ordenar tus finanzas antes de dar el paso de la vivienda, podemos ayudarte. Usa nuestro simulador en línea o contáctanos por WhatsApp para recibir asesoría gratuita sin compromisos."
+      }
+    ],
+    "id": 20
+  },
+  {
+    "slug": "fovissste-2026-como-funciona-trabajadores-gobierno",
+    "metaTitle": "FOVISSSTE 2026: Qué Es, Cómo Funciona y Quiénes Califican | Credipro",
+    "metaDescription": "Todo sobre el FOVISSSTE en 2026: quiénes califican, cómo solicitar crédito de vivienda, sorteos, montos y diferencias con INFONAVIT. Guía completa.",
+    "titulo": "FOVISSSTE 2026: Guía Completa para Trabajadores del Gobierno",
+    "resumen": "El FOVISSSTE es el fondo de vivienda para trabajadores del Estado. Descubre cómo funciona, quiénes pueden solicitarlo y cómo diferenciarlo del INFONAVIT.",
+    "imagen": "../src/assets/images/blog/fovissste-2026-como-funciona-trabajadores-gobierno.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Trabajador del gobierno mexicano revisando información sobre crédito FOVISSSTE para comprar vivienda",
+    "categoria": "Crédito en México",
+    "tags": [
+      "fovissste",
+      "crédito vivienda gobierno",
+      "issste vivienda",
+      "trabajadores gobierno vivienda",
+      "fovissste vs infonavit",
+      "hipotecario gobierno 2026",
+      "crédito sector público"
+    ],
+    "fecha": "2026-05-24",
+    "fechaISO": "2026-05-24T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "5 min",
+    "destacado": false,
+    "audiencia": "general",
+    "faq": [
+      {
+        "pregunta": "¿Cuál es la diferencia principal entre FOVISSSTE e INFONAVIT?",
+        "respuesta": "El FOVISSSTE atiende a trabajadores del gobierno federal (ISSSTE), mientras que el INFONAVIT sirve a trabajadores del sector privado (IMSS). Ambos ofrecen créditos hipotecarios pero con reglas, montos y mecánicas de sorteo distintas. Si cotizas al ISSSTE, tu fondo de vivienda es FOVISSSTE; si cotizas al IMSS, es INFONAVIT."
+      },
+      {
+        "pregunta": "¿Puedo usar FOVISSSTE e INFONAVIT al mismo tiempo?",
+        "respuesta": "No directamente, ya que son fondos para distintos tipos de trabajadores. Sin embargo, si en algún momento cotizaste a ambas instituciones (por tener trabajos en distintos sectores), existe la posibilidad de portabilidad de subcuenta bajo ciertas condiciones. Consulta con un asesor para analizar tu caso específico."
+      },
+      {
+        "pregunta": "¿Cuánto tiempo tarda el trámite del crédito FOVISSSTE?",
+        "respuesta": "Una vez que eres seleccionado en el sorteo, el proceso completo —desde la notificación hasta la escrituración— puede tomar entre 2 y 6 meses, dependiendo de la complejidad de la operación y la documentación. Es importante tener todos los documentos listos con anticipación."
+      },
+      {
+        "pregunta": "¿El FOVISSSTE tiene una tasa de interés fija?",
+        "respuesta": "Sí, en la mayoría de sus esquemas el FOVISSSTE maneja una tasa de interés del 4% anual sobre saldos en VSM (Veces Salario Mínimo), lo que es considerablemente menor a las tasas del mercado bancario que oscilan entre el 9% y el 14% anual."
+      },
+      {
+        "pregunta": "¿Qué pasa con mi crédito FOVISSSTE si me jubilo?",
+        "respuesta": "Si te jubilas antes de terminar de pagar tu crédito FOVISSSTE, el descuento de nómina se convierte en descuento a tu pensión. El crédito sigue vigente y se continúa pagando con el mismo esquema, solo que el cargo se aplica sobre tu pensión mensual en lugar de tu salario activo."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "p",
+        "texto": "Si eres trabajador del gobierno federal en México —maestro, médico del ISSSTE, administrativo, policía federal o cualquier empleado que cotice al ISSSTE— el FOVISSSTE es tu principal puerta de entrada a un crédito hipotecario accesible. Sin embargo, a pesar de ser un derecho al que miles de trabajadores del Estado tienen acceso, muchos no lo conocen bien o no saben cómo aprovecharlo. En esta guía te explicamos qué es el FOVISSSTE, cómo funciona en 2026 y cuándo te conviene usarlo."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué es el FOVISSSTE y Para Quién Es?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El Fondo de la Vivienda del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (FOVISSSTE) es un organismo del gobierno federal que otorga créditos hipotecarios a los trabajadores del Estado que cotizan al ISSSTE. Esto incluye a empleados federales de la SEP, salud, administración pública, poder judicial, fuerzas armadas y otros sectores del gobierno que no pertenecen al IMSS."
+      },
+      {
+        "tipo": "p",
+        "texto": "El FOVISSSTE se financia con las aportaciones patronales obligatorias: cada quincena, el gobierno deposita el 5% de tu salario en tu subcuenta de vivienda dentro del ISSSTE. Ese dinero acumulado es el que te da derecho a solicitar un crédito hipotecario cuando lo necesitas. Cuantos más años lleves cotizando, mayor es el monto al que puedes acceder."
+      },
+      {
+        "tipo": "h2",
+        "texto": "FOVISSSTE vs INFONAVIT: Diferencias Clave"
+      },
+      {
+        "tipo": "p",
+        "texto": "La confusión entre FOVISSSTE e INFONAVIT es muy común, especialmente entre personas que han trabajado en ambos sectores a lo largo de su carrera. Aquí están las diferencias fundamentales:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Población objetivo: FOVISSSTE para trabajadores del gobierno (ISSSTE); INFONAVIT para trabajadores del sector privado (IMSS).",
+          "Tasa de interés: FOVISSSTE aplica generalmente 4% anual en VSM; INFONAVIT aplica tasas que varían según el salario del trabajador, entre 1.9% y 10.45%.",
+          "Sorteo vs. solicitud directa: FOVISSSTE usa un sistema de sorteo para la mayoría de sus créditos; INFONAVIT permite solicitar directamente si cumples los puntos necesarios.",
+          "Montos: ambos dependen del salario y tiempo cotizando, pero los rangos máximos son distintos según las reglas de cada fondo.",
+          "Esquemas de cofinanciamiento: ambos tienen opciones para complementar con crédito bancario (Cofinavit en INFONAVIT, Alia2+ en FOVISSSTE)."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Cómo Funciona el Sorteo y la Solicitud FOVISSSTE"
+      },
+      {
+        "tipo": "p",
+        "texto": "El mecanismo de acceso más común al FOVISSSTE es el sorteo anual. FOVISSSTE abre convocatorias periódicas donde los derechohabientes se registran en línea para participar. Los créditos disponibles se asignan aleatoriamente entre quienes se registraron. Si no eres seleccionado, puedes volver a participar el siguiente año."
+      },
+      {
+        "tipo": "p",
+        "texto": "Existen también esquemas donde no se requiere sorteo, como el crédito Respalda2M (para reestructurar hipotecas bancarias existentes) y algunos créditos especiales para ciertos perfiles de trabajadores. FOVISSSTE también permite los llamados créditos en pesos (TUCA), que eliminan la dependencia al salario mínimo en el cálculo."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Cuánto Crédito FOVISSSTE Puedes Obtener en 2026?"
+      },
+      {
+        "tipo": "p",
+        "texto": "El monto del crédito FOVISSSTE depende principalmente de tu VSM acumulado (Veces Salario Mínimo), que es el resultado de multiplicar tu salario básico por el tiempo que llevas cotizando. En términos generales, para 2026 los rangos son aproximadamente los siguientes: trabajadores con menos de 5 años de cotización pueden acceder a créditos desde $450,000 pesos; con 10 a 15 años el rango sube a $1,000,000 - $1,500,000 pesos; y con más de 20 años de cotización los montos pueden superar los $2,000,000 pesos."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Aprovecha el FOVISSSTE con Orientación Experta"
+      },
+      {
+        "tipo": "p",
+        "texto": "Entender el FOVISSSTE es el primer paso, pero optimizarlo requiere conocer tu situación específica: cuánto llevas cotizando, a qué esquema calificas, si conviene complementar con un crédito bancario y cómo preparar la documentación. En Credipro trabajamos con trabajadores del gobierno federal para ayudarlos a entender sus opciones de crédito hipotecario y a complementar el FOVISSSTE cuando es necesario. Si tienes dudas, usa nuestro simulador en línea o contáctanos por WhatsApp para recibir orientación sin costo."
+      }
+    ],
+    "id": 21
+  },
+  {
+    "slug": "invertir-cetes-trabajador-gobierno-mexico-2026",
+    "metaTitle": "CETES 2026: Cómo Invertir Siendo Trabajador del Gobierno | Credipro",
+    "metaDescription": "Descubre cómo invertir en CETES siendo empleado del gobierno en México 2026: rendimientos, plazos, Cetesdirecto y por qué es la opción más segura para empezar.",
+    "titulo": "CETES 2026: La Inversión Más Segura para Trabajadores del Gobierno en México",
+    "resumen": "Los CETES son instrumentos de inversión respaldados por el gobierno mexicano, ideales para empleados públicos que quieren hacer crecer sus ahorros sin riesgo. Conoce todo en 2026.",
+    "imagen": "../src/assets/images/blog/invertir-cetes-trabajador-gobierno-mexico-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Trabajador del gobierno mexicano consultando sus inversiones en CETES desde su teléfono",
+    "categoria": "Educación Financiera",
+    "tags": [
+      "cetes",
+      "inversión cetes México 2026",
+      "cetesdirecto",
+      "ahorro trabajadores gobierno",
+      "inversión segura México",
+      "rendimiento cetes",
+      "educación financiera",
+      "invertir sin riesgo"
+    ],
+    "fecha": "2026-05-24",
+    "fechaISO": "2026-05-24T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "5 min",
+    "destacado": false,
+    "audiencia": "general",
+    "faq": [
+      {
+        "pregunta": "¿Cuánto dinero necesito para empezar a invertir en CETES?",
+        "respuesta": "A través de Cetesdirecto, la plataforma oficial del gobierno, puedes comenzar a invertir en CETES desde $100 pesos. No hay monto mínimo elevado ni comisiones de entrada, lo que los hace perfectos para trabajadores que quieren empezar a invertir aunque sea con pequeñas cantidades."
+      },
+      {
+        "pregunta": "¿Los CETES son seguros para un trabajador del gobierno?",
+        "respuesta": "Sí, son considerados la inversión más segura en México. Los CETES son emitidos y respaldados directamente por el gobierno federal mexicano a través del Banco de México (Banxico). El riesgo de impago es prácticamente nulo, especialmente a plazos cortos como 28 o 91 días."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre CETES y una cuenta de ahorro bancaria?",
+        "respuesta": "La principal diferencia es el rendimiento: en 2026, los CETES a 28 días ofrecen tasas cercanas al 9-10% anual, mientras que la mayoría de las cuentas de ahorro bancarias ofrecen menos del 5% anual. Además, el capital en CETES está respaldado por el gobierno, no solo por el IPAB (seguro bancario)."
+      },
+      {
+        "pregunta": "¿Pago impuestos sobre los rendimientos de los CETES?",
+        "respuesta": "Sí, los rendimientos de los CETES causan retención de ISR. Sin embargo, la retención se aplica sobre los intereses generados, no sobre el capital invertido. La tasa de retención para personas físicas en 2026 es del 0.50% sobre el capital en algunos instrumentos. Al final del año, la institución te emite una constancia fiscal para tu declaración anual."
+      },
+      {
+        "pregunta": "¿Puedo invertir en CETES si tengo un crédito de nómina activo?",
+        "respuesta": "Absolutamente sí. Tener un crédito de nómina no te impide invertir en CETES al mismo tiempo. De hecho, muchos asesores financieros recomiendan hacerlo de forma paralela: mientras pagas tu crédito (que puede estar financiando algo productivo), haces crecer un fondo de ahorro e inversión en CETES con el dinero disponible."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "p",
+        "texto": "Como trabajador del gobierno en México tienes un ingreso estable y predecible, lo que te pone en una posición privilegiada para comenzar a invertir. Y si estás buscando una opción segura, sin complicaciones y con buenos rendimientos para 2026, los CETES son exactamente lo que necesitas conocer. En este artículo te explicamos qué son, cómo invertir en ellos y por qué son ideales para los empleados del sector público."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué Son los CETES y Cómo Funcionan?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los Certificados de la Tesorería de la Federación (CETES) son instrumentos de deuda emitidos por el gobierno federal mexicano a través del Banco de México (Banxico). Básicamente, cuando compras CETES le estás prestando dinero al gobierno por un período determinado —28, 91, 182 o 364 días— y a cambio recibes tu capital de vuelta más una tasa de interés preestablecida."
+      },
+      {
+        "tipo": "p",
+        "texto": "Su principal característica es la seguridad: al estar respaldados por el gobierno federal, el riesgo de impago es prácticamente inexistente. Esto los convierte en el punto de partida ideal para quienes están comenzando a invertir o para quienes quieren guardar su dinero con rendimientos reales superiores a la inflación."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Rendimientos CETES en 2026: ¿Cuánto Ganas?"
+      },
+      {
+        "tipo": "p",
+        "texto": "Los rendimientos de los CETES varían según las condiciones macroeconómicas del país y las decisiones de política monetaria del Banxico. En 2026, los CETES a 28 días han operado en tasas que oscilan entre el 8.5% y el 10% anual, lo cual es significativamente superior a lo que ofrece una cuenta de ahorro bancaria tradicional."
+      },
+      {
+        "tipo": "p",
+        "texto": "Para poner esto en perspectiva: si inviertes $10,000 pesos en CETES a 28 días con una tasa del 9% anual, al final del plazo recibirías aproximadamente $10,207 pesos antes de impuestos. Si reinviertes mes a mes durante un año, el efecto del interés compuesto incrementa aún más tu rendimiento total."
+      },
+      {
+        "tipo": "h2",
+        "texto": "Cómo Invertir en CETES Siendo Trabajador del Gobierno"
+      },
+      {
+        "tipo": "p",
+        "texto": "Invertir en CETES es más sencillo de lo que parece. La forma más accesible para un trabajador del gobierno es a través de Cetesdirecto (cetesdirecto.com.mx), la plataforma oficial del gobierno federal que permite comprar CETES, Bondes, UDIBONOS y otros instrumentos gubernamentales sin intermediarios y desde $100 pesos:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Regístrate en cetesdirecto.com.mx con tu CURP, RFC y datos bancarios.",
+          "Verifica tu identidad siguiendo los pasos de la plataforma (tardan unos días hábiles).",
+          "Deposita el dinero que quieras invertir desde tu cuenta bancaria a tu cuenta Cetesdirecto.",
+          "Elige el instrumento (CETES), el plazo (28, 91, 182 o 364 días) y el monto.",
+          "Confirma la operación. Al vencimiento, tu dinero más los rendimientos regresan automáticamente a tu cuenta.",
+          "Puedes configurar reinversión automática para que el dinero siga trabajando sin que tengas que hacerlo manualmente."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Estrategia de Inversión para Empleados del Gobierno: CETES como Base"
+      },
+      {
+        "tipo": "p",
+        "texto": "Para un trabajador del gobierno que está comenzando a construir su patrimonio, los CETES pueden funcionar como la base de su estrategia de inversión. La idea es sencilla: mantén entre 3 y 6 meses de tus gastos en CETES de corto plazo (28-91 días) como fondo de emergencia líquido y con rendimiento. Este dinero está disponible cuando lo necesitas y mientras tanto genera más que una cuenta de ahorro."
+      },
+      {
+        "tipo": "p",
+        "texto": "Una vez que tengas ese fondo base, puedes explorar CETES a plazos más largos o incluso otros instrumentos de mayor rendimiento como fondos de inversión, SOFIPOS o acciones. El punto de partida, sin embargo, siempre debe ser construir esa base segura y líquida."
+      },
+      {
+        "tipo": "h2",
+        "texto": "CETES, Ahorro e Inversión: Un Paso a la Vez"
+      },
+      {
+        "tipo": "p",
+        "texto": "En Credipro creemos que las buenas finanzas personales combinan tres pilares: controlar las deudas de forma inteligente, construir un fondo de ahorro e inversión, y protegerse ante imprevistos. Los CETES son una pieza fundamental del segundo pilar. Si tienes un crédito de nómina activo y quieres saber cómo estructurar tu estrategia financiera completa —incluyendo inversión en CETES y opciones de ahorro— nuestros asesores pueden ayudarte. Escríbenos por WhatsApp o usa nuestro simulador y con gusto te orientamos."
+      }
+    ],
+    "id": 22
+  },
+  {
+    "slug": "registrar-negocio-sat-empleado-gobierno-mexico-2026",
+    "metaTitle": "Cómo Registrar tu Negocio en el SAT Siendo Empleado del Gobierno 2026 | Credipro",
+    "metaDescription": "Guía paso a paso para registrar tu negocio en el SAT sin perder tu trabajo en el gobierno: régimen simplificado, obligaciones fiscales y tips en México 2026.",
+    "titulo": "Cómo Registrar tu Negocio en el SAT Siendo Empleado del Gobierno en 2026",
+    "resumen": "¿Tienes un negocio propio y también trabajas en el gobierno? Puedes registrarte ante el SAT sin perder tu plaza. Te explicamos cómo hacerlo paso a paso en 2026.",
+    "imagen": "../src/assets/images/blog/registrar-negocio-sat-empleado-gobierno-mexico-2026.jpg",
+    "imagenFallback": "../src/assets/images/credi2.jpg",
+    "imagenAlt": "Empleado del gobierno mexicano registrando su negocio ante el SAT desde su computadora en casa",
+    "categoria": "Emprendimiento",
+    "tags": [
+      "emprendimiento gobierno",
+      "registrar negocio sat 2026",
+      "resico sat",
+      "régimen simplificado confianza",
+      "facturar sat empleado gobierno",
+      "ingresos extra gobierno",
+      "sat personas físicas México",
+      "emprender con plaza gobierno"
+    ],
+    "fecha": "2026-05-24",
+    "fechaISO": "2026-05-24T00:00:00-06:00",
+    "autor": "Equipo Credipro",
+    "tiempoLectura": "6 min",
+    "destacado": false,
+    "audiencia": "general",
+    "faq": [
+      {
+        "pregunta": "¿Puedo tener un negocio propio siendo empleado del gobierno sin que me afecte mi plaza?",
+        "respuesta": "Sí, en la gran mayoría de los casos puedes tener un negocio propio o ser trabajador independiente mientras mantienes tu empleo en el gobierno. Lo importante es cumplir con tus obligaciones fiscales ante el SAT y verificar que tu contrato colectivo o reglamento interno no tenga cláusulas que lo prohíban explícitamente. La mayoría de los contratos gubernamentales no restringen la actividad empresarial fuera del horario laboral."
+      },
+      {
+        "pregunta": "¿Cuál es el mejor régimen fiscal para un trabajador del gobierno que también tiene negocio?",
+        "respuesta": "El Régimen Simplificado de Confianza (RESICO) es generalmente la mejor opción para empleados del gobierno con negocio propio, ya que ofrece tasas muy bajas (del 1% al 2.5%) y obligaciones fiscales simplificadas. Sin embargo, también puedes estar en el Régimen de Actividades Empresariales con mayor control de deducciones si tus ingresos del negocio son elevados. Un contador puede ayudarte a decidir cuál es más conveniente."
+      },
+      {
+        "pregunta": "¿Tengo que hacer dos declaraciones anuales si trabajo en el gobierno y tengo negocio?",
+        "respuesta": "No son dos declaraciones separadas, sino una sola declaración anual que incluye todos tus ingresos: los de tu empleo en el gobierno (que tu dependencia ya te reportó al SAT) y los de tu actividad empresarial. El SAT precargar muchos datos, pero debes verificar y capturar los ingresos de tu negocio manualmente."
+      },
+      {
+        "pregunta": "¿Debo avisar a mi dependencia si registro un negocio ante el SAT?",
+        "respuesta": "Generalmente no, porque el registro ante el SAT es un trámite personal que no requiere autorización de tu empleador. Sin embargo, es recomendable revisar tu contrato colectivo o reglamento interno para verificar que no haya restricciones específicas. Algunos puestos de alta responsabilidad o confidencialidad pueden tener ciertas limitaciones."
+      },
+      {
+        "pregunta": "¿Qué pasa si no registro mi negocio ante el SAT y el gobierno se entera?",
+        "respuesta": "El SAT tiene mecanismos para detectar ingresos no declarados, especialmente los que pasan por transferencias bancarias o plataformas digitales. Las consecuencias pueden incluir multas, recargos y en casos extremos auditorías. Registrarte en el régimen correcto y cumplir con tus obligaciones fiscales te protege legalmente y te permite crecer tu negocio sin preocupaciones."
+      }
+    ],
+    "contenido": [
+      {
+        "tipo": "p",
+        "texto": "Muchos trabajadores del gobierno en México tienen un negocio propio, hacen trabajo freelance o venden productos por redes sociales como actividad complementaria. El problema es que una buena parte lo hace de manera informal, sin registrarse ante el SAT, lo cual genera riesgos legales y les impide crecer. La buena noticia es que registrar tu negocio siendo empleado del gobierno en 2026 es más fácil de lo que crees, y en muchos casos puedes hacerlo tú mismo sin necesidad de contratar un contador desde el primer día."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Por Qué Registrar tu Negocio en el SAT si Ya Tienes Trabajo en el Gobierno?"
+      },
+      {
+        "tipo": "p",
+        "texto": "La informalidad puede parecer cómoda al principio, pero tiene costos ocultos importantes. Sin RFC activo con actividad empresarial, no puedes emitir facturas a tus clientes (lo cual te limita a clientes que no necesitan factura). No puedes deducir gastos de tu negocio. No puedes acceder a financiamiento empresarial. Y si el SAT detecta tus ingresos extra, puedes enfrentar multas y recargos."
+      },
+      {
+        "tipo": "p",
+        "texto": "Registrarte en el régimen correcto te da acceso a beneficios reales: facturas electrónicas (CFDI), deducciones de gastos operativos, acceso a líneas de crédito empresariales, cumplimiento legal y —muy importante— la posibilidad de crecer tu negocio sin miedo."
+      },
+      {
+        "tipo": "h2",
+        "texto": "¿Qué Régimen Fiscal te Conviene si Trabajas en el Gobierno y Tienes Negocio?"
+      },
+      {
+        "tipo": "p",
+        "texto": "En 2026 existen dos opciones principales para los empleados del gobierno que tienen ingresos adicionales de un negocio:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "RESICO (Régimen Simplificado de Confianza): ideal para negocios con ingresos anuales de hasta $3.5 millones de pesos. Pagas una tasa muy baja (del 1% al 2.5% sobre tus ingresos sin deducción de gastos). Declaraciones mensuales sencillas y declaración anual simplificada. Es el régimen más recomendado para emprendedores y trabajadores del gobierno con negocio propio.",
+          "Régimen de Actividades Empresariales y Profesionales: más complejo, pero permite deducir gastos de tu negocio (renta, materiales, servicios, etc.). Conveniente si tienes gastos significativos que reducen tu base gravable. Requiere llevar contabilidad formal y es más recomendable tener un contador."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Paso a Paso: Cómo Registrar tu Negocio en el SAT Siendo Empleado del Gobierno"
+      },
+      {
+        "tipo": "p",
+        "texto": "El proceso de registro ante el SAT como persona física con actividad empresarial es completamente en línea. Aquí los pasos:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Obtén tu e.firma (antes FIEL): necesitas ir a una oficina del SAT con tu INE, CURP y comprobante de domicilio. La e.firma es tu firma electrónica y la necesitas para casi todos los trámites fiscales avanzados.",
+          "Ingresa al portal del SAT (sat.gob.mx) con tu RFC y contraseña o e.firma.",
+          "Ve a la sección de 'Trámites > RFC > Actualización de Actividades Económicas y Obligaciones'.",
+          "Agrega la actividad económica que corresponde a tu negocio (venta de productos, servicios profesionales, plataformas digitales, etc.).",
+          "Selecciona el régimen fiscal: elige RESICO si cumples los requisitos o Actividades Empresariales si prefieres deducir gastos.",
+          "Indica la fecha de inicio de actividades (puedes poner la fecha actual).",
+          "Guarda la constancia de situación fiscal actualizada. ¡Ya estás registrado!",
+          "A partir del mes siguiente, deberás presentar declaraciones mensuales de IVA e ISR según el régimen elegido."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Obligaciones Fiscales que Tendrás como Empleado-Emprendedor en 2026"
+      },
+      {
+        "tipo": "p",
+        "texto": "Una vez registrado, tendrás dos tipos de ingresos que declarar: los de tu trabajo en el gobierno (que tu dependencia ya reporta al SAT como retención de ISR) y los de tu negocio. Para el negocio, en RESICO tus principales obligaciones son:"
+      },
+      {
+        "tipo": "lista",
+        "items": [
+          "Declaración mensual de ISR e IVA (entre el 1 y el 17 de cada mes por los ingresos del mes anterior).",
+          "Emitir facturas CFDI por cada venta o servicio que factures.",
+          "Declaración anual (en abril del año siguiente).",
+          "Mantener tus datos del SAT actualizados (domicilio, actividad, etc.)."
+        ]
+      },
+      {
+        "tipo": "h2",
+        "texto": "Financia el Crecimiento de tu Negocio con Inteligencia"
+      },
+      {
+        "tipo": "p",
+        "texto": "Una vez que tu negocio está registrado y tiene historial fiscal, abres la puerta a productos financieros que antes no tenías acceso: líneas de crédito para empresas, financiamiento para capital de trabajo, arrendamiento de equipos y más. Y si como empleado del gobierno tienes un crédito de nómina, este puede ser un excelente puente para financiar el arranque de tu negocio mientras construyes el historial empresarial. En Credipro podemos ayudarte a explorar las mejores opciones de financiamiento según tu perfil dual (empleado y emprendedor). Consúltanos por WhatsApp o prueba nuestro simulador en línea sin compromiso."
+      }
+    ],
+    "id": 23
+  },
+  {
     "slug": "credito-pensionados-issstecali-baja-california-2026",
     "metaTitle": "Crédito para Pensionados ISSSTECALI en Baja California 2026 | Credipro",
     "metaDescription": "¿Eres pensionado del ISSSTECALI en BC? Descubre cómo acceder a un crédito personal con descuento a tu pensión. Requisitos, montos y asesoría sin costo.",
@@ -23,7 +676,7 @@
     "fechaISO": "2026-05-17T00:00:00-06:00",
     "autor": "Equipo Credipro",
     "tiempoLectura": "6 min",
-    "destacado": true,
+    "destacado": false,
     "audiencia": "C",
     "faq": [
       {
