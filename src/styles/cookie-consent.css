@@ -1,0 +1,100 @@
+#credipro-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 1rem;
+    pointer-events: none;
+}
+
+#credipro-cookie-banner .cookie-banner__inner {
+    pointer-events: auto;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 -4px 24px rgba(2, 48, 71, 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+}
+
+#credipro-cookie-banner .cookie-banner__text {
+    flex: 1 1 16rem;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #334155;
+    text-align: left;
+}
+
+#credipro-cookie-banner .cookie-banner__text a {
+    color: #219ebc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+#credipro-cookie-banner .cookie-banner__text a:hover {
+    color: #fb8500;
+}
+
+#credipro-cookie-banner .cookie-banner__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+#credipro-cookie-banner .cookie-banner__btn {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#credipro-cookie-banner .cookie-banner__btn--accept {
+    background: #219ebc;
+    color: #fff;
+}
+
+#credipro-cookie-banner .cookie-banner__btn--accept:hover {
+    background: #fb8500;
+}
+
+#credipro-cookie-banner .cookie-banner__btn--reject {
+    background: #f1f5f9;
+    color: #023047;
+    border: 1px solid #cbd5e1;
+}
+
+#credipro-cookie-banner .cookie-banner__btn--reject:hover {
+    background: #e2e8f0;
+}
+
+@media (max-width: 640px) {
+    #credipro-cookie-banner {
+        padding: 0.75rem;
+    }
+
+    #credipro-cookie-banner .cookie-banner__inner {
+        padding: 1rem;
+    }
+
+    #credipro-cookie-banner .cookie-banner__actions {
+        width: 100%;
+    }
+
+    #credipro-cookie-banner .cookie-banner__btn {
+        flex: 1;
+        text-align: center;
+    }
+}

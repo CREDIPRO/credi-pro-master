@@ -39,10 +39,11 @@
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="../src/javascript/cookie-consent.js"></script>
 </head>
 
 <body>
-  <div id="content">
+<div id="content">
     <header x-data="{ open: false }" class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-md shadow-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
@@ -307,11 +308,15 @@
             <p class="mt-4">Nuestro sitio web <strong>credipro.com.mx</strong> puede utilizar cookies y tecnologías
               similares para:</p>
             <ul>
-              <li>Recordar preferencias de navegación</li>
-              <li>Analizar el tráfico y uso del sitio</li>
-              <li>Mejorar el funcionamiento y la experiencia de usuario</li>
+              <li>Recordar preferencias y permitir el funcionamiento del sitio</li>
+              <li>Analizar el tráfico y el uso de las páginas</li>
+              <li>Medir la efectividad de nuestras comunicaciones y campañas</li>
             </ul>
-            <p>Puede configurar su navegador para rechazar cookies; ello podría afectar algunas funciones del sitio.</p>
+            <p>Al visitarnos por primera vez, puede <strong>aceptar o rechazar</strong> el uso de cookies opcionales
+              mediante el aviso que aparece en el sitio. Su preferencia se guarda en su navegador por un periodo
+              limitado y puede cambiarla borrando los datos de navegación del sitio.</p>
+            <p>Algunas herramientas de terceros pueden establecer sus propias cookies conforme a sus políticas. Puede
+              configurar su navegador para rechazar cookies; ello podría afectar algunas funciones del sitio.</p>
           </section>
 
           <section id="menores" class="mb-10">
